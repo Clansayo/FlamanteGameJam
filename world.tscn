@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dsbcaqoe8pj3o"]
+
+[ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://dd7st5i75yvw3" path="res://world.gd" id="1_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://tw667q5ux0nu" path="res://scenes/example_player/player.tscn" id="4_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://be8u6oq8u5gsb" path="res://resources/sprites/windows.png" id="5_036b0"]
+[ext_resource type="Texture2D" uid="uid://x2un66ucalao" path="res://resources/sprites/door.png" id="6_dwbse"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3sb7"]
+size = Vector2(229, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vyua3"]
+
+[node name="Node2D" type="Node2D" unique_id=959815553]
+script = ExtResource("1_tlwt5")
+
+[node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("1_f3sb7")]
+dialogue_key = "window"
+last_dialogue_index = 0
+
+[node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
+position = Vector2(395, 228)
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="DialogueArea2" parent="." unique_id=1744282777 instance=ExtResource("1_f3sb7")]
+dialogue_key = "door"
+
+[node name="CollisionShape2D" parent="DialogueArea2" index="0" unique_id=617687203]
+position = Vector2(1398, 313)
+scale = Vector2(6.63, 11.15)
+shape = SubResource("RectangleShape2D_vyua3")
+
+[node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("3_tlwt5")]
+scene_text_file = "res://dialogues/scene1.json"
+speech_speed_multiplayer = 10
+
+[node name="Windows" type="Sprite2D" parent="." unique_id=1485881472]
+position = Vector2(397, 223)
+scale = Vector2(0.25781253, 0.25439453)
+texture = ExtResource("5_036b0")
+
+[node name="Door" type="Sprite2D" parent="." unique_id=484706649]
+position = Vector2(1400, 316)
+scale = Vector2(0.19932431, 0.17356421)
+texture = ExtResource("6_dwbse")
+
+[node name="Player" parent="." unique_id=925233108 instance=ExtResource("4_aqk2v")]
+position = Vector2(746, 341)
+scale = Vector2(2.685, 2.685)
+
+[editable path="DialogueArea"]
+[editable path="DialogueArea2"]

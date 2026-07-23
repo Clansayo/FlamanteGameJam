@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://bv3lkfnvry34r"]
+
+[ext_resource type="Script" uid="uid://csgre42tp1b3q" path="res://ui/dialogue_player.gd" id="1_0y3eu"]
+[ext_resource type="Texture2D" uid="uid://dl7yvdpbg71tp" path="res://sprites/dialogueBox.svg" id="1_6vbxw"]
+[ext_resource type="FontFile" uid="uid://d0ve054nn1y38" path="res://resources/fonts/BlockBlueprint.ttf" id="3_cfieu"]
+
+[node name="DialoguePlayer" type="CanvasLayer" unique_id=2013203058]
+script = ExtResource("1_0y3eu")
+lines_per_page = 4
+
+[node name="TextBox" type="Control" parent="." unique_id=978828007]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 343.65997
+offset_bottom = 343.65997
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="TextBox" unique_id=471597746]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -672.0
+offset_top = -167.17001
+offset_right = 672.0
+offset_bottom = 167.17001
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6vbxw")
+stretch_mode = 4
+
+[node name="TextLabel" type="RichTextLabel" parent="TextBox" unique_id=1833959117]
+layout_mode = 0
+offset_left = -626.0
+offset_top = -129.65997
+offset_right = 616.0
+offset_bottom = 131.34003
+theme_override_fonts/normal_font = ExtResource("3_cfieu")
+theme_override_font_sizes/normal_font_size = 67
+bbcode_enabled = true
+text = "
+What does it do?
+
+CopyPaste.me helps you when you need to send a password, text snippet or file from one phone, laptop or tablet to another device. No more painstakingly typing in your password character by character, sending yourself pieces of text via email or having to look for a USB stick. As long as you have a browser, you are ready to start sharing data between devices.
+How does it work?
+
+The QR code above is generated specifically for you. Scan it by pointing your phone’s camera at it (most of them have a QR scanner built in) to setup the connection and start sharing! If you don’t have a camera at hand, for instance when you want to connect your laptop to another computer, simply use the 'connect manually' option. Or use the 'invite' option if you like to setup a secure connection with someone else.
+"
+scroll_active = false
+visible_characters_behavior = 1
+
+[node name="SpeakerName" type="RichTextLabel" parent="TextBox" unique_id=1915075921]
+layout_mode = 0
+offset_left = -642.0
+offset_top = -243.65997
+offset_right = 635.0
+offset_bottom = -176.65997
+theme_override_fonts/normal_font = ExtResource("3_cfieu")
+theme_override_font_sizes/normal_font_size = 54
+bbcode_enabled = true
+text = "Speaker name"
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1

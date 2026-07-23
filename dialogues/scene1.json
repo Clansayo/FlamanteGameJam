@@ -1,0 +1,11 @@
+{
+	"door": {
+		"speaker": "DOOR_NAME",
+		"autopaging": true,
+		"messeges": ["S1_DOOR", "S1_DOOR_2"]
+	},
+	"window": {
+		"speaker": "WINDOW_NAME",
+		"messeges": ["S1_WINDOW"]
+	}
+}

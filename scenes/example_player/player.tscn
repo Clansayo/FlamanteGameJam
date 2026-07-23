@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://tw667q5ux0nu"]
+
+[ext_resource type="Script" uid="uid://utjob58306am" path="res://scenes/example_player/player.gd" id="1_aor3f"]
+[ext_resource type="Texture2D" uid="uid://b8mxjdm5cph42" path="res://resources/sprites/scabam.jpg" id="1_ba0im"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vyua3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8524"]
+
+[node name="Player" type="CharacterBody2D" unique_id=925233108]
+script = ExtResource("1_aor3f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1214472068]
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_vyua3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1693245745]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_ba0im")
+
+[node name="DialoguesHitBox" type="Area2D" parent="." unique_id=1369778023]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialoguesHitBox" unique_id=455267600]
+scale = Vector2(3.98, 3.98)
+shape = SubResource("RectangleShape2D_d8524")
+debug_color = Color(0.9480099, 1.540184e-06, 0.58271015, 0.41960785)
