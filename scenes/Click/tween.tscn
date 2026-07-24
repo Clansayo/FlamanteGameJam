@@ -1,15 +1,22 @@
 [gd_scene format=3 uid="uid://dtfe3fwdidld"]
 
-[ext_resource type="Script" uid="uid://diq2fnq8ekkvs" path="res://click.gd" id="1_fwvj4"]
+[ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="1_w4ene"]
+[ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="2_ufavc"]
+[ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_ufavc"]
 
 [node name="Canvas" type="CanvasLayer" unique_id=599804789]
 
-[node name="Button" type="Button" parent="." unique_id=681263959]
-offset_left = 544.0
-offset_top = 631.0
-offset_right = 1344.0
-offset_bottom = 831.0
-script = ExtResource("1_fwvj4")
+[node name="Teclado" type="TextureButton" parent="." unique_id=1872876233]
+offset_left = 441.0
+offset_top = 534.0
+offset_right = 1549.0
+offset_bottom = 1110.0
+texture_normal = ExtResource("1_w4ene")
+texture_pressed = ExtResource("2_ufavc")
+stretch_mode = 3
+script = ExtResource("4_ufavc")
 
-[connection signal="mouse_entered" from="Button" to="Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Button" to="Button" method="_on_mouse_exited"]
+[connection signal="button_down" from="Teclado" to="Teclado" method="_on_button_down"]
+[connection signal="button_up" from="Teclado" to="Teclado" method="_on_button_up"]
+[connection signal="mouse_entered" from="Teclado" to="Teclado" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Teclado" to="Teclado" method="_on_mouse_exited"]
