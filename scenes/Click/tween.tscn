@@ -15,7 +15,7 @@ scale = Vector2(0.242, 0.242)
 sprite_frames = ExtResource("1_d6vjc")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.025974767
+frame_progress = 0.82787913
 
 [node name="Fondo" type="Sprite2D" parent="." unique_id=633380548]
 position = Vector2(960, 540)
