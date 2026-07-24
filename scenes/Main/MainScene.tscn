@@ -2,29 +2,55 @@
 
 [ext_resource type="Script" uid="uid://c00hfrflt640b" path="res://scenes/Main/MainManager.gd" id="1_j720q"]
 [ext_resource type="Texture2D" uid="uid://bmln2pnic7and" path="res://resources/sprites/fondo.png" id="1_l353u"]
+[ext_resource type="Texture2D" uid="uid://b16bh0xy1hlo1" path="res://resources/sprites/fondo_jefe.png" id="2_1xk82"]
 [ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="2_5hlhw"]
 [ext_resource type="SpriteFrames" uid="uid://di878oetghqop" path="res://resources/Animations/Ferran.tres" id="2_nfu33"]
 [ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="3_j720q"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_8w4u8"]
+[ext_resource type="Script" uid="uid://i2d1eu4kyakv" path="res://scenes/Main/ferran_sprite.gd" id="4_xqmat"]
 [ext_resource type="PackedScene" uid="uid://bnsmdxltc12a5" path="res://scenes/CurrencyManager/currency_manager.tscn" id="6_8w4u8"]
+[ext_resource type="Texture2D" uid="uid://djndblsts34ph" path="res://resources/sprites/relojpartio.png" id="6_70ueb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k5thl"]
+size = Vector2(292, 298)
 
 [node name="MainScene" type="Node" unique_id=1411292886]
 script = ExtResource("1_j720q")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=273827565]
 
-[node name="FerranSprite" type="AnimatedSprite2D" parent="UI" unique_id=501432011]
-position = Vector2(247, 638.88)
-rotation = -0.054105207
-scale = Vector2(0.242, 0.242)
-sprite_frames = ExtResource("2_nfu33")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.7510335
+[node name="FondoJefe" type="Sprite2D" parent="UI" unique_id=1723593505]
+position = Vector2(250.00005, 645)
+rotation = -0.07853982
+scale = Vector2(0.3528428, 0.3528428)
+texture = ExtResource("2_1xk82")
 
 [node name="Fondo" type="Sprite2D" parent="UI" unique_id=711365100]
 position = Vector2(960, 540)
 texture = ExtResource("1_l353u")
+
+[node name="FerranSprite" type="AnimatedSprite2D" parent="UI" unique_id=501432011]
+position = Vector2(235.17, 647.26)
+rotation = -0.054105207
+scale = Vector2(0.232, 0.232)
+sprite_frames = ExtResource("2_nfu33")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.7510335
+script = ExtResource("4_xqmat")
+
+[node name="Area2D" type="Area2D" parent="UI/FerranSprite" unique_id=2112651625]
+position = Vector2(-876.3996, -2691.333)
+rotation = 0.054105207
+scale = Vector2(4.1322317, 4.1322317)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/FerranSprite/Area2D" unique_id=1459840281]
+position = Vector2(241, 650)
+shape = SubResource("RectangleShape2D_k5thl")
+
+[node name="Relojpartio" type="Sprite2D" parent="UI" unique_id=1421590638]
+position = Vector2(960, 540)
+texture = ExtResource("6_70ueb")
 
 [node name="Teclado" type="TextureButton" parent="UI" unique_id=54294405]
 offset_left = 428.0
@@ -60,6 +86,8 @@ text = "PlanetaPoints"
 
 [node name="CurrencyManager" parent="." unique_id=238071387 instance=ExtResource("6_8w4u8")]
 
+[connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]
 [connection signal="button_down" from="UI/Teclado" to="UI/Teclado" method="_on_button_down"]
 [connection signal="button_up" from="UI/Teclado" to="UI/Teclado" method="_on_button_up"]
 [connection signal="mouse_entered" from="UI/Teclado" to="UI/Teclado" method="_on_mouse_entered"]
