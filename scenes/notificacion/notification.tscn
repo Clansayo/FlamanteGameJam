@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c5pfutdg4tr2x"]
+
+[node name="Notification" type="PanelContainer" unique_id=217631275]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1389.0
+offset_bottom = -491.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=236366932]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1716534973]
+layout_mode = 2
+theme_override_constants/separation = 132
+alignment = 1
+
+[node name="ColorRect" type="Label" parent="MarginContainer/VBoxContainer" unique_id=26723865]
+custom_minimum_size = Vector2(0, 95.78)
+layout_mode = 2
+theme_override_font_sizes/font_size = 49
+text = "Noticia"
+horizontal_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="MarginContainer/VBoxContainer" unique_id=463609176]
+custom_minimum_size = Vector2(0, 95.78)
+layout_mode = 2
+color = Color(0.45776093, 0, 0.21060443, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="MarginContainer/VBoxContainer" unique_id=59821051]
+custom_minimum_size = Vector2(0, 95.78)
+layout_mode = 2
+color = Color(0.9882353, 0.31764707, 0, 1)
