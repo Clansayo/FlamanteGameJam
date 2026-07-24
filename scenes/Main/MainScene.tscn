@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://isdopt0ybbjv"]
 
 [ext_resource type="Script" uid="uid://c00hfrflt640b" path="res://scenes/Main/MainManager.gd" id="1_j720q"]
-[ext_resource type="Texture2D" uid="uid://bpcrfaveildep" path="res://resources/sprites/fondo.png" id="1_l353u"]
+[ext_resource type="Texture2D" uid="uid://bmln2pnic7and" path="res://resources/sprites/fondo.png" id="1_l353u"]
 [ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="2_5hlhw"]
 [ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="3_j720q"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_8w4u8"]
