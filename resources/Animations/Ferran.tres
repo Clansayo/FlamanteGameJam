@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://di878oetghqop"]
+
+[ext_resource type="Texture2D" uid="uid://catqb4ab0lh2s" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle2.png" id="1_paapj"]
+[ext_resource type="Texture2D" uid="uid://7o3n1opjnos0" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle3.png" id="2_w7i3l"]
+[ext_resource type="Texture2D" uid="uid://ch0t2r8beamfx" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle4.png" id="3_iuynb"]
+[ext_resource type="Texture2D" uid="uid://bjou7wesd3v05" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle5.png" id="4_07di0"]
+[ext_resource type="Texture2D" uid="uid://b21fr5peswxoq" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle.png" id="5_15ob1"]
+[ext_resource type="Texture2D" uid="uid://ceyjq03mj54d6" path="res://resources/sprites/JefeFerranTalk/Jefe 0T.png" id="6_15ob1"]
+[ext_resource type="Texture2D" uid="uid://dm6c8lhsfdwmg" path="res://resources/sprites/JefeFerranTalk/Jefe 2T.png" id="7_he2g1"]
+[ext_resource type="Texture2D" uid="uid://sbth648n3ve8" path="res://resources/sprites/JefeFerranTalk/Jefe 3T.png" id="8_okn5g"]
+[ext_resource type="Texture2D" uid="uid://c478ksbs81gig" path="res://resources/sprites/JefeFerranTalk/Jefe 4T.png" id="9_eylbx"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_paapj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w7i3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iuynb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_07di0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_15ob1")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_15ob1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_15ob1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_he2g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_okn5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_eylbx")
+}],
+"loop": 2,
+"name": &"YapYap",
+"speed": 25.0
+}]

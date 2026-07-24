@@ -1,11 +1,21 @@
 [gd_scene format=3 uid="uid://dtfe3fwdidld"]
 
-[ext_resource type="Texture2D" uid="uid://bpcrfaveildep" path="res://resources/sprites/fondo.png" id="1_ufavc"]
+[ext_resource type="SpriteFrames" uid="uid://di878oetghqop" path="res://resources/Animations/Ferran.tres" id="1_d6vjc"]
+[ext_resource type="Texture2D" uid="uid://bmln2pnic7and" path="res://resources/sprites/fondo.png" id="1_ufavc"]
 [ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="1_w4ene"]
 [ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="2_ufavc"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_ufavc"]
 
 [node name="Canvas" type="CanvasLayer" unique_id=599804789]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1179403491]
+position = Vector2(247, 638.88)
+rotation = -0.054105207
+scale = Vector2(0.242, 0.242)
+sprite_frames = ExtResource("1_d6vjc")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.025974767
 
 [node name="Fondo" type="Sprite2D" parent="." unique_id=633380548]
 position = Vector2(960, 540)
