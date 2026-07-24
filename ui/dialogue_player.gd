@@ -1,10 +1,10 @@
 extends CanvasLayer
 
-@export_file("*.json") var scene_text_file: String
+@export_file("*.json") var scene_text_data_file: String
 @export_range(1, 300) var speech_speed: int = 30
 @export_range(1, 20) var speech_speed_multiplayer = 6
 
-var scene_text: Dictionary = {}
+var scene_text_data: Dictionary = {}
 var paged_text: PackedStringArray
 var page_bbcode: String = ""
 var speaker_name: String = ""
@@ -35,7 +35,7 @@ func _ready() -> void:
 	
 	background.visible = false
 	text_label.scroll_following_visible_characters
-	scene_text = load_scene_text()
+	scene_text_data = FileManager.load_json(scene_text_data_file)
 	SignalBus.display_dialogue.connect(on_display_dialogue)
 
 func _process(delta: float) -> void:
@@ -104,10 +104,10 @@ func on_display_dialogue(dialogue_area: DialogueArea):
 	print("on_display_dialogue(%s, %s)" % [dialogue_key, dialogue_index])
 	
 	# Comprobaciones de seguridad
-	if !scene_text.has(dialogue_key):
+	if !scene_text_data.has(dialogue_key):
 		print("ERROR: No existe esta dialogue_key: %s" % dialogue_key)
 		return
-	if dialogue_index >= scene_text[dialogue_key]["messeges"].size(): 
+	if dialogue_index >= scene_text_data[dialogue_key]["messeges"].size(): 
 		print("ERROR: No existe este dialogue_index: %s" % dialogue_index)
 		return
 
@@ -121,14 +121,14 @@ func on_display_dialogue(dialogue_area: DialogueArea):
 		in_progress = true
 		is_writing = true
 		current_displayed_page = 0
-		var text = tr(scene_text[dialogue_key]["messeges"].get(dialogue_index))
-		speaker_name = tr(scene_text[dialogue_key].get("speaker", ""))
+		var text = tr(scene_text_data[dialogue_key]["messeges"].get(dialogue_index))
+		speaker_name = tr(scene_text_data[dialogue_key].get("speaker", ""))
 
 		print("Speaker: ", speaker_name)
 		var strip_arr = strip_bbcode(text)
 		page_bbcode = strip_arr[1]
 		#print("Clean: <", strip_arr[0], ">\nBBcode: <", strip_arr[1], ">")
-		paged_text = paging(strip_arr[0], scene_text[dialogue_key].get("autopaging", true))
+		paged_text = paging(strip_arr[0], scene_text_data[dialogue_key].get("autopaging", true))
 
 		show_text()
 
@@ -155,12 +155,6 @@ func finish():
 	page_bbcode = ""
 	current_dialogue_area.on_dialogue_ended()
 	print("##### FINISH #######")
-
-func load_scene_text() -> Variant: # variant porque puede devolver tanto un diccionario como una lista por el json
-	var file = FileAccess.open(scene_text_file, FileAccess.READ)
-	if file: # No es null
-		return JSON.parse_string(file.get_as_text())
-	return null
 
 func get_line_length(line: int) -> int:
 	var range: Vector2i = text_label.get_line_range(line)

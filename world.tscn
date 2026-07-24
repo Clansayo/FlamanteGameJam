@@ -32,7 +32,7 @@ scale = Vector2(6.63, 11.15)
 shape = SubResource("RectangleShape2D_vyua3")
 
 [node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("3_tlwt5")]
-scene_text_file = "res://dialogues/scene1.json"
+scene_text_data_file = "res://dialogues/scene1.json"
 speech_speed_multiplayer = 10
 
 [node name="Windows" type="Sprite2D" parent="." unique_id=1485881472]
