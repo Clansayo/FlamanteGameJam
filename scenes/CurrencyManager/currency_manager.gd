@@ -4,7 +4,7 @@ class_name CurrencyManager
 # Dollars
 var dollar_float: float = 0
 var dollar_int: int = 0
-var dollar_modifier: float = 2
+var dollar_modifier: float = 0
 
 # Earth
 var earth_points_float: float = 0
@@ -14,7 +14,7 @@ var earth_points_modifier: float = 0
 # Email
 var emails_points_float: float = 0
 var emails_points_int: int = 0
-var emails_points_modifier: float = 0.1
+var emails_points_modifier: float = 0
 
 ## Los puntos aumentan con el tiempo usando delta time (dt) para que el ratio sea
 ## de x por segundo. Pero luego la variable real que almacena el valor es un int. 
@@ -24,16 +24,17 @@ const UMBRAL: float = 100000000.0
 
 func _process(delta: float) -> void:
 	dollar_float += (dollar_modifier * delta)
+	
 	if dollar_float > UMBRAL:
 		dollar_int += int(dollar_float)
 		dollar_float -= int(dollar_float)
 	
-	earth_points_float += (earth_points_float * delta)
+	earth_points_float += (earth_points_modifier * delta)
 	if earth_points_float > UMBRAL:
 		earth_points_int += int(earth_points_float)
 		earth_points_float -= int(earth_points_float)
 	
-	emails_points_float += (emails_points_float * delta)
+	emails_points_float += (emails_points_modifier * delta)
 	if emails_points_float > UMBRAL:
 		emails_points_int += int(emails_points_float)
 		emails_points_float -= int(emails_points_float)

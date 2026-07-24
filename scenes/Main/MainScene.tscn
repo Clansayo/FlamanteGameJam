@@ -38,15 +38,15 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "Dinero $"
 
-[node name="LabelDinero2" type="Label" parent="UI/VBoxContainer" unique_id=1730789381]
+[node name="LabelEmails" type="Label" parent="UI/VBoxContainer" unique_id=1730789381]
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
-text = "Dinero $"
+text = "Emails"
 
-[node name="LabelDinero3" type="Label" parent="UI/VBoxContainer" unique_id=1114314973]
+[node name="LabelPlaneta" type="Label" parent="UI/VBoxContainer" unique_id=1114314973]
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
-text = "Dinero $"
+text = "PlanetaPoints"
 
 [node name="CurrencyManager" parent="." unique_id=238071387 instance=ExtResource("6_8w4u8")]
 
@@ -54,3 +54,4 @@ text = "Dinero $"
 [connection signal="button_up" from="UI/Teclado" to="UI/Teclado" method="_on_button_up"]
 [connection signal="mouse_entered" from="UI/Teclado" to="UI/Teclado" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="UI/Teclado" to="UI/Teclado" method="_on_mouse_exited"]
+[connection signal="pressed" from="UI/Teclado" to="." method="_on_teclado_pressed"]
