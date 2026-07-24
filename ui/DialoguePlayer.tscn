@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bv3lkfnvry34r"]
 
 [ext_resource type="Script" uid="uid://csgre42tp1b3q" path="res://ui/dialogue_player.gd" id="1_0y3eu"]
-[ext_resource type="Texture2D" uid="uid://dl7yvdpbg71tp" path="res://sprites/dialogueBox.svg" id="1_6vbxw"]
+[ext_resource type="Texture2D" uid="uid://dl7yvdpbg71tp" path="res://resources/sprites/dialogueBox.svg" id="1_6vbxw"]
 [ext_resource type="FontFile" uid="uid://d0ve054nn1y38" path="res://resources/fonts/BlockBlueprint.ttf" id="3_cfieu"]
 
 [node name="DialoguePlayer" type="CanvasLayer" unique_id=2013203058]

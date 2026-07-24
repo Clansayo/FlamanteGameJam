@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://mpecogxhliq"]
+
+[ext_resource type="Script" uid="uid://b8prtwkjp76fy" path="res://scenes/CurrencyManager/test.gd" id="1_bl13t"]
+[ext_resource type="PackedScene" uid="uid://bnsmdxltc12a5" path="res://scenes/CurrencyManager/currency_manager.tscn" id="2_iyx0m"]
+
+[node name="Test" type="Control" unique_id=733989521]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bl13t")
+
+[node name="Label3Time" type="Label" parent="." unique_id=458946346]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 83.0
+offset_right = 777.0
+offset_bottom = 212.0
+theme_override_font_sizes/font_size = 66
+text = "Timer: "
+
+[node name="CurrencyManager" parent="." unique_id=238071387 instance=ExtResource("2_iyx0m")]
+
+[node name="Label" type="Label" parent="." unique_id=1173951813]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 88.0
+offset_right = 128.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 66
+text = "a"
+
+[node name="Label2" type="Label" parent="." unique_id=876456126]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 234.0
+offset_right = 208.0
+offset_bottom = 363.0
+theme_override_font_sizes/font_size = 66
+text = "b"
+
+[node name="Timer" type="Timer" parent="." unique_id=1126546133]
+wait_time = 2000.0
+one_shot = true
+autostart = true

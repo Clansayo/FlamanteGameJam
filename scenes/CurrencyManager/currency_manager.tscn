@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bnsmdxltc12a5"]
+
+[ext_resource type="Script" uid="uid://b8wtecqe4pqfi" path="res://scenes/CurrencyManager/currency_manager.gd" id="1_pwsc1"]
+
+[node name="CurrencyManager" type="Node" unique_id=238071387]
+script = ExtResource("1_pwsc1")
