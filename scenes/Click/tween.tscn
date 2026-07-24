@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtfe3fwdidld"]
+
+[ext_resource type="Script" uid="uid://diq2fnq8ekkvs" path="res://click.gd" id="1_fwvj4"]
+
+[node name="Canvas" type="CanvasLayer" unique_id=599804789]
+
+[node name="Button" type="Button" parent="." unique_id=681263959]
+offset_left = 544.0
+offset_top = 631.0
+offset_right = 1344.0
+offset_bottom = 831.0
+script = ExtResource("1_fwvj4")
+
+[connection signal="mouse_entered" from="Button" to="Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="Button" method="_on_mouse_exited"]
