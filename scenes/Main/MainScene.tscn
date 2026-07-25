@@ -31,7 +31,7 @@ position = Vector2(1730.74, 184.85)
 scale = Vector2(0.36210322, 0.36210325)
 sprite_frames = ExtResource("3_kerbj")
 autoplay = "default"
-frame_progress = 0.457038
+frame_progress = 0.05245025
 
 [node name="Fondo" type="Sprite2D" parent="UI" unique_id=711365100]
 position = Vector2(960, 540)

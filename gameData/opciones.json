@@ -266,64 +266,62 @@
 		"cost": 5500
 	},	
 	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
+	"MANGO_LOCO": {
+		"title": "Darle Monster energy sabor Mango Loco a los gusanos de seda, a ver que pasa",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
+			"add_dollars": -1000,
+			"add_earth_points": -100,
+			"add_earth_points_modifier": -10
+		},
+		"cost": 500000
+	},	
+	
+	"BOMA_ATOMICA": {
+		"title": "Usar bombas atómicas como herramientas de minería",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 1000,
+			"add_earth_points": 20,
+			"add_earth_points_modifier": 1,
+			"add_dollars_modifier": 10,
+			"add_email_modifier": 10
+		},
+		"cost": 15000
+	},	
+	
+	"OLIVOS": {
+		"title": "Plantar 5 olivos",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -5000,
+			"add_earth_points": -2,
+			"add_earth_points_modifier": -0.5,
 		},
 		"cost": 500
 	},	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
+	
+	"DATACENTER": {
+		"title": "Darle de beber a un Data Center",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
+			"add_dollars": 6700,
+			"add_earth_points": 15,
+			"add_earth_points_modifier": 1,
+			"add_dollars_modifier": 100,
+			"add_email_modifier": 500
 		},
-		"cost": 500
+		"cost": 5000
 	},	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
+	
+	"MENDIGOS": {
+		"title": "Darle de beber a 500 mendigos",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
+			"add_dollars": -1000,
+			"add_earth_points": -2,
 		},
-		"cost": 500
-	},	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
-		"effect_visibility": true,
-		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
-		},
-		"cost": 500
-	},	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
-		"effect_visibility": true,
-		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
-		},
-		"cost": 500
-	},	
-	"CARRIL_BICI": {
-		"title": "Construir un carril bici",
-		"effect_visibility": true,
-		"effect": {
-			"add_dollars": -100,
-			"add_earth_points": 2,
-			"add_earth_points_modifier": 1
-		},
-		"cost": 500
+		"cost": 35000
 	}
+	
 }
