@@ -14,7 +14,7 @@ offset_right = 210.0
 offset_bottom = 44.0
 size_flags_horizontal = 3
 script = ExtResource("1_x0rm4")
-option_key = "AI_AUTOMATION"
+option_key = "PLASTIC_STRAW"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1395248790]
 layout_mode = 0
@@ -38,4 +38,29 @@ text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
 clip_text = true
 
+[node name="EffectsDescription" type="PanelContainer" parent="." unique_id=1829634543]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -62.605
+offset_right = 209.0
+offset_bottom = -2.60503
+
+[node name="MarginContainer" type="MarginContainer" parent="EffectsDescription" unique_id=1913605623]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+
+[node name="EffectDescriptionLabel" type="RichTextLabel" parent="EffectsDescription/MarginContainer" unique_id=1079473433]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 10
+text = "+ 300 $
+Malo para el planeta"
+
+[node name="effect_description_timer" type="Timer" parent="." unique_id=1612550355]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="timeout" from="effect_description_timer" to="." method="_on_effect_description_timer_timeout"]
