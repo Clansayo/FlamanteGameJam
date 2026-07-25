@@ -1,0 +1,18 @@
+{
+	"BOSS_NOTIFICATION_1": {
+		"type": "boss",
+		"image": "boss.png",
+		"mensaje": "Hola soy tu jefe que pasa",
+		"trigger": {
+			"less_boss_points_than": 50
+		} 
+	},
+	"PLANET_NOTIFICATION_1": {
+		"type": "planet",
+		"image": "planet.png",
+		"mensaje": "Tux se ha quedao sin casa primo",
+		"trigger": {
+			"more_planet_points_than": 50
+		} 
+	}
+}
