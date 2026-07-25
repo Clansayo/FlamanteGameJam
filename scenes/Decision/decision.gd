@@ -28,8 +28,10 @@ func on_option_press(option: Option):
 		return
 	
 	if option.data.cost > CurrencyManager.get_emails_points():
+		AudioManager.play_ui_f_click()
 		print("No tenemos lereles para comprar esta opcion")
 		return
+	AudioManager.play_ui_click()
 	
 	# Asumimos que la hemos posido seleccionar
 	option_selected_data.emit(option.data) #Que es emitir lo que tiene en su campo de efecto
