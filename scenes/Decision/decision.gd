@@ -5,6 +5,7 @@ const OPTION_SCENE = preload("res://scenes/opcion/opcion.tscn") # Precargo la es
 var active_option: Option = null
 
 signal option_selected_data(data: Dictionary) # Declaro la señal de que se emitirá cuando pulse el boton, y que emite un diccionario
+signal option_deselected_data(data: Dictionary)
 
 @onready var container: HBoxContainer = $HBoxContainer # container va a ser el hbox
 
@@ -37,6 +38,7 @@ func on_option_press(option: Option):
 	
 	# Si había ya una opcion seleccionada entonces la desactivamos
 	if active_option:
+		option_deselected_data.emit(active_option.data)
 		active_option.deactivate_option()
 	
 	active_option = option

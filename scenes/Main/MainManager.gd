@@ -15,6 +15,7 @@ func _ready() -> void:
 	# Conectar la signal emitidas por las decisiones:
 	for decision: Decision in decision_container.get_children():
 		decision.option_selected_data.connect(_on_decision_selected)
+		decision.option_deselected_data.connect(_on_decision_deselected)
 
 func _process(delta: float) -> void:
 	label_dinero.text = "dinero: %s M$\n$/s: %s\n" % [CurrencyManager.get_dollar(), CurrencyManager.get_dollar_modifier()]
@@ -30,3 +31,9 @@ func _on_decision_selected(data: Dictionary) -> void:
 	
 	for effect_key: String in data.effect.keys():
 		CurrencyManager.call(effect_key, data.effect[effect_key])
+
+func _on_decision_deselected(data: Dictionary) -> void:
+	print("Se ha deseleccionado una decision por lo que va a eliminarse sus modificadores dentro del siguiente efecto: %s" % data.effect)	
+	for effect_key: String in data.effect.keys():
+		if effect_key.ends_with("modifier"):
+			CurrencyManager.call(effect_key, -data.effect[effect_key])
