@@ -55,9 +55,9 @@ func _ready():
 	if effect.has("add_dollars_modifier"):
 		points = effect.add_dollars_modifier
 		if points > 0:
-			effect_description_label.text += "+%s M$/segundo\n" % effect.add_dollars
+			effect_description_label.text += "+%s M$/segundo\n" % effect.add_dollars_modifier
 		else:
-			effect_description_label.text += "%s M$/segundo\n" % effect.add_dollars
+			effect_description_label.text += "%s M$/segundo\n" % effect.add_dollars_modifier
 
 func _on_pressed() -> void:
 	option_selected.emit(self)
