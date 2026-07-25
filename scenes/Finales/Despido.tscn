@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://w3s334xy0kx3"]
+
+[ext_resource type="Texture2D" uid="uid://dk4nd5hmf0eab" path="res://resources/sprites/Finales/fondo despido.png" id="1_lgubn"]
+[ext_resource type="Texture2D" uid="uid://cbq0rcaaboy77" path="res://resources/sprites/Finales/CajaFinalDEspido.png" id="2_u83cu"]
+[ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="3_31137"]
+
+[node name="Control" type="Control" unique_id=1423290450]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1847080987]
+
+[node name="FondoDespido" type="Sprite2D" parent="." unique_id=465332954]
+position = Vector2(960, 540)
+texture = ExtResource("1_lgubn")
+
+[node name="Caja" type="TextureButton" parent="." unique_id=258825707]
+layout_mode = 0
+offset_left = 425.105
+offset_top = 293.0
+offset_right = 1533.105
+offset_bottom = 1211.0
+scale = Vector2(0.9, 0.9)
+texture_normal = ExtResource("2_u83cu")
+stretch_mode = 3
+script = ExtResource("3_31137")
+
+[connection signal="button_down" from="Caja" to="Caja" method="_on_button_down"]
+[connection signal="button_up" from="Caja" to="Caja" method="_on_button_up"]
+[connection signal="mouse_entered" from="Caja" to="Caja" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Caja" to="Caja" method="_on_mouse_exited"]
