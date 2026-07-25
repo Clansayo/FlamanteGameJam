@@ -11,6 +11,7 @@ offset_bottom = -406.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hak6v")
+notification_key = "BOSS_NOTIFICATION_1"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=236366932]
 layout_mode = 2
@@ -37,6 +38,8 @@ custom_minimum_size = Vector2(0, 140.535)
 layout_mode = 2
 text = "Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas "
 scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer" unique_id=26723865]
 custom_minimum_size = Vector2(0, 95.78)
