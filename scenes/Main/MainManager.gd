@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 
 func _on_teclado_pressed() -> void:
 	CurrencyManager.add_email_points(click_value)
+	AudioManager.play_keyboard_click()
 
 func _on_decision_selected(data: Dictionary) -> void:
 	print("Se ha seleccionado una decision con el siguiente efecto: %s" % data.effect)
