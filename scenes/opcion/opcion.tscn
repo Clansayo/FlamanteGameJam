@@ -4,7 +4,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_n2mjt"]
 line_spacing = -3.975
-font_size = 8
+font_size = 13
 
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
 font_size = 9
