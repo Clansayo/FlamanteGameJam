@@ -103,10 +103,10 @@ theme_override_font_sizes/font_size = 42
 text = "PlanetaPoints"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="UI" unique_id=1271717223]
-offset_left = 590.905
-offset_top = 108.58
-offset_right = 1404.0
-offset_bottom = 576.0
+offset_left = 586.0
+offset_top = 185.0
+offset_right = 1428.0
+offset_bottom = 608.0
 
 [node name="DecisionContainer" type="VBoxContainer" parent="UI/ScrollContainer" unique_id=899617390]
 layout_mode = 2
