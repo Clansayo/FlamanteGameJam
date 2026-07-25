@@ -2,12 +2,8 @@
 
 [ext_resource type="Script" uid="uid://4s3kydkrojqk" path="res://scenes/opcion/opcion.gd" id="1_x0rm4"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_n2mjt"]
-line_spacing = -3.975
-font_size = 13
-
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
-font_size = 9
+font_size = 18
 
 [node name="Opcion(boton)" type="Button" unique_id=2062428756]
 anchors_preset = 15
@@ -36,35 +32,48 @@ offset_right = 879.0
 offset_bottom = 441.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/normal_font_size = 10
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 20
 text = "+ 300 $
 Malo para el planeta"
+fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=465210645]
+[node name="TitleLabel" type="RichTextLabel" parent="." unique_id=1846293519]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -102.5
-offset_top = -25.0
-offset_right = 102.5
-offset_bottom = 25.0
+offset_left = -188.5
+offset_top = -441.0
+offset_right = 188.5
+offset_bottom = 441.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Title" type="Label" parent="VBoxContainer" unique_id=1080965379]
-layout_mode = 2
-text = "Esto es un título placeholder de una opción"
-label_settings = SubResource("LabelSettings_n2mjt")
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Hola buenas tardes Hola buenas tardesHola buenas tardes"
+fit_content = true
 horizontal_alignment = 1
-autowrap_mode = 3
+vertical_alignment = 1
 
-[node name="Cost" type="Label" parent="VBoxContainer" unique_id=751615557]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1727031597]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Cost" type="Label" parent="MarginContainer" unique_id=751615557]
+custom_minimum_size = Vector2(186.585, 0)
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
 clip_text = true
