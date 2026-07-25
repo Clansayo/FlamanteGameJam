@@ -4,7 +4,6 @@ const KEYBOARD_CLICKS = [
 	preload("res://globals/AudioManager/SFX/CLick1.mp3"),
 	preload("res://globals/AudioManager/SFX/CLick2.mp3"),
 	preload("res://globals/AudioManager/SFX/CLick3.mp3"),
-	preload("res://globals/AudioManager/SFX/CLick4.mp3"),
 	preload("res://globals/AudioManager/SFX/CLick5.mp3"),
 ]
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
