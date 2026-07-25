@@ -1,24 +1,9 @@
 extends Node
 
-# Dollars
-var dollar_float: float = 0
-var dollar_int: int = 0
-var dollar_modifier: float = 0
-
-# Earth
-var earth_points_float: float = 0
-var earth_points_int: int = 0
-var earth_points_modifier: float = 0
-
-# Email
-var emails_points_float: float = 0
-var emails_points_int: int = 0
-var emails_points_modifier: float = 0
-
-# Boss points
-var boss_points_float: float = 0
-var boss_points_int: int = 0
-var boss_points_modifier: float = 0
+var dollar: Currency = Currency.new(0)
+var earth: Currency = Currency.new(0)
+var email: Currency = Currency.new(0)
+var boss: Currency = Currency.new(0)
 
 
 ## Los puntos aumentan con el tiempo usando delta time (dt) para que el ratio sea
@@ -28,47 +13,55 @@ var boss_points_modifier: float = 0
 const UMBRAL: float = 100000000.0
 
 func _process(delta: float) -> void:
-	dollar_float += (dollar_modifier * delta)
-	if dollar_float > UMBRAL:
-		dollar_int += int(dollar_float)
-		dollar_float -= int(dollar_float)
-	
-	earth_points_float += (earth_points_modifier * delta)
-	if earth_points_float > UMBRAL:
-		earth_points_int += int(earth_points_float)
-		earth_points_float -= int(earth_points_float)
-	
-	emails_points_float += (emails_points_modifier * delta)
-	if emails_points_float > UMBRAL:
-		emails_points_int += int(emails_points_float)
-		emails_points_float -= int(emails_points_float)
+	dollar.update(delta)
+	earth.update(delta)
+	email.update(delta)
+	boss.update(delta)
 
 func add_dollars(x: int) -> void:
-	dollar_int += x
+	dollar.add(x)
 
 func add_earth_points(x: int) -> void:
-	earth_points_int += x
+	earth.add(x)
 
 func add_email_points(x: int) -> void:
-	emails_points_int += x
+	email.add(x)
+
+func add_boss_points(x: int) -> void:
+	boss.add(x)
 
 func add_dollars_modifier(x: int) -> void:
-	dollar_modifier += x
+	dollar.add_modifier(x)
 
 func add_email_points_modifier(x: int) -> void:
-	dollar_modifier += x
+	email.add_modifier(x)
 
 func add_earth_points_modifier(x: int) -> void:
-	dollar_modifier += x
+	earth.add_modifier(x)
+
+func add_boss_points_modifier(x: int) -> void:
+	boss.add_modifier(x)
 
 func get_dollar() -> int:
-	return dollar_int + dollar_float
+	return dollar.get_total()
 
 func get_earth_points() -> int:
-	return earth_points_int + earth_points_float
+	return earth.get_total()
 
 func get_emails_points() -> int:
-	return emails_points_int + emails_points_float
+	return email.get_total()
 
 func get_boss_points() -> int:
-	return boss_points_int + emails_points_float
+	return boss.get_total()
+
+func get_dollar_modifier() -> float:
+	return dollar.v_modifier
+
+func get_earth_points_modifier() -> float:
+	return earth.v_modifier
+
+func get_email_points_modifier() -> float:
+	return email.v_modifier
+
+func get_boss_points_modifier() -> float:
+	return boss.v_modifier
