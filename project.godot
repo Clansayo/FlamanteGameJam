@@ -20,7 +20,6 @@ config/icon="res://icon.svg"
 
 SignalBus="*uid://cr6hqsbctmtwg"
 DataResources="*uid://cxk3epb1mqeyr"
-CurrencyManager="*uid://b8wtecqe4pqfi"
 
 [display]
 

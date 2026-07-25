@@ -15,6 +15,8 @@ var emails_points_float: float = 0
 var emails_points_int: int = 0
 var emails_points_modifier: float = 0
 
+# Boss points
+
 ## Los puntos aumentan con el tiempo usando delta time (dt) para que el ratio sea
 ## de x por segundo. Pero luego la variable real que almacena el valor es un int. 
 ## Entonces cuando el float está lo suficientemente lleno (umbral)
@@ -46,6 +48,15 @@ func add_earth_points(x: int) -> void:
 
 func add_email_points(x: int) -> void:
 	emails_points_int += x
+
+func add_dollars_modifier(x: int) -> void:
+	dollar_modifier += x
+
+func add_email_points_modifier(x: int) -> void:
+	dollar_modifier += x
+
+func add_earth_points_modifier(x: int) -> void:
+	dollar_modifier += x
 
 func get_dollar() -> int:
 	return dollar_int + dollar_float
