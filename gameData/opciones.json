@@ -4,8 +4,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 300,
-			"add_boss": 8,
-			"add_planet": -15
+			"add_earth_points": -15
 		},
 		"cost": 25
 	},
@@ -15,8 +14,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -150,
-			"add_boss": -2,
-			"add_planet": 12
+			"add_earth_points": 30
 		},
 		"cost": 25
 	},
@@ -26,8 +24,7 @@
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 1500,
-			"add_boss": 20,
-			"add_planet": -40
+			"add_earth_points": -40
 		},
 		"cost": 100
 	},
@@ -37,8 +34,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -300,
-			"add_boss": -12,
-			"add_planet": 20
+			"add_earth_points": 20
 		},
 		"cost": 100
 	},
@@ -48,8 +44,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -500,
-			"add_boss": -5,
-			"add_planet": 30,
+			"add_earth_points": 30,
 			"add_dollars_modifier": 1
 		},
 		"cost": 80
@@ -60,8 +55,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 700,
-			"add_boss": 10,
-			"add_planet": -18,
+			"add_earth_points": -18,
 			"add_dollars_modifier": 1
 		},
 		"cost": 80
@@ -72,8 +66,7 @@
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 450,
-			"add_boss": 8,
-			"add_planet": -20
+			"add_earth_points": -20
 		},
 		"cost": 40
 	},
@@ -83,8 +76,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -220,
-			"add_boss": -2,
-			"add_planet": 14
+			"add_earth_points": 14
 		},
 		"cost": 40
 	},
@@ -94,8 +86,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 600,
-			"add_boss": 12,
-			"add_planet": 0
+			"add_earth_points": 0
 		},
 		"cost": 50
 	},
@@ -105,8 +96,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -350,
-			"add_boss": -4,
-			"add_planet": 3,
+			"add_earth_points": 3,
 			"add_dollars_modifier": 1
 		},
 		"cost": 50
@@ -117,8 +107,7 @@
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 900,
-			"add_boss": 15,
-			"add_planet": -8,
+			"add_earth_points": -8,
 			"add_dollars_modifier": 2
 		},
 		"cost": 120
@@ -129,8 +118,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -500,
-			"add_boss": 4,
-			"add_planet": 2,
+			"add_earth_points": 2,
 			"add_dollars_modifier": 1
 		},
 		"cost": 120

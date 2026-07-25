@@ -4,7 +4,7 @@ class_name Decision
 const OPTION_SCENE = preload("res://scenes/opcion/opcion.tscn") # Precargo la escena opcion
 var active_option: Option = null
 
-signal option_selected_effects(effect: Dictionary) # Declaro la señal de que se emitirá cuando pulse el boton, y que emite un diccionario
+signal option_selected_data(data: Dictionary) # Declaro la señal de que se emitirá cuando pulse el boton, y que emite un diccionario
 
 @onready var container: HBoxContainer = $HBoxContainer # container va a ser el hbox
 
@@ -26,8 +26,12 @@ func on_option_press(option: Option):
 		print("Esta opción ya es la que está seleccionada (no se puede volver a comprar si ya está activa)")
 		return
 	
+	if option.data.cost > CurrencyManager.get_emails_points():
+		print("No tenemos lereles para comprar esta opcion")
+		return
+	
 	# Asumimos que la hemos posido seleccionar
-	option_selected_effects.emit(option.data.effect) #Que es emitir lo que tiene en su campo de efecto
+	option_selected_data.emit(option.data) #Que es emitir lo que tiene en su campo de efecto
 	option.activate_option()
 	
 	# Si había ya una opcion seleccionada entonces la desactivamos
