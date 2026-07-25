@@ -1,0 +1,130 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c7vxeffbvk04t"]
+
+[ext_resource type="Texture2D" uid="uid://cswhb5mgkvcoi" path="res://resources/sprites/Ventana Tux/Tux busca piso3/Tux Busca piso 1.jpg" id="1_2js25"]
+[ext_resource type="Texture2D" uid="uid://xwcpqdl06423" path="res://resources/sprites/Ventana Tux/Muy Bien Tux1/Imagen 0 tux.jpg" id="1_g18kg"]
+[ext_resource type="Texture2D" uid="uid://cwgui70cpnlpd" path="res://resources/sprites/Ventana Tux/Tux muere en el metro por un patinete5/Tux muere 1.jpg" id="1_jy5kc"]
+[ext_resource type="Texture2D" uid="uid://bv1hn071elx7d" path="res://resources/sprites/Ventana Tux/Muy Bien Tux1/Imagen 1 tux.jpg" id="2_mwql7"]
+[ext_resource type="Texture2D" uid="uid://bstfk1l0yo6hy" path="res://resources/sprites/Ventana Tux/Tux busca piso3/Tux Busca piso 2.jpg" id="2_shf6r"]
+[ext_resource type="Texture2D" uid="uid://p823a5p2iyu7" path="res://resources/sprites/Ventana Tux/Tux muere en el metro por un patinete5/Tux muere 2.jpg" id="2_w5m8q"]
+[ext_resource type="Texture2D" uid="uid://ya8giv7x7nnp" path="res://resources/sprites/Ventana Tux/Tux busca piso3/Tux Busca piso 3.jpg" id="3_2ffcf"]
+[ext_resource type="Texture2D" uid="uid://bqad61fsvia1m" path="res://resources/sprites/Ventana Tux/Tux muere en el metro por un patinete5/Tux muere 3.jpg" id="3_f18e7"]
+[ext_resource type="Texture2D" uid="uid://dqt8ohylvljci" path="res://resources/sprites/Ventana Tux/Muy Bien Tux1/Imagen 2 .tux.jpg" id="3_wo1cj"]
+[ext_resource type="Texture2D" uid="uid://bqrkfg3xpb6r0" path="res://resources/sprites/Ventana Tux/Tux muere en el metro por un patinete5/Tux muere 4.jpg" id="4_43xeq"]
+[ext_resource type="Texture2D" uid="uid://bmlhqa6tx6h57" path="res://resources/sprites/Ventana Tux/Tux busca piso3/Tux Busca piso 4.jpg" id="4_kj2le"]
+[ext_resource type="Texture2D" uid="uid://d0kvyqpgnpapy" path="res://resources/sprites/Ventana Tux/Muy Bien Tux1/Imagen 3 tux.jpg" id="4_vfm3v"]
+[ext_resource type="Texture2D" uid="uid://ciugifsaubm30" path="res://resources/sprites/Ventana Tux/Tux busca piso3/Tux Busca piso 5.jpg" id="5_eqxik"]
+[ext_resource type="Texture2D" uid="uid://b2rxct61twt7o" path="res://resources/sprites/Ventana Tux/Muy Bien Tux1/Imagen 4 tux.jpg" id="5_p5sl8"]
+[ext_resource type="Texture2D" uid="uid://d02l4dssiu27v" path="res://resources/sprites/Ventana Tux/Tux muere en el metro por un patinete5/Tux muere 5.jpg" id="5_vskb1"]
+[ext_resource type="Texture2D" uid="uid://bk525trarpark" path="res://resources/sprites/Ventana Tux/Tux regu 2/Tux Regu1.jpg" id="6_8et8d"]
+[ext_resource type="Texture2D" uid="uid://c8qinl1tr6lkm" path="res://resources/sprites/Ventana Tux/Tux regu 2/Tux Regu2.jpg" id="7_raidp"]
+[ext_resource type="Texture2D" uid="uid://bu4b7unujogvf" path="res://resources/sprites/Ventana Tux/Tux regu 2/Tux Regu3.jpg" id="8_ff6bp"]
+[ext_resource type="Texture2D" uid="uid://cys7ll6n5dvb6" path="res://resources/sprites/Ventana Tux/Tux regu 2/Tux Regu4.jpg" id="9_yi7xr"]
+[ext_resource type="Texture2D" uid="uid://cjs08kmmfh402" path="res://resources/sprites/Ventana Tux/Tux regu 2/Tux Regu5.jpg" id="10_kvxny"]
+[ext_resource type="Texture2D" uid="uid://mfysv2qs3bqj" path="res://resources/sprites/Ventana Tux/Tux jodido metro la luz la paz4/Tux Homeless 1.jpg" id="16_8et8d"]
+[ext_resource type="Texture2D" uid="uid://d0jiceq4ynuhr" path="res://resources/sprites/Ventana Tux/Tux jodido metro la luz la paz4/Tux Homeless 2.jpg" id="17_raidp"]
+[ext_resource type="Texture2D" uid="uid://5gongfwbh2vp" path="res://resources/sprites/Ventana Tux/Tux jodido metro la luz la paz4/Tux Homeless 3.jpg" id="18_ff6bp"]
+[ext_resource type="Texture2D" uid="uid://dkdrb0k2bvjq" path="res://resources/sprites/Ventana Tux/Tux jodido metro la luz la paz4/Tux Homeless 4.jpg" id="19_yi7xr"]
+[ext_resource type="Texture2D" uid="uid://duxskhfjexiqb" path="res://resources/sprites/Ventana Tux/Tux jodido metro la luz la paz4/Tux Homeless 5.jpg" id="20_kvxny"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jy5kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w5m8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f18e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_43xeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vskb1")
+}],
+"loop": 1,
+"name": &"Muerto",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_8et8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_raidp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ff6bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yi7xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kvxny")
+}],
+"loop": 1,
+"name": &"Regula",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2js25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_shf6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ffcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kj2le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eqxik")
+}],
+"loop": 1,
+"name": &"Tux Busca Piso",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g18kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mwql7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wo1cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vfm3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_p5sl8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_8et8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_raidp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ff6bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_yi7xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kvxny")
+}],
+"loop": 1,
+"name": &"jodido en el metro",
+"speed": 8.0
+}]

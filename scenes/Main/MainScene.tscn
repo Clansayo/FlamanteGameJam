@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="2_5hlhw"]
 [ext_resource type="SpriteFrames" uid="uid://di878oetghqop" path="res://resources/Animations/Ferran.tres" id="2_nfu33"]
 [ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="3_j720q"]
+[ext_resource type="SpriteFrames" uid="uid://c7vxeffbvk04t" path="res://resources/Animations/Tux.tres" id="3_kerbj"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_8w4u8"]
 [ext_resource type="Script" uid="uid://i2d1eu4kyakv" path="res://scenes/Main/ferran_sprite.gd" id="4_xqmat"]
 [ext_resource type="Texture2D" uid="uid://djndblsts34ph" path="res://resources/sprites/relojpartio.png" id="6_70ueb"]
@@ -24,6 +25,13 @@ position = Vector2(250.00005, 645)
 rotation = -0.07853982
 scale = Vector2(0.3528428, 0.3528428)
 texture = ExtResource("2_1xk82")
+
+[node name="TuxSprite" type="AnimatedSprite2D" parent="UI" unique_id=1375512173]
+position = Vector2(1730.74, 184.85)
+scale = Vector2(0.36210322, 0.36210325)
+sprite_frames = ExtResource("3_kerbj")
+autoplay = "default"
+frame_progress = 0.457038
 
 [node name="Fondo" type="Sprite2D" parent="UI" unique_id=711365100]
 position = Vector2(960, 540)
