@@ -64,40 +64,103 @@ stretch_mode = 3
 script = ExtResource("4_8w4u8")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=182257804]
-offset_left = 594.0
-offset_top = 103.0
-offset_right = 875.0
-offset_bottom = 285.0
+offset_left = 45.275
+offset_top = 38.4
+offset_right = 326.27512
+offset_bottom = 220.40002
 scale = Vector2(1.11, 1.11)
 
 [node name="LabelDinero" type="Label" parent="UI/VBoxContainer" unique_id=2122451197]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 42
 text = "Dinero $"
 
 [node name="LabelEmails" type="Label" parent="UI/VBoxContainer" unique_id=1730789381]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 42
 text = "Emails"
 
 [node name="LabelPlaneta" type="Label" parent="UI/VBoxContainer" unique_id=1114314973]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 42
 text = "PlanetaPoints"
 
-[node name="DecisionContainer" type="VBoxContainer" parent="UI" unique_id=566832140]
-offset_left = 1013.46
-offset_top = 130.045
-offset_right = 1333.8353
-offset_bottom = 274.04504
-scale = Vector2(2, 2)
+[node name="ScrollContainer" type="ScrollContainer" parent="UI" unique_id=1271717223]
+offset_left = 590.905
+offset_top = 108.58
+offset_right = 1404.0
+offset_bottom = 576.0
 
-[node name="decision1" parent="UI/DecisionContainer" unique_id=1412057992 instance=ExtResource("10_kerbj")]
+[node name="DecisionContainer" type="VBoxContainer" parent="UI/ScrollContainer" unique_id=899617390]
+layout_mode = 2
+theme_override_constants/separation = -26
+
+[node name="decision1" parent="UI/ScrollContainer/DecisionContainer" unique_id=388804765 instance=ExtResource("10_kerbj")]
 layout_mode = 2
 option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 
-[node name="decision2" parent="UI/DecisionContainer" unique_id=1973368791 instance=ExtResource("10_kerbj")]
+[node name="decision2" parent="UI/ScrollContainer/DecisionContainer" unique_id=1360625027 instance=ExtResource("10_kerbj")]
 layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision3" parent="UI/ScrollContainer/DecisionContainer" unique_id=252964959 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision4" parent="UI/ScrollContainer/DecisionContainer" unique_id=1305691156 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision5" parent="UI/ScrollContainer/DecisionContainer" unique_id=2133594634 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision6" parent="UI/ScrollContainer/DecisionContainer" unique_id=2113275266 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision7" parent="UI/ScrollContainer/DecisionContainer" unique_id=170374866 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision8" parent="UI/ScrollContainer/DecisionContainer" unique_id=1046742414 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision9" parent="UI/ScrollContainer/DecisionContainer" unique_id=961577509 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision10" parent="UI/ScrollContainer/DecisionContainer" unique_id=219995411 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision11" parent="UI/ScrollContainer/DecisionContainer" unique_id=110628027 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision12" parent="UI/ScrollContainer/DecisionContainer" unique_id=1736619024 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision13" parent="UI/ScrollContainer/DecisionContainer" unique_id=1961678083 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision14" parent="UI/ScrollContainer/DecisionContainer" unique_id=1757618556 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision15" parent="UI/ScrollContainer/DecisionContainer" unique_id=1447579684 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+
+[node name="decision16" parent="UI/ScrollContainer/DecisionContainer" unique_id=212046732 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]

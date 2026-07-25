@@ -22,6 +22,7 @@ func _ready():
 		container.add_child(option) #añado la opción como hijo al hbox
 
 func on_option_press(option: Option):
+	print("option pressed")
 	if option == active_option:
 		print("Esta opción ya es la que está seleccionada (no se puede volver a comprar si ya está activa)")
 		return

@@ -3,9 +3,7 @@ extends Node
 @onready var label_dinero: Label = $UI/VBoxContainer/LabelDinero
 @onready var label_emails: Label = $UI/VBoxContainer/LabelEmails
 @onready var label_planeta: Label = $UI/VBoxContainer/LabelPlaneta
-@onready var decision_container: VBoxContainer = $UI/DecisionContainer
-
-const DECISION_SCENE = preload("res://scenes/Decision/decision.tscn")
+@onready var decision_container: VBoxContainer = $UI/ScrollContainer/DecisionContainer
 
 var click_value: int = 1
 

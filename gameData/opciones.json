@@ -53,7 +53,7 @@
 	},
 
 	"ARMAS_TELAVOV": {
-		"title": "Invertir en armas para Tel Avov",
+		"title": "Invertir en armas Esraelies",
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 700,
