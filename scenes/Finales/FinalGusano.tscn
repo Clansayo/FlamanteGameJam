@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://em8c6v4o6hdu"]
+
+[ext_resource type="Texture2D" uid="uid://3rxm5f3y3qcw" path="res://resources/sprites/Finales/Telavvo destruccion/1.png" id="1_uxcbj"]
+[ext_resource type="Texture2D" uid="uid://o4tg6imxi0aa" path="res://resources/sprites/Finales/Telavvo destruccion/2.png" id="2_pol3x"]
+[ext_resource type="Texture2D" uid="uid://fe72sbwjb0xk" path="res://resources/sprites/Finales/Telavvo destruccion/3.png" id="3_paba6"]
+[ext_resource type="Texture2D" uid="uid://b337q6b48thmv" path="res://resources/sprites/Finales/Telavvo destruccion/4.png" id="4_sl482"]
+[ext_resource type="Texture2D" uid="uid://bacmlewkums63" path="res://resources/sprites/Finales/Telavvo destruccion/5.png" id="5_b2fvn"]
+[ext_resource type="Texture2D" uid="uid://dra74s1rrmle4" path="res://resources/sprites/Finales/Telavvo destruccion/6.png" id="6_x7rwo"]
+[ext_resource type="Texture2D" uid="uid://47h86yo4bpy" path="res://resources/sprites/Finales/Telavvo destruccion/7.png" id="7_1rnda"]
+[ext_resource type="Texture2D" uid="uid://bf5ha1875pvci" path="res://resources/sprites/Finales/Telavvo destruccion/8.png" id="8_1h3ff"]
+[ext_resource type="Texture2D" uid="uid://4dqlhdgs6vt3" path="res://resources/sprites/Finales/Telavvo destruccion/9.png" id="9_i7m56"]
+[ext_resource type="Texture2D" uid="uid://20waubyvbuw1" path="res://resources/sprites/Finales/Telavvo destruccion/10.png" id="10_ddyg2"]
+[ext_resource type="Texture2D" uid="uid://bc00i6tq1x1rl" path="res://resources/sprites/Finales/Telavvo destruccion/11.png" id="11_smrqs"]
+[ext_resource type="Texture2D" uid="uid://belqiawms8qov" path="res://resources/sprites/Finales/Telavvo destruccion/12.png" id="12_w0d5t"]
+[ext_resource type="Texture2D" uid="uid://daakf84vr4sk7" path="res://resources/sprites/Finales/Telavvo destruccion/13.png" id="13_2kssi"]
+[ext_resource type="Texture2D" uid="uid://b1quqr6onj1is" path="res://resources/sprites/Finales/Telavvo destruccion/14.png" id="14_xwnc6"]
+[ext_resource type="Texture2D" uid="uid://bt1xpybmahwuu" path="res://resources/sprites/Finales/Telavvo destruccion/15.png" id="15_d3ngh"]
+[ext_resource type="Texture2D" uid="uid://cw4hcqd367bjg" path="res://resources/sprites/Finales/Telavvo destruccion/16.png" id="16_3jmux"]
+[ext_resource type="Texture2D" uid="uid://cil35vd5q7jp7" path="res://resources/sprites/Finales/Telavvo destruccion/17.png" id="17_80gr6"]
+[ext_resource type="Texture2D" uid="uid://bvgc2ykujv2na" path="res://resources/sprites/Finales/Telavvo destruccion/18.png" id="18_lh4c5"]
+[ext_resource type="Texture2D" uid="uid://4ompboh786mo" path="res://resources/sprites/Finales/Telavvo destruccion/19.png" id="19_5jhsc"]
+[ext_resource type="Texture2D" uid="uid://du8skfjp4ocv6" path="res://resources/sprites/Finales/Telavvo destruccion/20.png" id="20_2gmjf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k5thl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uxcbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pol3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_paba6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sl482")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b2fvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x7rwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1rnda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1h3ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i7m56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ddyg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_smrqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_w0d5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2kssi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xwnc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d3ngh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3jmux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_80gr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lh4c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5jhsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2gmjf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Control" type="Control" unique_id=1698438906]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1285904356]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=246319677]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_k5thl")
+autoplay = "default"
+frame = 15
+frame_progress = 0.26447642

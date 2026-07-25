@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bsgvvbwscvm5p"]
+
+[node name="Control" type="Control" unique_id=2093076122]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2013534439]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2062538890]

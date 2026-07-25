@@ -5,6 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://d1xnl162jd4mg" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado3png.png" id="3_mtglk"]
 [ext_resource type="Texture2D" uid="uid://f5bfn6u36042" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado4png.png" id="4_hdyhr"]
 [ext_resource type="Texture2D" uid="uid://b3foh3qlurhw8" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado5png.png" id="5_ts80s"]
+[ext_resource type="Texture2D" uid="uid://catqb4ab0lh2s" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle2.png" id="6_kweu8"]
+[ext_resource type="Texture2D" uid="uid://7o3n1opjnos0" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle3.png" id="7_b78h3"]
+[ext_resource type="Texture2D" uid="uid://ch0t2r8beamfx" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle4.png" id="8_ykm8c"]
+[ext_resource type="Texture2D" uid="uid://bjou7wesd3v05" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle5.png" id="9_1f6sl"]
+[ext_resource type="Texture2D" uid="uid://b21fr5peswxoq" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle.png" id="10_oy301"]
 [ext_resource type="Texture2D" uid="uid://cdot703qd5h8s" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz1.png" id="11_ncelw"]
 [ext_resource type="Texture2D" uid="uid://csjdw0x7cylvf" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz2.png" id="12_gxk51"]
 [ext_resource type="Texture2D" uid="uid://deyygmjiq3ed5" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz3.png" id="13_x502e"]
@@ -20,6 +25,11 @@
 [ext_resource type="Texture2D" uid="uid://dia1d6s3yebky" path="res://resources/sprites/JefeFerran/VacacionesContento1/vacaciones4.png" id="23_b78h3"]
 [ext_resource type="Texture2D" uid="uid://b6a4dp7nbe07" path="res://resources/sprites/JefeFerran/VacacionesContento1/vacaciones5.png" id="24_ykm8c"]
 [ext_resource type="Texture2D" uid="uid://bmrf4vaf7do2o" path="res://resources/sprites/JefeFerran/VacacionesContento1/vacaciones.png" id="25_1f6sl"]
+[ext_resource type="Texture2D" uid="uid://ceyjq03mj54d6" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 0T.png" id="26_7xfse"]
+[ext_resource type="Texture2D" uid="uid://dm6c8lhsfdwmg" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 2T.png" id="27_my16l"]
+[ext_resource type="Texture2D" uid="uid://sbth648n3ve8" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 3T.png" id="28_ecskt"]
+[ext_resource type="Texture2D" uid="uid://c478ksbs81gig" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 4T.png" id="29_g8osk"]
+[ext_resource type="Texture2D" uid="uid://cspjm1rymt64g" path="res://resources/sprites/JefeFerran/Base y Talk/Jefe 5T.png" id="30_wsyr1"]
 
 [resource]
 animations = [{
@@ -45,19 +55,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("6_kweu8")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("7_b78h3")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("8_ykm8c")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("9_1f6sl")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("10_oy301")
 }],
 "loop": 1,
 "name": &"Idle",
@@ -125,19 +135,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("26_7xfse")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("27_my16l")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("28_ecskt")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("29_g8osk")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("30_wsyr1")
 }],
 "loop": 2,
 "name": &"YapYap",

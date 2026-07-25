@@ -37,7 +37,7 @@ scale = Vector2(0.232, 0.232)
 sprite_frames = ExtResource("2_nfu33")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.070138976
+frame_progress = 0.8787095
 script = ExtResource("4_xqmat")
 
 [node name="Area2D" type="Area2D" parent="UI/FerranSprite" unique_id=2112651625]
