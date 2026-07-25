@@ -1,5 +1,4 @@
 extends Node
-class_name CurrencyManager
 
 # Dollars
 var dollar_float: float = 0

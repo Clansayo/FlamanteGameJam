@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://idla2vgrtxb7" path="res://resources/sprites/Teclado_pulsado.png" id="3_j720q"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="4_8w4u8"]
 [ext_resource type="Script" uid="uid://i2d1eu4kyakv" path="res://scenes/Main/ferran_sprite.gd" id="4_xqmat"]
-[ext_resource type="PackedScene" uid="uid://bnsmdxltc12a5" path="res://scenes/CurrencyManager/currency_manager.tscn" id="6_8w4u8"]
 [ext_resource type="Texture2D" uid="uid://djndblsts34ph" path="res://resources/sprites/relojpartio.png" id="6_70ueb"]
 [ext_resource type="PackedScene" uid="uid://b8cpsyuuy0cg1" path="res://scenes/Decision/decision.tscn" id="10_kerbj"]
 
@@ -100,8 +99,6 @@ option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 [node name="decision2" parent="UI/DecisionContainer" unique_id=1973368791 instance=ExtResource("10_kerbj")]
 layout_mode = 2
 option_keys_list = PackedStringArray("WEAPON_CONTRACT", "REJECT_WEAPON_CONTRACT")
-
-[node name="CurrencyManager" parent="." unique_id=238071387 instance=ExtResource("6_8w4u8")]
 
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]
