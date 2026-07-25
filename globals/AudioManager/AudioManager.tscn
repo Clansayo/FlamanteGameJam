@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b3koludsu6rhk"]
+
+[ext_resource type="Script" uid="uid://bnnq4qbevmtj2" path="res://globals/AudioManager/audio_manager.gd" id="1_8hqgo"]
+
+[node name="Node" type="Node" unique_id=724489040]
+script = ExtResource("1_8hqgo")
+
+[node name="KeyboardPlayer" type="AudioStreamPlayer" parent="." unique_id=571564703]
