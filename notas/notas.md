@@ -20,6 +20,7 @@ Ejemplo:
 ```json
 {
 	"ID_OPCION": {
+		"tittle": String,
 		"effect_visibility": bool,
 		"effect": {
 			"add_dollars": 300,
@@ -72,4 +73,3 @@ load_image_from_path("/imagenes_notificaciones/" + nombre_imagen);
 \* Este código me lo he inventado que flipas pero para que se entiende.
 
 \* Los mensajes deberían ser keys rollo NOTIFICACION_MENSAJE_JEFE_1 para que en texto se encuentre en el propio csv con las traducciones.
-
