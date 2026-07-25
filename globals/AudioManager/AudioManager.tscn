@@ -4,9 +4,14 @@
 
 [sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_wtihh"]
 
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_8hqgo"]
+
 [node name="Node" type="Node" unique_id=724489040]
 script = ExtResource("1_8hqgo")
 
 [node name="KeyboardPlayer" type="AudioStreamPlayer" parent="." unique_id=571564703]
 stream = SubResource("AudioStreamPolyphonic_wtihh")
 max_polyphony = 8
+
+[node name="UIPlayer" type="AudioStreamPlayer" parent="." unique_id=502274573]
+stream = SubResource("AudioStreamPolyphonic_8hqgo")
