@@ -112,27 +112,27 @@ option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 
 [node name="decision2" parent="UI/ScrollContainer/DecisionContainer" unique_id=1360625027 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("TRASLADO_OCUPADO", "TRASLADO_EUROPA")
 
 [node name="decision3" parent="UI/ScrollContainer/DecisionContainer" unique_id=252964959 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("GUSANOS", "ARMAS_TELAVOV")
 
 [node name="decision4" parent="UI/ScrollContainer/DecisionContainer" unique_id=1305691156 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("PIPCHA", "VALERIANA")
 
 [node name="decision5" parent="UI/ScrollContainer/DecisionContainer" unique_id=2133594634 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("COMUNITY_MANAGER", "PROMO_XOCAS")
 
 [node name="decision6" parent="UI/ScrollContainer/DecisionContainer" unique_id=2113275266 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("ANTONIO_LOBATO", "NO")
 
 [node name="decision7" parent="UI/ScrollContainer/DecisionContainer" unique_id=170374866 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("CALIDAD_VACAS", "ALCALDE_ASTURIAS")
 
 [node name="decision8" parent="UI/ScrollContainer/DecisionContainer" unique_id=1046742414 instance=ExtResource("10_kerbj")]
 layout_mode = 2

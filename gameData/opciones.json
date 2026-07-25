@@ -68,7 +68,6 @@
 		"title": "Sin animo de lucro, una pipscha",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": 0,
 			"add_earth_points": -1,
 			"add_email_points_modifier": 5
 		},
@@ -79,7 +78,6 @@
 		"title": "Devolverle 7 caja´ de valeriana",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": 0,
 			"add_earth_points": -1,
 			"add_email_points_modifier": 5
 		},
