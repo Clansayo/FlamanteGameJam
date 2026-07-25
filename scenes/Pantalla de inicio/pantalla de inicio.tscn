@@ -22,7 +22,7 @@ texture = ExtResource("1_p4cey")
 position = Vector2(1368, 254)
 texture = ExtResource("2_2jq8y")
 
-[node name="Iniciar" type="TextureButton" parent="CanvasLayer" unique_id=317196590]
+[node name="Salir" type="TextureButton" parent="CanvasLayer" unique_id=317196590]
 offset_left = 110.0
 offset_top = 580.0
 offset_right = 520.0
@@ -40,7 +40,7 @@ texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
 
-[node name="Salir" type="TextureButton" parent="CanvasLayer" unique_id=1502810186]
+[node name="Iniciar" type="TextureButton" parent="CanvasLayer" unique_id=1502810186]
 offset_left = 110.0
 offset_top = 180.0
 offset_right = 520.0
