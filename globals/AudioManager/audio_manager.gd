@@ -9,6 +9,11 @@ const KEYBOARD_CLICKS = [
 ]
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 
-func play_keyboard_click() :
-	keyboard_player.stream = KEYBOARD_CLICKS.pick_random()
+var keyboard_playback: AudioStreamPlaybackPolyphonic
+
+func _ready():
 	keyboard_player.play()
+	keyboard_playback = keyboard_player.get_stream_playback()
+
+func play_keyboard_click():
+	keyboard_playback.play_stream(KEYBOARD_CLICKS.pick_random())

@@ -29,7 +29,6 @@ func _on_teclado_pressed() -> void:
 func _on_decision_selected(data: Dictionary) -> void:
 	print("Se ha seleccionado una decision con el siguiente efecto: %s" % data.effect)
 	CurrencyManager.add_email_points(-data.cost)
-	
 	for effect_key: String in data.effect.keys():
 		CurrencyManager.call(effect_key, data.effect[effect_key])
 
