@@ -4,7 +4,7 @@ extends Node
 @onready var label_dinero: Label = $UI/VBoxContainer/LabelDinero
 @onready var label_emails: Label = $UI/VBoxContainer/LabelEmails
 @onready var label_planeta: Label = $UI/VBoxContainer/LabelPlaneta
-@onready var decision_container: VBoxContainer = $UI/VBoxContainer/DecisionContainer
+@onready var decision_container: VBoxContainer = $UI/DecisionContainer
 
 const DECISION_SCENE = preload("res://scenes/Decision/decision.tscn")
 
@@ -13,6 +13,11 @@ var click_value: int = 1
 func _ready() -> void:
 	currency_manager.dollar_modifier = 1
 	currency_manager.emails_points_modifier = 0
+	
+	# Conectar la signal emitidas por las decisiones:
+	for decision: Decision in decision_container.get_children():
+		decision.option_selected_effects.connect(_on_decision_selected)
+	
 
 func _process(delta: float) -> void:
 	label_dinero.text = "dinero: %s M$\n$/s: %s\n" % [currency_manager.get_dollar(), currency_manager.dollar_modifier]
@@ -21,3 +26,6 @@ func _process(delta: float) -> void:
 
 func _on_teclado_pressed() -> void:
 	currency_manager.add_email_points(click_value)
+
+func _on_decision_selected(effect: Dictionary) -> void:
+	print("Se ha seleccionado una decision con el siguiente efecto: %s" % effect)

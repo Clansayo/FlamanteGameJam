@@ -1,9 +1,9 @@
 extends Button
 class_name Option
+
 @onready var title: Label = $MarginContainer/VBoxContainer/Title
 @onready var cost: Label = $MarginContainer/VBoxContainer/Cost
 signal option_selected(option: Option)
-
 
 @export var option_key: String #optionkey es una variable que se pasa por el editor
 
@@ -16,3 +16,9 @@ func _ready():
 
 func _on_pressed() -> void:
 	option_selected.emit(self)
+
+func activate_option():
+	self.modulate = Color(0.716, 0.0, 0.422, 1.0)
+
+func deactivate_option():
+	self.modulate = Color(1.0, 1.0, 1.0, 1.0)

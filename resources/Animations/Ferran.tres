@@ -1,19 +1,10 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://di878oetghqop"]
 
 [ext_resource type="Texture2D" uid="uid://cubbg0tvlvdri" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado1png.png" id="1_inqr5"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle2.png" id="1_paapj"]
 [ext_resource type="Texture2D" uid="uid://88mnrvc4xpqy" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado2png.png" id="2_tosvy"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle3.png" id="2_w7i3l"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle4.png" id="3_iuynb"]
 [ext_resource type="Texture2D" uid="uid://d1xnl162jd4mg" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado3png.png" id="3_mtglk"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle5.png" id="4_07di0"]
 [ext_resource type="Texture2D" uid="uid://f5bfn6u36042" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado4png.png" id="4_hdyhr"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 1T idle.png" id="5_15ob1"]
 [ext_resource type="Texture2D" uid="uid://b3foh3qlurhw8" path="res://resources/sprites/JefeFerran/Enfadaillo/Enfado5png.png" id="5_ts80s"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 0T.png" id="6_15ob1"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 2T.png" id="7_he2g1"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 3T.png" id="8_okn5g"]
-[ext_resource type="Texture2D" path="res://resources/sprites/JefeFerranTalk/Jefe 4T.png" id="9_eylbx"]
 [ext_resource type="Texture2D" uid="uid://cdot703qd5h8s" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz1.png" id="11_ncelw"]
 [ext_resource type="Texture2D" uid="uid://csjdw0x7cylvf" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz2.png" id="12_gxk51"]
 [ext_resource type="Texture2D" uid="uid://deyygmjiq3ed5" path="res://resources/sprites/JefeFerran/MuyContento2/JefeMuyFeliz3.png" id="13_x502e"]
@@ -54,19 +45,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_paapj")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_w7i3l")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_iuynb")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_07di0")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_15ob1")
+"texture": null
 }],
 "loop": 1,
 "name": &"Idle",
@@ -134,19 +125,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_15ob1")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_15ob1")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_he2g1")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_okn5g")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_eylbx")
+"texture": null
 }],
 "loop": 2,
 "name": &"YapYap",
