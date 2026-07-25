@@ -3,7 +3,7 @@ extends Node
 var dollar: Currency = Currency.new(0)
 var earth: Currency = Currency.new(0)
 var email: Currency = Currency.new(0)
-var boss: Currency = Currency.new(0)
+var boss: Currency = Currency.new(50)
 
 
 ## Los puntos aumentan con el tiempo usando delta time (dt) para que el ratio sea
