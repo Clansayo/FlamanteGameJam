@@ -1,5 +1,71 @@
 [gd_scene format=3 uid="uid://bsgvvbwscvm5p"]
 
+[ext_resource type="Texture2D" uid="uid://0ek35r0tshdy" path="res://resources/sprites/Finales/Destruccion/Planeta/1.png" id="1_oglib"]
+[ext_resource type="Texture2D" uid="uid://bkuryc3gnmy6n" path="res://resources/sprites/Finales/Destruccion/fondo espacio.png" id="1_yx7sl"]
+[ext_resource type="Texture2D" uid="uid://b3nsx54fli2db" path="res://resources/sprites/Finales/Destruccion/Planeta/2.png" id="2_yx7sl"]
+[ext_resource type="Texture2D" uid="uid://3d3jr12xaf6h" path="res://resources/sprites/Finales/Destruccion/Planeta/3.png" id="3_8ckb0"]
+[ext_resource type="Texture2D" uid="uid://5xhasyesr643" path="res://resources/sprites/Finales/Destruccion/Planeta/4.png" id="4_pad87"]
+[ext_resource type="Texture2D" uid="uid://cmfbcb2lotipk" path="res://resources/sprites/Finales/Destruccion/Planeta/5.png" id="5_s4hmr"]
+[ext_resource type="Texture2D" uid="uid://nugb4vmwfx74" path="res://resources/sprites/Finales/Destruccion/Planeta/6.png" id="6_2xnww"]
+[ext_resource type="Texture2D" uid="uid://by023cq6aydc1" path="res://resources/sprites/Finales/Destruccion/Planeta/7.png" id="7_t10j0"]
+[ext_resource type="Texture2D" uid="uid://cy08c3s5scm0n" path="res://resources/sprites/Finales/Destruccion/fuego/4.png" id="8_few71"]
+[ext_resource type="Texture2D" uid="uid://bxtsmts7dfalh" path="res://resources/sprites/Finales/Destruccion/fuego/1.png" id="9_nhwhd"]
+[ext_resource type="Texture2D" uid="uid://ba18k8edlpnyo" path="res://resources/sprites/Finales/Destruccion/fuego/3.png" id="10_rd00t"]
+[ext_resource type="Texture2D" uid="uid://b0y3205vkikvm" path="res://resources/sprites/Finales/Destruccion/fuego/5.png" id="11_f88up"]
+[ext_resource type="Texture2D" uid="uid://bamtjutr7jedp" path="res://resources/sprites/Finales/Destruccion/fuego/2.png" id="12_g1cxt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrqu0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oglib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yx7sl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8ckb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pad87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s4hmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2xnww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t10j0")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k5thl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_few71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nhwhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rd00t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f88up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g1cxt")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control" unique_id=2093076122]
 layout_mode = 3
 anchors_preset = 0
@@ -8,4 +74,18 @@ offset_bottom = 40.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2013534439]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2062538890]
+[node name="FondoEspacio" type="Sprite2D" parent="CanvasLayer" unique_id=1899594739]
+position = Vector2(960, 540)
+texture = ExtResource("1_yx7sl")
+
+[node name="Planeta" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2062538890]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_nrqu0")
+autoplay = "default"
+frame_progress = 0.5236064
+
+[node name="Fuego" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=902177140]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_k5thl")
+autoplay = "default"
+frame_progress = 0.5586963
