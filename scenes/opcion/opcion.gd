@@ -1,12 +1,13 @@
 extends Button
 class_name Option
 
-@onready var title: Label = $MarginContainer/VBoxContainer/Title
-@onready var cost: Label = $MarginContainer/VBoxContainer/Cost
+@onready var title: Label = $VBoxContainer/Title
+@onready var cost: Label = $VBoxContainer/Cost
+
 signal option_selected(option: Option)
 @onready var effect_description_timer: Timer = $effect_description_timer
-@onready var effect_description_label: RichTextLabel = $MarginContainer/EffectDescriptionLabel
-@onready var v_box_container: VBoxContainer = $MarginContainer/VBoxContainer
+@onready var effect_description_label: RichTextLabel = $EffectDescriptionLabel
+@onready var v_box_container: VBoxContainer = $VBoxContainer
 
 @export var option_key: String #optionkey es una variable que se pasa por el editor
 

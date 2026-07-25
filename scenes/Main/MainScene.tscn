@@ -104,10 +104,11 @@ offset_bottom = 576.0
 
 [node name="DecisionContainer" type="VBoxContainer" parent="UI/ScrollContainer" unique_id=899617390]
 layout_mode = 2
-theme_override_constants/separation = -26
+theme_override_constants/separation = 50
 
 [node name="decision1" parent="UI/ScrollContainer/DecisionContainer" unique_id=388804765 instance=ExtResource("10_kerbj")]
 layout_mode = 2
+theme_override_constants/separation = 19
 option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 
 [node name="decision2" parent="UI/ScrollContainer/DecisionContainer" unique_id=1360625027 instance=ExtResource("10_kerbj")]

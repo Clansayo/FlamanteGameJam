@@ -10,43 +10,64 @@ font_size = 13
 font_size = 9
 
 [node name="Opcion(boton)" type="Button" unique_id=2062428756]
-offset_right = 210.0
-offset_bottom = 44.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 script = ExtResource("1_x0rm4")
 option_key = "PLASTIC_STRAW"
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1395248790]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 207.0
-offset_bottom = 31.0
+[node name="effect_description_timer" type="Timer" parent="." unique_id=1612550355]
+wait_time = 0.5
+one_shot = true
 
-[node name="EffectDescriptionLabel" type="RichTextLabel" parent="MarginContainer" unique_id=1079473433]
-layout_mode = 2
+[node name="EffectDescriptionLabel" type="RichTextLabel" parent="." unique_id=1079473433]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -879.0
+offset_top = -441.0
+offset_right = 879.0
+offset_bottom = 441.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 10
 text = "+ 300 $
 Malo para el planeta"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=465210645]
-layout_mode = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=465210645]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.5
+offset_top = -25.0
+offset_right = 102.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1080965379]
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=1080965379]
 layout_mode = 2
 text = "Esto es un título placeholder de una opción"
 label_settings = SubResource("LabelSettings_n2mjt")
+horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Cost" type="Label" parent="MarginContainer/VBoxContainer" unique_id=751615557]
+[node name="Cost" type="Label" parent="VBoxContainer" unique_id=751615557]
 layout_mode = 2
 text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
 clip_text = true
-
-[node name="effect_description_timer" type="Timer" parent="." unique_id=1612550355]
-wait_time = 0.5
-one_shot = true
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

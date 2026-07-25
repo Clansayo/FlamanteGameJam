@@ -1,4 +1,4 @@
-extends Control
+extends HBoxContainer
 class_name Decision
 
 const OPTION_SCENE = preload("res://scenes/opcion/opcion.tscn") # Precargo la escena opcion
@@ -7,7 +7,6 @@ var active_option: Option = null
 signal option_selected_data(data: Dictionary) # Declaro la señal de que se emitirá cuando pulse el boton, y que emite un diccionario
 signal option_deselected_data(data: Dictionary)
 
-@onready var container: HBoxContainer = $HBoxContainer # container va a ser el hbox
 
 @export var option_keys_list: PackedStringArray
 
@@ -20,7 +19,7 @@ func _ready():
 
 		option.option_selected.connect(on_option_press)
 		
-		container.add_child(option) #añado la opción como hijo al hbox
+		self.add_child(option) #añado la opción como hijo al hbox
 
 func on_option_press(option: Option):
 	print("option pressed")
