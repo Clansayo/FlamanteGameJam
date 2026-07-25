@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceyjq03mj54d6"
-path="res://.godot/imported/Jefe 0T.png-d3b10e41272a0a9484da3c206335eb28.ctex"
+uid="uid://catqb4ab0lh2s"
+path="res://.godot/imported/Jefe 1T idle2.png-3d507c046f6b12ea48e09b2c432bb3a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/JefeFerranTalk/Jefe 0T.png"
-dest_files=["res://.godot/imported/Jefe 0T.png-d3b10e41272a0a9484da3c206335eb28.ctex"]
+source_file="res://resources/sprites/JefeFerran/Base y Talk/Jefe 1T idle2.png"
+dest_files=["res://.godot/imported/Jefe 1T idle2.png-3d507c046f6b12ea48e09b2c432bb3a1.ctex"]
 
 [params]
 

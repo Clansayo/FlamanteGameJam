@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm6c8lhsfdwmg"
-path="res://.godot/imported/Jefe 2T.png-487c55dc5a24874940559f6753f881c4.ctex"
+uid="uid://b6a4dp7nbe07"
+path="res://.godot/imported/vacaciones5.png-4cbbd824a026eaefd9fa090702afdc10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/JefeFerranTalk/Jefe 2T.png"
-dest_files=["res://.godot/imported/Jefe 2T.png-487c55dc5a24874940559f6753f881c4.ctex"]
+source_file="res://resources/sprites/JefeFerran/VacacionesContento1/vacaciones5.png"
+dest_files=["res://.godot/imported/vacaciones5.png-4cbbd824a026eaefd9fa090702afdc10.ctex"]
 
 [params]
 

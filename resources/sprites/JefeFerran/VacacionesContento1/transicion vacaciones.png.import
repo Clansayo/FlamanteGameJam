@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c478ksbs81gig"
-path="res://.godot/imported/Jefe 4T.png-8d9e64ef5a312d6410d03f7cfbab9b9b.ctex"
+uid="uid://ftriv54jmejv"
+path="res://.godot/imported/transicion vacaciones.png-b33874f5b30559b7667c1356ce433e14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/JefeFerranTalk/Jefe 4T.png"
-dest_files=["res://.godot/imported/Jefe 4T.png-8d9e64ef5a312d6410d03f7cfbab9b9b.ctex"]
+source_file="res://resources/sprites/JefeFerran/VacacionesContento1/transicion vacaciones.png"
+dest_files=["res://.godot/imported/transicion vacaciones.png-b33874f5b30559b7667c1356ce433e14.ctex"]
 
 [params]
 
