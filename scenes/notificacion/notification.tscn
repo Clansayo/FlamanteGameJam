@@ -11,7 +11,7 @@ offset_bottom = -406.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hak6v")
-notification_key = "BOSS_NOTIFICATION_1"
+notification_key = "PLANET_NOTIFICATION_1"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=236366932]
 layout_mode = 2
@@ -24,10 +24,14 @@ layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Image" type="ColorRect" parent="MarginContainer/VBoxContainer" unique_id=59821051]
-custom_minimum_size = Vector2(250, 250)
+[node name="Image" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=1753951511]
+custom_minimum_size = Vector2(400, 250)
+custom_maximum_size = Vector2(400, 250)
+clip_contents = true
 layout_mode = 2
-color = Color(0.9882353, 0.31764707, 0, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=174201523]
 layout_mode = 2
@@ -36,6 +40,7 @@ theme_override_constants/margin_top = 56
 [node name="ContentLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=1135720484]
 custom_minimum_size = Vector2(0, 140.535)
 layout_mode = 2
+theme_override_font_sizes/normal_font_size = 27
 text = "Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas "
 scroll_active = false
 horizontal_alignment = 1
