@@ -1,64 +1,67 @@
 {
 	"PLASTIC_STRAW": {
-		"title": "Usar pajitas de plástico",
+		"title": "Invertir en pajitas de plástico",
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 300,
-			"add_earth_points": -15
+			"add_earth_points": -10,
+			"add_email_points_modifier": 1
 		},
-		"cost": 25
+		"cost": 10
 	},
 
 	"PAPER_STRAW": {
-		"title": "Usar pajitas de papel",
+		"title": "Invertir en pajitas de papel",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -150,
-			"add_earth_points": 30
+			"add_dollars": -10,
+			"add_earth_points": 5,
+			"add_email_points_modifier": 1
 		},
 		"cost": 25
 	},
 
-	"WEAPON_CONTRACT": {
-		"title": "Aceptar contrato militar",
+	"TRASLADO_OCUPADO": {
+		"title": "Trasladar TODAS las fábricas a territorios ocupados",
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 1500,
-			"add_earth_points": -40
+			"add_earth_points": -20
 		},
 		"cost": 100
 	},
 
-	"REJECT_WEAPON_CONTRACT": {
-		"title": "Rechazar contrato militar",
+	"TRASLADO_EUROPA": {
+		"title": "Trasladar TODAS las fábricas a la Unión Europea",
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -300,
 			"add_earth_points": 20
 		},
-		"cost": 100
+		"cost": 1000
 	},
 
-	"INSTALL_SOLAR_PANELS": {
-		"title": "Instalar paneles solares",
+	"GUSANOS": {
+		"title": "Invertir en la cría de gusanos de seda",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -500,
-			"add_earth_points": 30,
-			"add_dollars_modifier": 1
+			"add_dollars": -100,
+			"add_earth_points": 10,
+			"add_email_points_modifier": 2
 		},
 		"cost": 80
 	},
 
-	"EXPAND_FACTORY": {
-		"title": "Ampliar la fábrica",
+	"ARMAS_TELAVOV": {
+		"title": "Invertir en armas para Tel Avov",
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 700,
 			"add_earth_points": -18,
-			"add_dollars_modifier": 1
+			"add_dollars_modifier": 4,
+			"add_email_points_modifier": 5
 		},
-		"cost": 80
+		"cost": 25
 	},
 
 	"CHEAP_SUPPLIERS": {
@@ -71,56 +74,261 @@
 		"cost": 40
 	},
 
-	"LOCAL_SUPPLIERS": {
-		"title": "Elegir proveedores locales",
+	"PIPCHA": {
+		"title": "Sin animo de lucro, una pipscha",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -220,
-			"add_earth_points": 14
+			"add_dollars": 0,
+			"add_earth_points": 1,
+			"add_email_points_modifier": 5
 		},
 		"cost": 40
 	},
 
-	"FIRE_STAFF": {
-		"title": "Despedir personal",
+	"VALERIANA": {
+		"title": "Devolverle 7 caja´ de valeriana",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": 600,
-			"add_earth_points": 0
+			"add_dollars": 0,
+			"add_earth_points": 1,
+			"add_email_points_modifier": 5
 		},
-		"cost": 50
+		"cost": 40
 	},
 
-	"HIRE_STAFF": {
-		"title": "Contratar personal",
+	"COMUNITY_MANAGER": {
+		"title": "Contratar a un wannabe de influencer (Comunity manager)",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -350,
-			"add_earth_points": 3,
-			"add_dollars_modifier": 1
+			"add_dollars": 10,
+			"add_earth_points": -2,
+			"add_dollars_modifier": 5,
+			"add_email_points_modifier": 2
 		},
-		"cost": 50
+		"cost": 100
 	},
 
-	"AI_AUTOMATION": {
-		"title": "Automatizar con IA",
+	"PROMO_XOCAS": {
+		"title": "Hacer una promo con el Xocas",
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 900,
-			"add_earth_points": -8,
-			"add_dollars_modifier": 2
+			"add_earth_points": -25,
+			"add_dollars_modifier": 20,
+			"add_email_points_modifier": 10
 		},
-		"cost": 120
+		"cost": 200
 	},
 
-	"EMPLOYEE_TRAINING": {
-		"title": "Formar a los empleados",
+	"ANTONIO_LOBATO": {
+		"title": "Contratar a Antonio Lobato",
 		"effect_visibility": true,
 		"effect": {
-			"add_dollars": -500,
-			"add_earth_points": 2,
-			"add_dollars_modifier": 1
+			"add_dollars": -100,
+			"add_earth_points": 20,
+			"add_dollars_modifier": -10
 		},
-		"cost": 120
+		"cost": 1000
+	},
+	
+	"NO": {
+		"title": "O...no...",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 10,
+			"add_earth_points": -20
+		},
+		"cost": 200
+	},
+	
+	"CALIDAD_VACAS": {
+		"title": "Bajarle la calidad de vida a las vacas",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 100,
+			"add_earth_points": -10,
+			"add_dollars_modifier": 100,
+			"add_email_points_modifier": 10
+		},
+		"cost": 500
+	},
+	
+	"ALCALDE_ASTURIAS": {
+		"title": "Hacerme amigo del alcalde de Asturias",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 10,
+			"add_dollars_modifier": -15,
+			"add_email_points_modifier": -5
+		},
+		"cost": 750
+	},
+	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},
+		
+	"CBE": {
+		"title": "Poner una zona de bajas emisiones",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 500,
+			"add_earth_points": -7,
+			"add_earth_points_modifier": -1,
+			"add_email_points_modifier": 10,
+			"add_dollars_modifier": 15
+		},
+		"cost": 700
+	},	
+	
+	"TAYLOR_SWIFT": {
+		"title": "Pedirle a Taylor Swift, por favor, que use el transporte público",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -20,
+			"add_earth_points": -2,
+		},
+		"cost": 5000
+	},	
+	
+	"PESETA_VISION": {
+		"title": "Poner un anuncio en PesataVisión",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 100,
+			"add_earth_points": -12,
+			"add_dollars_modifier": 15
+		},
+		"cost": 4500
+	},	
+	
+	"CARA_ANCHOA": {
+		"title": "Decirle a mi jefe que le apesta el aliento a anchoa",
+		"effect_visibility": true,
+		"effect": {
+			"add_earth_points": 15,
+			"add_boss_points": -50
+		},
+		"cost": 500
+	},	
+	
+	"LOGO": {
+		"title": "Cambiar el logo de la empresa en junio a uno multicolor",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 500,
+			"add_earth_points": -2,
+			"add_dollars_modifier": 50
+		},
+		"cost": 600
+		
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
+	},	
+	"CARRIL_BICI": {
+		"title": "Construir un carril bici",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": -100,
+			"add_earth_points": 2,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 500
 	}
 }
