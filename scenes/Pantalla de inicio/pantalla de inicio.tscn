@@ -1,16 +1,21 @@
 [gd_scene format=3 uid="uid://b4x3kbe31hfta"]
 
+[ext_resource type="Script" uid="uid://btdko466256c7" path="res://scenes/Pantalla de inicio/pantalla_de_inicio.gd" id="1_kt7f2"]
 [ext_resource type="Texture2D" uid="uid://y0vl1t1c5djr" path="res://resources/sprites/Fondo/silla grande.png" id="1_p4cey"]
 [ext_resource type="Texture2D" uid="uid://cyae4srhft3v5" path="res://resources/sprites/logo de la empresa.png" id="2_2jq8y"]
 [ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="3_egfal"]
 [ext_resource type="Texture2D" uid="uid://d03swvk63a4kc" path="res://resources/sprites/Fondo/botónNoDisponible.png" id="4_a8718"]
 [ext_resource type="Texture2D" uid="uid://c5f2u3himp0gi" path="res://resources/sprites/Fondo/botónPresionado.png" id="5_bkkga"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="6_a8718"]
+[ext_resource type="Texture2D" uid="uid://bkuryc3gnmy6n" path="res://resources/sprites/Finales/Destruccion/fondo espacio.png" id="7_ai6k6"]
+[ext_resource type="Texture2D" uid="uid://clu50p4a70s0w" path="res://resources/sprites/Fondo/fondo pantalla ui.jpg" id="8_kt7f2"]
 
 [node name="PAntalla de inicio" type="Control" unique_id=1332867268]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_kt7f2")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1113281462]
 
@@ -31,6 +36,18 @@ texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
 
+[node name="SalirTexto" type="RichTextLabel" parent="CanvasLayer/Salir" unique_id=117848106]
+layout_mode = 0
+offset_right = 407.0
+offset_bottom = 133.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 60
+text = "Salir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Creditos" type="TextureButton" parent="CanvasLayer" unique_id=2094006752]
 offset_left = 110.0
 offset_top = 380.0
@@ -40,6 +57,18 @@ texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
 
+[node name="CreditosTexto" type="RichTextLabel" parent="CanvasLayer/Creditos" unique_id=359681509]
+layout_mode = 0
+offset_right = 407.0
+offset_bottom = 133.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 60
+text = "Créditos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Iniciar" type="TextureButton" parent="CanvasLayer" unique_id=1502810186]
 offset_left = 110.0
 offset_top = 180.0
@@ -48,3 +77,83 @@ offset_bottom = 317.0
 texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
+
+[node name="IniciarTexto" type="RichTextLabel" parent="CanvasLayer/Iniciar" unique_id=1327995813]
+layout_mode = 0
+offset_right = 407.0
+offset_bottom = 133.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 60
+text = "Iniciar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Creditos" type="CanvasLayer" parent="." unique_id=411330806]
+visible = false
+
+[node name="FondoEspacio" type="Sprite2D" parent="Creditos" unique_id=1748504359]
+position = Vector2(960, 540)
+texture = ExtResource("7_ai6k6")
+
+[node name="FondoPantallaUi" type="Sprite2D" parent="Creditos/FondoEspacio" unique_id=1496507714]
+position = Vector2(-3.0000005, -120)
+scale = Vector2(0.5885417, 0.71481484)
+texture = ExtResource("8_kt7f2")
+
+[node name="Creditos2" type="RichTextLabel" parent="Creditos" unique_id=1138887257]
+offset_left = 487.0
+offset_top = 195.0
+offset_right = 1504.0
+offset_bottom = 806.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 66
+text = "Yago (Itchio): Programación
+Ale (Itchio): Programación y múscia
+Max (Maxitos): Arte
+Luís (Itchio): Música
+Luh (katastraa): Arte y UI"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Creditos" type="RichTextLabel" parent="Creditos" unique_id=1874555712]
+offset_left = 536.0
+offset_top = 38.0
+offset_right = 1415.0
+offset_bottom = 220.73013
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 84
+text = "Créditos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SalirCreditos" type="TextureButton" parent="Creditos" unique_id=1971738641]
+offset_left = 770.0
+offset_top = 888.555
+offset_right = 1180.0002
+offset_bottom = 1025.5553
+texture_normal = ExtResource("3_egfal")
+texture_pressed = ExtResource("5_bkkga")
+texture_hover = ExtResource("4_a8718")
+
+[node name="SalirCreditosTexto" type="RichTextLabel" parent="Creditos/SalirCreditos" unique_id=912699647]
+layout_mode = 0
+offset_right = 407.0
+offset_bottom = 133.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_a8718")
+theme_override_font_sizes/normal_font_size = 60
+text = "Salir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="CanvasLayer/Creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="CanvasLayer/Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Creditos/SalirCreditos" to="." method="_on_salir_creditos_pressed"]
