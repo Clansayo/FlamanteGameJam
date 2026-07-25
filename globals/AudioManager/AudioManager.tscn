@@ -15,3 +15,5 @@ max_polyphony = 8
 
 [node name="UIPlayer" type="AudioStreamPlayer" parent="." unique_id=502274573]
 stream = SubResource("AudioStreamPolyphonic_8hqgo")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1280223386]

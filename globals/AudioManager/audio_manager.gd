@@ -9,9 +9,11 @@ const KEYBOARD_CLICKS = [
 
 const UI_CLICK = preload("res://globals/AudioManager/SFX/UIClick2.mp3")
 const F_CLICK = preload("res://globals/AudioManager/SFX/ClickF.mp3")
+const MAIN_THEME = preload("res://globals/AudioManager/SFX/Theme1.mp3")
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer
+@onready var music_player: AudioStreamPlayer = $MusicPlayer
 
 
 var keyboard_playback: AudioStreamPlaybackPolyphonic
@@ -28,3 +30,6 @@ func play_ui_click():
 func play_ui_f_click():
 	ui_player.stream = F_CLICK
 	ui_player.play()
+func play_music():
+	music_player.stream = MAIN_THEME
+	music_player.play()
