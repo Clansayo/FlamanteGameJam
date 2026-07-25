@@ -84,6 +84,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "PlanetaPoints"
 
+[node name="DecisionContainer" type="VBoxContainer" parent="UI/VBoxContainer" unique_id=566832140]
+layout_mode = 2
+
 [node name="CurrencyManager" parent="." unique_id=238071387 instance=ExtResource("6_8w4u8")]
 
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]

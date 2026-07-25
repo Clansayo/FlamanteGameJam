@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cx3xrrki7gv7y" path="res://scenes/Decision/decision.gd" id="1_kuo6k"]
 
 [node name="Decision (Control)" type="Control" unique_id=1412057992]
+custom_minimum_size = Vector2(0, 70)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kuo6k")
-option_keys = Array[String](["PLASTIC_STRAW", "PAPER_STRAW", "REJECT_WEAPON_CONTRACT"])
+option_keys = Array[String](["PLASTIC_STRAW", "AI_AUTOMATION"])
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=289140464]
 layout_mode = 0

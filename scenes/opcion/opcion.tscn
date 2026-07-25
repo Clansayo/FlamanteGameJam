@@ -14,7 +14,7 @@ offset_right = 210.0
 offset_bottom = 44.0
 size_flags_horizontal = 3
 script = ExtResource("1_x0rm4")
-option_key = "WEAPON_CONTRACT"
+option_key = "AI_AUTOMATION"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1395248790]
 layout_mode = 0
@@ -34,6 +34,8 @@ autowrap_mode = 3
 
 [node name="Cost" type="Label" parent="MarginContainer/VBoxContainer" unique_id=751615557]
 layout_mode = 2
-text = "XX @s"
+text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
 clip_text = true
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
