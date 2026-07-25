@@ -20,7 +20,7 @@ func _ready():
 
 func _on_pressed() -> void:
 	option_selected.emit(self)
-	# AudioManager.play_ui_click()
+	AudioManager.play_ui_click()
 
 func activate_option():
 	self.modulate = Color(0.716, 0.0, 0.422, 1.0)
