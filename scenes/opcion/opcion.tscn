@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ddogp5rrisbml"]
 
+[ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="1_6dmt1"]
 [ext_resource type="Script" uid="uid://4s3kydkrojqk" path="res://scenes/opcion/opcion.gd" id="1_x0rm4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
@@ -12,6 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+texture_normal = ExtResource("1_6dmt1")
 script = ExtResource("1_x0rm4")
 option_key = "PLASTIC_STRAW"
 

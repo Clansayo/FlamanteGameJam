@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://b4x3kbe31hfta"]
+
+[ext_resource type="Texture2D" uid="uid://y0vl1t1c5djr" path="res://resources/sprites/Fondo/silla grande.png" id="1_p4cey"]
+[ext_resource type="Texture2D" uid="uid://cyae4srhft3v5" path="res://resources/sprites/logo de la empresa.png" id="2_2jq8y"]
+[ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="3_egfal"]
+[ext_resource type="Texture2D" uid="uid://d03swvk63a4kc" path="res://resources/sprites/Fondo/botónNoDisponible.png" id="4_a8718"]
+[ext_resource type="Texture2D" uid="uid://c5f2u3himp0gi" path="res://resources/sprites/Fondo/botónPresionado.png" id="5_bkkga"]
+
+[node name="PAntalla de inicio" type="Control" unique_id=1332867268]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1113281462]
+
+[node name="SillaGrande" type="Sprite2D" parent="CanvasLayer" unique_id=941413240]
+position = Vector2(960, 540)
+texture = ExtResource("1_p4cey")
+
+[node name="LogoDeLaEmpresa" type="Sprite2D" parent="CanvasLayer" unique_id=1517474716]
+position = Vector2(1368, 254)
+texture = ExtResource("2_2jq8y")
+
+[node name="Iniciar" type="TextureButton" parent="CanvasLayer" unique_id=317196590]
+offset_left = 110.0
+offset_top = 580.0
+offset_right = 520.0
+offset_bottom = 717.0
+texture_normal = ExtResource("3_egfal")
+texture_pressed = ExtResource("5_bkkga")
+texture_hover = ExtResource("4_a8718")
+
+[node name="Creditos" type="TextureButton" parent="CanvasLayer" unique_id=2094006752]
+offset_left = 110.0
+offset_top = 380.0
+offset_right = 520.0
+offset_bottom = 517.0
+texture_normal = ExtResource("3_egfal")
+texture_pressed = ExtResource("5_bkkga")
+texture_hover = ExtResource("4_a8718")
+
+[node name="Salir" type="TextureButton" parent="CanvasLayer" unique_id=1502810186]
+offset_left = 110.0
+offset_top = 180.0
+offset_right = 520.0
+offset_bottom = 317.0
+texture_normal = ExtResource("3_egfal")
+texture_pressed = ExtResource("5_bkkga")
+texture_hover = ExtResource("4_a8718")
