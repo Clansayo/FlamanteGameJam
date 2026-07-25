@@ -5,7 +5,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
 font_size = 18
 
-[node name="Opcion(boton)" type="Button" unique_id=2062428756]
+[node name="Opcion(boton)" type="TextureButton" unique_id=631546472]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

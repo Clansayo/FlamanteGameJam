@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 class_name Option
 
 @onready var cost: Label = $MarginContainer/Cost
