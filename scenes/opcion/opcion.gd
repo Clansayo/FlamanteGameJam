@@ -17,6 +17,7 @@ func _ready():
 	data = DataResources.options_data_map[option_key] #Los datos serán los que saque del mapa, que coincidan con su option_key
 	title_label.text = data.title #El título será el que ela de los datos
 	cost.text = "%d @" % data.cost #El coste ídem
+	effect_description_label.visible = false
 
 func _on_pressed() -> void:
 	option_selected.emit(self)
