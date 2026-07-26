@@ -28,6 +28,7 @@ func enable():
 	dialogue_player.visible = true
 
 func _on_texture_button_pressed() -> void:
+	AudioManager.play_ui_click()
 	get_tree().change_scene_to_file("res://scenes/Pantalla de inicio/pantalla de inicio.tscn")
 
 
