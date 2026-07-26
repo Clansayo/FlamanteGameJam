@@ -115,9 +115,10 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_a8718")
 theme_override_font_sizes/normal_font_size = 66
 text = "Yago (sayo-juegos): Programación
-Javier Alegrandro (Neiotic): Programación y múscia
+Javier A. (Neiotic):
+Programación, música y SFX
 Max (Maxitos): Arte
-Luís (Luiszol): Música
+Luís (Luiszol): Música y SFX
 Luh (katastraa): Arte y UI"
 horizontal_alignment = 1
 vertical_alignment = 1
