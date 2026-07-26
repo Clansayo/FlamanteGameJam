@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bsgvvbwscvm5p"]
 
 [ext_resource type="Texture2D" uid="uid://0ek35r0tshdy" path="res://resources/sprites/Finales/Destruccion/Planeta/1.png" id="1_oglib"]
+[ext_resource type="Script" uid="uid://dygmsaly8sgty" path="res://scenes/Finales/despido.gd" id="1_t10j0"]
 [ext_resource type="Texture2D" uid="uid://bkuryc3gnmy6n" path="res://resources/sprites/Finales/Destruccion/fondo espacio.png" id="1_yx7sl"]
 [ext_resource type="Texture2D" uid="uid://b3nsx54fli2db" path="res://resources/sprites/Finales/Destruccion/Planeta/2.png" id="2_yx7sl"]
 [ext_resource type="Texture2D" uid="uid://3d3jr12xaf6h" path="res://resources/sprites/Finales/Destruccion/Planeta/3.png" id="3_8ckb0"]
@@ -13,6 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://ba18k8edlpnyo" path="res://resources/sprites/Finales/Destruccion/fuego/3.png" id="10_rd00t"]
 [ext_resource type="Texture2D" uid="uid://b0y3205vkikvm" path="res://resources/sprites/Finales/Destruccion/fuego/5.png" id="11_f88up"]
 [ext_resource type="Texture2D" uid="uid://bamtjutr7jedp" path="res://resources/sprites/Finales/Destruccion/fuego/2.png" id="12_g1cxt"]
+[ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="15_few71"]
+[ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="16_nhwhd"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="17_rd00t"]
+[ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="18_f88up"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nrqu0"]
 animations = [{
@@ -66,11 +71,15 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1cxt"]
+size = Vector2(229, 192)
+
 [node name="Control" type="Control" unique_id=2093076122]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_t10j0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2013534439]
 
@@ -89,3 +98,42 @@ position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_k5thl")
 autoplay = "default"
 frame_progress = 0.09116609
+
+[node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("15_few71")]
+scene_text_data_file = "res://dialogues/scene1.json"
+speech_speed_multiplayer = 10
+lines_per_page = 5
+
+[node name="Background" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="0" unique_id=471597746]
+modulate = Color(0, 0, 0, 0.81960785)
+offset_left = -673.0
+offset_top = -263.65997
+offset_right = 671.0
+offset_bottom = 245.34003
+texture = ExtResource("16_nhwhd")
+
+[node name="TextLabel" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="1" unique_id=1833959117]
+offset_left = -638.0
+offset_top = -236.65997
+offset_right = 640.0
+offset_bottom = 147.34003
+theme_override_fonts/normal_font = ExtResource("17_rd00t")
+vertical_alignment = 1
+
+[node name="SpeakerName" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="2" unique_id=1915075921]
+offset_left = -791.0
+offset_top = -775.66
+offset_right = 486.0
+offset_bottom = -708.66
+theme_override_fonts/normal_font = ExtResource("17_rd00t")
+
+[node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("18_f88up")]
+dialogue_key = "final_tierra_scena"
+last_dialogue_index = 0
+
+[node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
+position = Vector2(395, 228)
+shape = SubResource("RectangleShape2D_g1cxt")
+
+[editable path="DialoguePlayer"]
+[editable path="DialogueArea"]

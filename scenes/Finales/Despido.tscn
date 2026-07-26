@@ -1,14 +1,23 @@
 [gd_scene format=3 uid="uid://w3s334xy0kx3"]
 
+[ext_resource type="Script" uid="uid://dygmsaly8sgty" path="res://scenes/Finales/despido.gd" id="1_3t2wa"]
 [ext_resource type="Texture2D" uid="uid://dk4nd5hmf0eab" path="res://resources/sprites/Finales/fondo despido.png" id="1_lgubn"]
 [ext_resource type="Texture2D" uid="uid://cbq0rcaaboy77" path="res://resources/sprites/Finales/CajaFinalDEspido.png" id="2_u83cu"]
 [ext_resource type="Script" uid="uid://caqbx6ccamkbq" path="res://scenes/Click/click.gd" id="3_31137"]
+[ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="4_qp0gr"]
+[ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="5_qp0gr"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="6_d2tua"]
+[ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="7_sp5nc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g3ibt"]
+size = Vector2(229, 192)
 
 [node name="Control" type="Control" unique_id=1423290450]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_3t2wa")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1847080987]
 
@@ -27,7 +36,46 @@ texture_normal = ExtResource("2_u83cu")
 stretch_mode = 3
 script = ExtResource("3_31137")
 
+[node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("4_qp0gr")]
+scene_text_data_file = "res://dialogues/scene1.json"
+speech_speed_multiplayer = 10
+lines_per_page = 5
+
+[node name="Background" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="0" unique_id=471597746]
+modulate = Color(0.20392157, 0.11764706, 0.050980393, 0.81960785)
+offset_left = -673.0
+offset_top = -263.65997
+offset_right = 671.0
+offset_bottom = 245.34003
+texture = ExtResource("5_qp0gr")
+
+[node name="TextLabel" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="1" unique_id=1833959117]
+offset_left = -638.0
+offset_top = -236.65997
+offset_right = 640.0
+offset_bottom = 147.34003
+theme_override_fonts/normal_font = ExtResource("6_d2tua")
+vertical_alignment = 1
+
+[node name="SpeakerName" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="2" unique_id=1915075921]
+offset_left = -791.0
+offset_top = -775.66
+offset_right = 486.0
+offset_bottom = -708.66
+theme_override_fonts/normal_font = ExtResource("6_d2tua")
+
+[node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("7_sp5nc")]
+dialogue_key = "final_despido_scena"
+last_dialogue_index = 0
+
+[node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
+position = Vector2(395, 228)
+shape = SubResource("RectangleShape2D_g3ibt")
+
 [connection signal="button_down" from="Caja" to="Caja" method="_on_button_down"]
 [connection signal="button_up" from="Caja" to="Caja" method="_on_button_up"]
 [connection signal="mouse_entered" from="Caja" to="Caja" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Caja" to="Caja" method="_on_mouse_exited"]
+
+[editable path="DialoguePlayer"]
+[editable path="DialogueArea"]
