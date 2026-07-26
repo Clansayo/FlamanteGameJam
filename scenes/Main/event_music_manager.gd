@@ -61,3 +61,4 @@ func change_song(song: int):
 	
 func change_layers(song:int, interval:int):
 	print("Cancion: ", song, " Intervalo: ", interval) 
+	AudioManager.set_music_state(song,interval)

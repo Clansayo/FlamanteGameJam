@@ -22,6 +22,7 @@ func _ready() -> void:
 	CurrencyManager.add_dollars_modifier(1)
 	CurrencyManager.add_email_points_modifier(1)
 	CurrencyManager.add_email_points(1000)
+	AudioManager.play_song(1)
 	
 	# Conectar la signal emitidas por las decisiones:
 	for decision: Decision in decision_container.get_children():
