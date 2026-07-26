@@ -322,7 +322,7 @@
 			"add_dollars": 1000,
 			"add_earth_points": 12,
 			"add_dollars_modifier": 10,
-			"add_email_modifier": 10,
+			"add_email_points": 10,
 			"add_boss_points": -12
 		},
 		"cost": 15000
