@@ -49,3 +49,8 @@ func _on_decision_deselected(data: Dictionary) -> void:
 	for effect_key: String in data.effect.keys():
 		if effect_key.ends_with("modifier"):
 			CurrencyManager.call(effect_key, -data.effect[effect_key])
+
+
+func _on_event_notification_manager_trigger_notification(notification_key: String) -> void:
+	print("TRIGGER DE: %s" % notification_key)
+	

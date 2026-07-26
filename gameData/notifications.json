@@ -4,7 +4,7 @@
 		"image": "1_hora_vacaciones.png",
 		"message": "Estas trabajando TAN bien que voy a añadir una hora a tus vacaciones.",
 		"trigger": {
-			"less_boss_points_than": 50
+			"more_points_than": 70
 		}
 	},
 	"PLANET_NOTIFICATION_1": {
@@ -12,7 +12,7 @@
 		"image": "planet.png",
 		"message": "Tux se ha quedao sin casa primo",
 		"trigger": {
-			"more_planet_points_than": 50
+			"more_points_than": 50
 		} 
 	}
 }

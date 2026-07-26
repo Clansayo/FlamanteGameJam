@@ -11,7 +11,11 @@ var data: Dictionary
 const IMAGE_BASE_PATH = "res://resources/sprites/Notificaciones/"
 var path_tipo: String
 
+
 func _ready() -> void:
+	load_data()
+
+func load_data() -> void:
 	data = DataResources.notifications_data_map[notification_key]
 	if data.type == "boss":
 		title.text = "Nota del Jefe"
@@ -25,4 +29,3 @@ func _ready() -> void:
 	if data.has("image"):
 		print("Path: %s" % IMAGE_BASE_PATH + path_tipo + data.image)
 		image.texture = load(IMAGE_BASE_PATH + path_tipo + data.image)
-	
