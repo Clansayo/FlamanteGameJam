@@ -10,6 +10,7 @@
 	},
 	"ferran_scena_1": {
 		"speaker": "Boss",
+		"autopaging": false,
 		"message": ["FERRAN_INTRO"]
 	}
 }

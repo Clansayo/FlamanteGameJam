@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="3_cc8v7"]
 [ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="5_186v7"]
 [ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="5_i2h7s"]
+[ext_resource type="Texture2D" uid="uid://3ldccetyqnoj" path="res://resources/Textito/VentanaDialogoFerran.png" id="5_xcvv8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_186v7"]
 size = Vector2(229, 192)
@@ -33,8 +34,27 @@ autoplay = "Idle"
 [node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("3_cc8v7")]
 scene_text_data_file = "res://dialogues/scene1.json"
 speech_speed_multiplayer = 10
+lines_per_page = 8
+
+[node name="Background" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="0" unique_id=471597746]
+offset_left = -826.0
+offset_top = -705.66
+offset_right = 518.0
+offset_bottom = 10.340027
+texture = ExtResource("5_xcvv8")
 
 [node name="TextLabel" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="1" unique_id=1833959117]
+offset_left = -783.0
+offset_top = -664.66
+offset_right = -129.0
+offset_bottom = -27.659973
+theme_override_fonts/normal_font = ExtResource("5_186v7")
+
+[node name="SpeakerName" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="2" unique_id=1915075921]
+offset_left = -791.0
+offset_top = -775.66
+offset_right = 486.0
+offset_bottom = -708.66
 theme_override_fonts/normal_font = ExtResource("5_186v7")
 
 [node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("5_i2h7s")]
@@ -44,6 +64,8 @@ last_dialogue_index = 0
 [node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
 position = Vector2(395, 228)
 shape = SubResource("RectangleShape2D_186v7")
+
+[connection signal="letter_typed" from="DialoguePlayer" to="." method="_on_dialogue_player_letter_typed"]
 
 [editable path="DialoguePlayer"]
 [editable path="DialogueArea"]

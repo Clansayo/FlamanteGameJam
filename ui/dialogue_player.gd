@@ -25,6 +25,7 @@ var fixed_visible_char: float = 0
 @onready var text_label: RichTextLabel = $TextBox/TextLabel
 @onready var speaker_name_label: RichTextLabel = $TextBox/SpeakerName
 
+signal letter_typed
 
 var current_dialogue_area: DialogueArea
 
@@ -40,8 +41,11 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if in_progress and is_writing:
+		var current_visible_characters: int = text_label.visible_characters
 		fixed_visible_char += (speech_speed * delta * speech_speed_multiplayer) if skip_page else (speech_speed * delta)
 		text_label.visible_characters = int(fixed_visible_char)
+		if current_visible_characters != int(fixed_visible_char):
+			letter_typed.emit()
 		if text_label.visible_characters >= text_label.get_parsed_text().length():
 			is_writing = false
 			skip_page = false
