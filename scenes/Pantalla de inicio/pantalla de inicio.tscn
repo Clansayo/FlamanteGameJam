@@ -29,9 +29,10 @@ texture = ExtResource("2_2jq8y")
 
 [node name="Salir" type="TextureButton" parent="CanvasLayer" unique_id=317196590]
 offset_left = 110.0
-offset_top = 580.0
+offset_top = 610.0
 offset_right = 520.0
-offset_bottom = 717.0
+offset_bottom = 747.0
+pivot_offset = Vector2(205, 70)
 texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
@@ -53,6 +54,7 @@ offset_left = 110.0
 offset_top = 380.0
 offset_right = 520.0
 offset_bottom = 517.0
+pivot_offset = Vector2(205, 70)
 texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
@@ -71,9 +73,10 @@ vertical_alignment = 1
 
 [node name="Iniciar" type="TextureButton" parent="CanvasLayer" unique_id=1502810186]
 offset_left = 110.0
-offset_top = 180.0
-offset_right = 520.0
-offset_bottom = 317.0
+offset_top = 150.0
+offset_right = 520.00006
+offset_bottom = 287.00015
+pivot_offset = Vector2(205, 70)
 texture_normal = ExtResource("3_egfal")
 texture_pressed = ExtResource("5_bkkga")
 texture_hover = ExtResource("4_a8718")
@@ -153,7 +156,13 @@ text = "Salir"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="mouse_entered" from="CanvasLayer/Salir" to="." method="_on_salir_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Salir" to="." method="_on_salir_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Creditos" to="." method="_on_creditos_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Creditos" to="." method="_on_creditos_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Creditos" to="." method="_on_creditos_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Iniciar" to="." method="_on_iniciar_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Iniciar" to="." method="_on_iniciar_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Iniciar" to="." method="_on_iniciar_pressed"]
 [connection signal="pressed" from="Creditos/SalirCreditos" to="." method="_on_salir_creditos_pressed"]
