@@ -6,7 +6,7 @@
 			"add_dollars": 300,
 			"add_earth_points": 5,
 			"add_boss_points": -3,
-			"add_email_points_modifier": 3
+			"add_email_points_modifier": 4
 		},
 		"cost": 5
 	},
@@ -17,7 +17,7 @@
 		"effect": {
 			"add_dollars": -10,
 			"add_earth_points": -3,
-			"add_email_points_modifier": 3,
+			"add_email_points_modifier": 4,
 			"add_boss_points": 5
 		},
 		"cost": 15
@@ -28,9 +28,9 @@
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 1500,
-			"add_earth_points": 7,
+			"add_earth_points": 8,
 			"add_boss_points": -3,
-			"add_email_points_modifier": 5
+			"add_email_points_modifier": 7
 		},
 		"cost": 50
 	},
@@ -42,7 +42,7 @@
 			"add_dollars": -300,
 			"add_earth_points": -3,
 			"add_boss_points": 5,
-			"add_email_points_modifier": 5
+			"add_email_points_modifier": 7
 		},
 		"cost": 200
 	},
@@ -53,7 +53,7 @@
 		"effect": {
 			"add_dollars": -100,
 			"add_earth_points": -5,
-			"add_email_points_modifier": 12,
+			"add_email_points_modifier": 15,
 			"add_boss_points": 8
 		},
 		"cost": 80
@@ -64,9 +64,9 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 700,
-			"add_earth_points": 9,
+			"add_earth_points": 10,
 			"add_dollars_modifier": 4,
-			"add_email_points_modifier": 12,
+			"add_email_points_modifier": 15,
 			"add_boss_points": -5
 		},
 		"cost": 25
@@ -76,8 +76,7 @@
 		"title": "Sin animo de lucro, una pipscha",
 		"effect_visibility": true,
 		"effect": {
-			"add_earth_points": -6,
-			"add_email_points_modifier": 15,
+			"add_email_points_modifier": 18,
 		},
 		"cost": 40
 	},
@@ -86,8 +85,7 @@
 		"title": "Devolverle 7 caja´ de valeriana",
 		"effect_visibility": true,
 		"effect": {
-			"add_earth_points": -1,
-			"add_email_points_modifier": 15
+			"add_email_points_modifier": 18
 		},
 		"cost": 40
 	},
@@ -97,9 +95,9 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 10,
-			"add_earth_points": 10,
+			"add_earth_points": 12,
 			"add_dollars_modifier": 5,
-			"add_email_points_modifier": 40,
+			"add_email_points_modifier": 60,
 			"add_boss_points": -6
 		},
 		"cost": 100
@@ -110,9 +108,9 @@
 		"effect_visibility": false,
 		"effect": {
 			"add_dollars": 900,
-			"add_earth_points": 9,
+			"add_earth_points": 10,
 			"add_dollars_modifier": 20,
-			"add_email_points_modifier": 40,
+			"add_email_points_modifier": 60,
 			"add_boss_points": -6
 		},
 		"cost": 200
@@ -126,9 +124,9 @@
 			"add_earth_points": -6,
 			"add_dollars_modifier": -3,
 			"add_boss_points": 9,
-			"add_email_points_modifier": 30
+			"add_email_points_modifier": 60
 		},
-		"cost": 1000
+		"cost": 750
 	},
 	
 	"NO": {
@@ -136,7 +134,7 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 10,
-			"add_earth_points": 9,
+			"add_earth_points": 10,
 			"add_boss_points": -6
 		},
 		"cost": 50
@@ -147,10 +145,10 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 100,
-			"add_earth_points": 10,
+			"add_earth_points": 12,
 			"add_dollars_modifier": 100,
 			"add_boss_points": -6,
-			"add_email_points_modifier": 40
+			"add_email_points_modifier": 60
 		},
 		"cost": 500
 	},
@@ -175,7 +173,7 @@
 			"add_dollars": -100,
 			"add_earth_points": -6,
 			"add_boss_points": 9,
-			"add_email_points_modifier": 40,
+			"add_email_points_modifier": 60,
 		},
 		"cost": 500
 	},
@@ -185,8 +183,8 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 500,
-			"add_earth_points": 9,
-			"add_email_points_modifier": 30,
+			"add_earth_points": 12,
+			"add_email_points_modifier": 60,
 			"add_dollars_modifier": 15,
 			"add_boss_points": -6
 		},
@@ -198,11 +196,11 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -20,
-			"add_earth_points": 3,
+			"add_earth_points": 6,
 			"add_boss_points": 4,
-			"add_email_points_modifier": 30,
+			"add_email_points_modifier": 60,
 		},
-		"cost": 5000
+		"cost": 3500
 	},	
 	
 	"PESETA_VISION": {
@@ -210,10 +208,10 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 100,
-			"add_earth_points": 8,
+			"add_earth_points": 10,
 			"add_dollars_modifier": 15,
 			"add_boss_points": -3,
-			"add_email_points_modifier": 40,
+			"add_email_points_modifier": 80,
 		},
 		"cost": 4500
 	},	
@@ -226,7 +224,7 @@
 			"add_boss_points": 12,
 			"add_email_points_modifier": -1
 		},
-		"cost": 5000
+		"cost": 3500
 	},	
 	
 	"LOGO": {
@@ -234,10 +232,10 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 500,
-			"add_earth_points": 8,
+			"add_earth_points": 10,
 			"add_dollars_modifier": 50,
 			"add_boss_points": -6,
-			"add_email_points_modifier": 20
+			"add_email_points_modifier": 40
 		},
 		"cost": 600
 		
@@ -248,10 +246,10 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 200,
-			"add_earth_points": 8,
+			"add_earth_points": 10,
 			"add_dollars_modifier": 10,
 			"add_boss_points": -6,
-			"add_email_points_modifier": 20
+			"add_email_points_modifier": 40
 		},
 		"cost": 1000
 	},	
@@ -263,7 +261,7 @@
 			"add_dollars": -100,
 			"add_earth_points": -6,
 			"add_boss_points": 9,
-			"add_email_points_modifier": 15
+			"add_email_points_modifier": 30
 		},
 		"cost": 500
 	},	
@@ -273,11 +271,11 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 100,
-			"add_earth_points": 10,
+			"add_earth_points": 12,
 			"add_boss_points": -6,
-			"add_email_points_modifier": 20
+			"add_email_points_modifier": 40
 		},
-		"cost": 5000
+		"cost": 4000
 	},	
 	
 	"INVESTIGAR_GUSANOS": {
@@ -287,7 +285,7 @@
 			"add_dollars": -100,
 			"add_earth_points": -10,
 			"add_boss_points": 12,
-			"add_email_points_modifier": 20
+			"add_email_points_modifier": 40
 		},
 		"cost": 3000
 	},	
@@ -299,7 +297,7 @@
 			"add_dollars": -1000,
 			"add_earth_points": -25,
 			"add_boss_points": 25,
-			"add_email_points_modifier": 20
+			"add_email_points_modifier": 40
 		},
 		"cost": 30000
 	},	
@@ -309,10 +307,10 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 0,
-			"add_earth_points": 7,
+			"add_earth_points": 10,
 			"add_boss_points": -6
 		},
-		"cost": 0
+		"cost": 400
 	},	
 	
 	"BOMA_ATOMICA": {
@@ -320,12 +318,12 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 1000,
-			"add_earth_points": 15,
+			"add_earth_points": 20,
 			"add_dollars_modifier": 10,
-			"add_email_points": 20,
+			"add_email_points_modifier": 40,
 			"add_boss_points": -12
 		},
-		"cost": 7000
+		"cost": 4500
 	},	
 	
 	"OLIVOS": {
@@ -334,7 +332,7 @@
 		"effect": {
 			"add_dollars": -5000,
 			"add_earth_points": -7,
-			"add_boss_points": 12
+			"add_boss_points": 10
 		},
 		"cost": 500
 	},	
@@ -344,12 +342,12 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": 6700,
-			"add_earth_points": 12,
+			"add_earth_points": 15,
 			"add_dollars_modifier": 100,
 			"add_email_points_modifier": 500,
 			"add_boss_points": -12
 		},
-		"cost": 5000
+		"cost": 2500
 	},	
 	
 	"MENDIGOS": {
@@ -360,7 +358,7 @@
 			"add_earth_points": -6,
 			"add_boss_points": 12
 		},
-		"cost": 7000
+		"cost": 4500
 	}
 	
 }
