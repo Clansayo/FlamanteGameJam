@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8t0sml7v6ngj"
-path="res://.godot/imported/Tux se queda sin casa.png-faaf6a5ddd9d159d7f264f53eae15e29.ctex"
+path="res://.godot/imported/Tux_sin_casa.png-41b76a54012948f36b09f18fcc55bc88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/Tux se queda sin casa.png"
-dest_files=["res://.godot/imported/Tux se queda sin casa.png-faaf6a5ddd9d159d7f264f53eae15e29.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/Tux_sin_casa.png"
+dest_files=["res://.godot/imported/Tux_sin_casa.png-41b76a54012948f36b09f18fcc55bc88.ctex"]
 
 [params]
 

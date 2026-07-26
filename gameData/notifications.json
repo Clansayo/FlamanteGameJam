@@ -7,12 +7,128 @@
 			"less_points_than": 40
 		}
 	},
+		"BOSS_NOTIFICATION_2": {
+		"type": "boss",
+		"image": "lafufus_para_todos.png",
+		"message": "La empresa va tan bien que para estas navidades os he comprado blindboxes de lafufus a todos",
+		"trigger": {
+			"less_points_than": 20
+		}
+	},
+		"BOSS_NOTIFICATION_3": {
+		"type": "boss",
+		"image": "no_heredas.png",
+		"message": "Definitivamente, tú no vas a heredar esta empresa",
+		"trigger": {
+			"more_points_than": 60
+		}
+	},
+	
+		"BOSS_NOTIFICATION_4": {
+		"type": "boss",
+		"image": "2_paradas_de_baño.png",
+		"message": "Te he recortado a 2 los “bathroom breaks” diarios hasta tu jubilación",
+		"trigger": {
+			"more_points_than": 70
+		}
+	},
+	"BOSS_NOTIFICATION_5": {
+		"type": "boss",
+		"image": "solo_1_baño.png",
+		"message": "Hemos tenido que cerrar todos los baños menos los de la primera planta, porque no hay presupuesto",
+		"trigger": {
+			"more_points_than": 80
+		}
+	},
+	"BOSS_NOTIFICATION_6": {
+		"type": "boss",
+		"image": "no_aire_acondicionado.png",
+		"message": "Por ahorro de presupuesto, vamos a cortarte el aire acondicionado",
+		"trigger": {
+			"more_points_than": 90
+		}
+	},
+	"BOSS_NOTIFICATION_7": {
+		"type": "boss",
+		"image": "15_horas_de_jornada.png",
+		"message": "Alargamos tus turnos a 15h diarias para compensar las pérdidas por tu bajo rendimiento",
+		"trigger": {
+			"more_points_than": 75
+		}
+	},
+	"BOSS_NOTIFICATION_8": {
+		"type": "boss",
+		"image": "sillas_de_carton.png",
+		"message": "Cambiamos vuestras sillas por cajas de cartón. Trabajad más.",
+		"trigger": {
+			"more_points_than": 85
+		}
+	},
+	
 	"PLANET_NOTIFICATION_1": {
 		"type": "planet",
-		"image": "planet.png",
-		"message": "Tux se ha quedao sin casa primo",
+		"image": "Tux_sin_casa.png",
+		"message": "Liada, Tux, la mascota de Linux, se le ha derretido el iglu",
+		"trigger": {
+			"more_points_than": 20
+		} 
+	},
+	"PLANET_NOTIFICATION_2": {
+		"type": "planet",
+		"image": "Ardillas.png",
+		"message": "Quedan 4 ardillas en toda Europa",
+		"trigger": {
+			"more_points_than": 30
+		} 
+	},
+	
+	"PLANET_NOTIFICATION_3": {
+		"type": "planet",
+		"image": "7_tios_con_pancarta.png",
+		"message": "7 hippies con pancartas han salido a protestar por las acciones de tu empresa, han sido fácilmente ignorables",
 		"trigger": {
 			"more_points_than": 50
 		} 
-	}
+	},
+	
+	"PLANET_NOTIFICATION_4": {
+		"type": "planet",
+		"image": "Tux_Busca_Piso.png",
+		"message": "Hola busco piso por la Luz la Paz, soy limpio ordenador, LGTBfriendly y me gusta el anime",
+		"trigger": {
+			"more_points_than": 40
+		} 
+	},
+		"PLANET_NOTIFICATION_5": {
+		"type": "planet",
+		"image": "protestas_zbe.png",
+		"message": "Un puñao de estudiantes petardos han protestao por la zona de bajas emisiones, nos hemos pasao la queja por el forro de los cojones",
+		"trigger": {
+			"more_points_than": 45
+		} 
+	},
+	"PLANET_NOTIFICATION_6": {
+		"type": "planet",
+		"image": "tux_se_muda_al_metro.png",
+		"message": "Tux, la mascota de Linux, se ha tenido que ir a vivir al metro de La Luz La Paz",
+		"trigger": {
+			"more_points_than": 60
+		} 
+	},
+	"PLANET_NOTIFICATION_7": {
+		"type": "planet",
+		"image": "Osos_frigopie.png",
+		"message": "Los osos polares se mudan al camión distribuidor de frigopies",
+		"trigger": {
+			"more_points_than": 70
+		} 
+	},
+	"PLANET_NOTIFICATION_8": {
+		"type": "planet",
+		"image": "explota_el_patinete.png",
+		"message": "Patinete explota en el metro de La Luz La Paz y mata a Tux, la mascota de Linux",
+		"trigger": {
+			"more_points_than": 80
+		} 
+	},
 }
