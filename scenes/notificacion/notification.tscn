@@ -11,7 +11,6 @@ offset_bottom = -405.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hak6v")
-notification_key = "BOSS_NOTIFICATION_1"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=236366932]
 layout_mode = 2

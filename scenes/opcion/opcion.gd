@@ -51,9 +51,9 @@ func _ready():
 		if points > UMBRAL_MUY_MALO:
 			effect_description_label.text += "Al jefe no le mola nada esto\n"
 		elif points > 0:
-			effect_description_label.text += "Malillo para el medio ambiente\n"
+			effect_description_label.text += "No le hace mucha gracia al jefe\n"
 		else:
-			effect_description_label.text += "Bueno para el medio ambiente\n"
+			effect_description_label.text += "Al jefe le gusta como piensas\n"
 	
 	if effect.has("add_dollars_modifier"):
 		points = effect.add_dollars_modifier

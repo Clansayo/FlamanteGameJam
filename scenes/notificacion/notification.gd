@@ -1,8 +1,9 @@
 extends PanelContainer
+class_name Notification
 
 var data: Dictionary
 
-@export var notification_key: String
+var notification_key: String = "PLANET_NOTIFICATION_1"
 
 @onready var title: Label = $MarginContainer/Title
 @onready var content_label: RichTextLabel = $MarginContainer/VBoxContainer/MarginContainer/ContentLabel
@@ -10,10 +11,6 @@ var data: Dictionary
 
 const IMAGE_BASE_PATH = "res://resources/sprites/Notificaciones/"
 var path_tipo: String
-
-
-func _ready() -> void:
-	load_data()
 
 func load_data() -> void:
 	data = DataResources.notifications_data_map[notification_key]
