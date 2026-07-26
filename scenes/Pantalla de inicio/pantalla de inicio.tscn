@@ -106,18 +106,18 @@ scale = Vector2(0.5885417, 0.71481484)
 texture = ExtResource("8_kt7f2")
 
 [node name="Creditos2" type="RichTextLabel" parent="Creditos" unique_id=1138887257]
-offset_left = 487.0
+offset_left = 416.0
 offset_top = 195.0
-offset_right = 1504.0
+offset_right = 1560.0
 offset_bottom = 806.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_a8718")
 theme_override_font_sizes/normal_font_size = 66
-text = "Yago (Itchio): Programación
-Ale (Itchio): Programación y múscia
+text = "Yago (sayo-juegos): Programación
+Javier Alegrandro (Neiotic): Programación y múscia
 Max (Maxitos): Arte
-Luís (Itchio): Música
+Luís (Luiszol): Música
 Luh (katastraa): Arte y UI"
 horizontal_alignment = 1
 vertical_alignment = 1

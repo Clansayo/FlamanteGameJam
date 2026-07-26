@@ -47,14 +47,14 @@ func _on_quit_button_pressed() -> void:
 	
 
 
-
-func _on_mouse_entered() -> void:
+func _on_quit_button_mouse_entered() -> void:
 	var tween: Tween = create_tween()
 	tween.tween_property(self,"scale", Vector2(end_size, end_size), 0.4)
 	tween.set_trans(Tween.TRANS_BOUNCE)
-	
+	print("hola")
 
-func _on_mouse_exited() -> void:
+
+func _on_quit_button_mouse_exited() -> void:
 	var tween: Tween = create_tween()
 	tween.tween_property(self,"scale", Vector2(start_size, start_size), 0.4)
 	tween.set_trans(Tween.TRANS_BOUNCE)
