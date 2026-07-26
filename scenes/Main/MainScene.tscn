@@ -30,13 +30,6 @@ script = ExtResource("13_wtihh")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=273827565]
 
-[node name="GeneradorNotificaciones" parent="UI" unique_id=909852352 instance=ExtResource("4_in32o")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-
 [node name="FondoPantallaUi" type="Sprite2D" parent="UI" unique_id=1424232194]
 position = Vector2(958, 342.00003)
 scale = Vector2(0.50937504, 0.5314815)
@@ -216,6 +209,13 @@ option_keys_list = PackedStringArray("BOMA_ATOMICA", "OLIVOS")
 layout_mode = 2
 theme_override_constants/separation = 19
 option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
+
+[node name="GeneradorNotificaciones" parent="UI" unique_id=909852352 instance=ExtResource("4_in32o")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 
 [connection signal="trigger_notification" from="EventNotificationManager" to="." method="_on_event_notification_manager_trigger_notification"]
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]

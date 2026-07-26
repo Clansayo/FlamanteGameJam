@@ -4,7 +4,7 @@
 		"image": "1_hora_vacaciones.png",
 		"message": "Estas trabajando TAN bien que voy a añadir una hora a tus vacaciones.",
 		"trigger": {
-			"more_points_than": 70
+			"less_points_than": 40
 		}
 	},
 	"PLANET_NOTIFICATION_1": {

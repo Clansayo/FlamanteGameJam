@@ -10,6 +10,7 @@ extends Node
 @onready var emails_label: RichTextLabel = $UI/DisplayCurrency/EmailsLabel
 
 @onready var decision_container: VBoxContainer = $UI/ScrollContainer/DecisionContainer
+@onready var generador_notificaciones: NotificationGenerator = $UI/GeneradorNotificaciones
 
 var click_value: int = 1
 
@@ -53,4 +54,4 @@ func _on_decision_deselected(data: Dictionary) -> void:
 
 func _on_event_notification_manager_trigger_notification(notification_key: String) -> void:
 	print("TRIGGER DE: %s" % notification_key)
-	
+	generador_notificaciones.generate(notification_key)
