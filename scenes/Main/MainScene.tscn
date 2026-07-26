@@ -169,16 +169,41 @@ option_keys_list = PackedStringArray("CALIDAD_VACAS", "ALCALDE_ASTURIAS")
 
 [node name="decision8" parent="UI/ScrollContainer/DecisionContainer" unique_id=1046742414 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("CARRIL_BICI", "CBE")
 
 [node name="decision9" parent="UI/ScrollContainer/DecisionContainer" unique_id=961577509 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+option_keys_list = PackedStringArray("TAYLOR_SWIFT", "PESETA_VISION")
 
 [node name="decision10" parent="UI/ScrollContainer/DecisionContainer" unique_id=1434398155 instance=ExtResource("10_kerbj")]
 layout_mode = 2
 theme_override_constants/separation = 19
-option_keys_list = PackedStringArray("TAYLOR_SWIFT", "PESETA_VISION")
+option_keys_list = PackedStringArray("CARA_ANCHOA", "LOGO")
+
+[node name="decision11" parent="UI/ScrollContainer/DecisionContainer" unique_id=103106422 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("CAJAMAR", "SALVAR_PECES")
+
+[node name="decision12" parent="UI/ScrollContainer/DecisionContainer" unique_id=214239196 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("MONOS", "INVESTIGAR_GUSANOS")
+
+[node name="decision13" parent="UI/ScrollContainer/DecisionContainer" unique_id=1618142590 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("MANGO_LOCO", "LOKO")
+
+[node name="decision14" parent="UI/ScrollContainer/DecisionContainer" unique_id=1467204218 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("BOMA_ATOMICA", "OLIVOS")
+
+[node name="decision15" parent="UI/ScrollContainer/DecisionContainer" unique_id=193595486 instance=ExtResource("10_kerbj")]
+layout_mode = 2
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
 
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]

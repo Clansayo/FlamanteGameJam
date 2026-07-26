@@ -275,6 +275,17 @@
 		"cost": 500000
 	},	
 	
+		"LOKO": {
+		"title": "Como le vas a dar Monster Energy a los gusanos estas loko bro?",
+		"effect_visibility": true,
+		"effect": {
+			"add_dollars": 0,
+			"add_earth_points": 5,
+			"add_earth_points_modifier": 1
+		},
+		"cost": 0
+	},	
+	
 	"BOMA_ATOMICA": {
 		"title": "Usar bombas atómicas como herramientas de minería",
 		"effect_visibility": true,
