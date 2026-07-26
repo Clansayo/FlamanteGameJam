@@ -40,6 +40,14 @@ func _ready():
 	keyboard_playback = keyboard_player.get_stream_playback()
 
 func play_song(song: int):
+	#Inicializo el volumen de estas cosas para que empiecen desde 0 y hagan fade in
+	nc_bass.volume_db = -80
+	nc_pad.volume_db = -80
+	nc_lead.volume_db = -80
+	fa_chords.volume_db = -80
+	fa_lead.volume_db = -80
+	fa_coro.volume_db = -80
+	fa_base.volume_db = -80
 	if song == 1:
 		nc_drums.play()
 		nc_chords.play()
@@ -47,11 +55,18 @@ func play_song(song: int):
 		nc_lead.play()
 		nc_pad.play()
 	else:
+		#Fuera cancion 1
+		fade_out(nc_drums)
+		fade_out(nc_chords)
+		fade_out(nc_bass)
+		fade_out(nc_pad)
+		fade_out(nc_lead)
 		nc_drums.stop()
 		nc_chords.stop()
 		nc_bass.stop()
 		nc_lead.stop()
 		nc_pad.stop()
+		#Dentro cancion 2
 		fa_chords.play()
 		fa_lead.play()
 		fa_coro.play()
@@ -78,11 +93,21 @@ func play_discard_notification():
 	ui_player.play()
 	
 func set_layer(player: AudioStreamPlayer, enabled: bool):
-	if enabled: 
-		player.volume_db = 0 
+	var target_volume
+	if enabled:
+		target_volume = 0.0
 	else:
-		player.volume_db =	-80
-		
+		target_volume = -80.0
+
+	var tween = create_tween()
+	tween.tween_property(player, "volume_db", target_volume, 1)
+	
+func fade_out(player: AudioStreamPlayer):
+	var tween = create_tween()
+	tween.set_trans(Tween.TRANS_SINE)
+	tween.set_ease(Tween.EASE_IN_OUT)
+	tween.tween_property(player, "volume_db", -80.0, 1.0)
+	
 func set_music_state(song: int, interval: int):
 	if song == 1:
 		set_layer(nc_drums, true)
@@ -90,7 +115,6 @@ func set_music_state(song: int, interval: int):
 		set_layer(nc_bass, interval >= 1)
 		set_layer(nc_pad, interval >= 2)
 		set_layer(nc_lead, interval >= 3)
-
 	elif song == 2:
 		set_layer(fa_chords, true)
 		set_layer(fa_base, interval >= 1)
