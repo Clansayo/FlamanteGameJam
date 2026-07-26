@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://b3koludsu6rhk"]
 
 [ext_resource type="Script" uid="uid://bnnq4qbevmtj2" path="res://globals/AudioManager/audio_manager.gd" id="1_8hqgo"]
+[ext_resource type="AudioStream" uid="uid://cdpp06himlxcu" path="res://resources/Music/NightCity/NCDrums.ogg" id="2_rv2yo"]
+[ext_resource type="AudioStream" uid="uid://b5yww706mf25e" path="res://resources/Music/NightCity/NCChords.ogg" id="3_wap0v"]
+[ext_resource type="AudioStream" uid="uid://qp8lfef0gagj" path="res://resources/Music/NightCity/NCBass.ogg" id="4_12odf"]
+[ext_resource type="AudioStream" uid="uid://c3wc023y70w1d" path="res://resources/Music/NightCity/NCPad.ogg" id="5_bmsrh"]
+[ext_resource type="AudioStream" uid="uid://bdbun5gl0f02b" path="res://resources/Music/NightCity/NCLead.ogg" id="6_50b2s"]
+[ext_resource type="AudioStream" uid="uid://2uuhwtr4nbf5" path="res://resources/Music/FireAge/FireAgeChords.ogg" id="7_25k04"]
+[ext_resource type="AudioStream" uid="uid://c56y1hysr2tc8" path="res://resources/Music/FireAge/FireAgeChords2.ogg" id="8_d6qgy"]
+[ext_resource type="AudioStream" uid="uid://chmekqlcoidss" path="res://resources/Music/FireAge/FRBASE.ogg" id="9_m727p"]
+[ext_resource type="AudioStream" uid="uid://b56fgyrn41lx2" path="res://resources/Music/FireAge/FRLead.ogg" id="10_sa0q8"]
+[ext_resource type="AudioStream" uid="uid://c1wwdt0qgdflx" path="res://resources/Music/FireAge/FRCORO.ogg" id="11_5bubq"]
 
 [sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_wtihh"]
 
@@ -16,4 +26,32 @@ max_polyphony = 8
 [node name="UIPlayer" type="AudioStreamPlayer" parent="." unique_id=502274573]
 stream = SubResource("AudioStreamPolyphonic_8hqgo")
 
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1280223386]
+[node name="NC_Drums" type="AudioStreamPlayer" parent="." unique_id=728880533]
+stream = ExtResource("2_rv2yo")
+
+[node name="NC_Chords" type="AudioStreamPlayer" parent="." unique_id=370039720]
+stream = ExtResource("3_wap0v")
+
+[node name="NC_Bass" type="AudioStreamPlayer" parent="." unique_id=949961156]
+stream = ExtResource("4_12odf")
+
+[node name="NC_Pad" type="AudioStreamPlayer" parent="." unique_id=1813869706]
+stream = ExtResource("5_bmsrh")
+
+[node name="NC_Lead" type="AudioStreamPlayer" parent="." unique_id=520792435]
+stream = ExtResource("6_50b2s")
+
+[node name="FA_Chords" type="AudioStreamPlayer" parent="." unique_id=1216147951]
+stream = ExtResource("7_25k04")
+
+[node name="FA_Chords2" type="AudioStreamPlayer" parent="." unique_id=362592484]
+stream = ExtResource("8_d6qgy")
+
+[node name="FA_Base" type="AudioStreamPlayer" parent="." unique_id=511311451]
+stream = ExtResource("9_m727p")
+
+[node name="FA_Lead" type="AudioStreamPlayer" parent="." unique_id=696654306]
+stream = ExtResource("10_sa0q8")
+
+[node name="FA_Coro" type="AudioStreamPlayer" parent="." unique_id=1045122354]
+stream = ExtResource("11_5bubq")

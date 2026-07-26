@@ -35,12 +35,6 @@ func get_interval_index(interval: Array, value: int) -> int:
 		index += 1
 	return index
 
-func set_layer(player: AudioStreamPlayer, enabled: bool):
-	if enabled: 
-		player.volume_db = 0 
-	else:
-		player.volume_db =	-80
-
 func refresh():
 	var earth = CurrencyManager.get_earth_points()
 	
@@ -63,7 +57,7 @@ func refresh():
 		current_interval = interval
 		
 func change_song(song: int):
-	pass
+	AudioManager.play_song(song)
 	
 func change_layers(song:int, interval:int):
 	print("Cancion: ", song, " Intervalo: ", interval) 
