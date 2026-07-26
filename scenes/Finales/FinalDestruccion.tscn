@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://bamtjutr7jedp" path="res://resources/sprites/Finales/Destruccion/fuego/2.png" id="12_g1cxt"]
 [ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="15_few71"]
 [ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="16_nhwhd"]
+[ext_resource type="Texture2D" uid="uid://c5f2u3himp0gi" path="res://resources/sprites/Fondo/botónPresionado.png" id="16_rd00t"]
+[ext_resource type="Texture2D" uid="uid://d03swvk63a4kc" path="res://resources/sprites/Fondo/botónNoDisponible.png" id="17_f88up"]
 [ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="17_rd00t"]
 [ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="18_f88up"]
 
@@ -99,6 +101,27 @@ sprite_frames = SubResource("SpriteFrames_k5thl")
 autoplay = "default"
 frame_progress = 0.09116609
 
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer" unique_id=2092119491]
+offset_left = 794.665
+offset_top = 57.0
+offset_right = 1204.6654
+offset_bottom = 194.0
+texture_normal = ExtResource("16_nhwhd")
+texture_pressed = ExtResource("16_rd00t")
+texture_hover = ExtResource("17_f88up")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/TextureButton" unique_id=1944004839]
+layout_mode = 0
+offset_right = 410.0
+offset_bottom = 137.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.02745098, 0.08235294, 0.2, 1)
+theme_override_fonts/normal_font = ExtResource("17_rd00t")
+theme_override_font_sizes/normal_font_size = 58
+text = "Volver al inicio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("15_few71")]
 scene_text_data_file = "res://dialogues/scene1.json"
 speech_speed_multiplayer = 10
@@ -121,10 +144,10 @@ theme_override_fonts/normal_font = ExtResource("17_rd00t")
 vertical_alignment = 1
 
 [node name="SpeakerName" parent="DialoguePlayer/TextBox" parent_id_path=PackedInt32Array(2013203058, 978828007) index="2" unique_id=1915075921]
-offset_left = -791.0
-offset_top = -775.66
-offset_right = 486.0
-offset_bottom = -708.66
+offset_left = -892.0
+offset_top = -373.65997
+offset_right = 385.0
+offset_bottom = -306.65997
 theme_override_fonts/normal_font = ExtResource("17_rd00t")
 
 [node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("18_f88up")]
@@ -134,6 +157,8 @@ last_dialogue_index = 0
 [node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
 position = Vector2(395, 228)
 shape = SubResource("RectangleShape2D_g1cxt")
+
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]
 
 [editable path="DialoguePlayer"]
 [editable path="DialogueArea"]
