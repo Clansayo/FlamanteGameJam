@@ -3,9 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="1_6dmt1"]
 [ext_resource type="Script" uid="uid://4s3kydkrojqk" path="res://scenes/opcion/opcion.gd" id="1_x0rm4"]
 [ext_resource type="Texture2D" uid="uid://dvpc4mh73w3y8" path="res://resources/sprites/Fondo/boton pulsado.png" id="2_ni5ej"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="4_cf4go"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
 font_size = 18
+font_color = Color(0.2627451, 0.21568628, 0.047058824, 1)
 
 [node name="Opcion(boton)" type="TextureButton" unique_id=631546472]
 anchors_preset = 15
@@ -37,7 +39,9 @@ offset_bottom = 441.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme_override_font_sizes/normal_font_size = 20
+theme_override_colors/default_color = Color(0.64837724, 0.529771, 0.16548046, 1)
+theme_override_fonts/normal_font = ExtResource("4_cf4go")
+theme_override_font_sizes/normal_font_size = 25
 text = "+ 300 $
 Malo para el planeta"
 fit_content = true
@@ -58,7 +62,9 @@ offset_bottom = 441.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme_override_font_sizes/normal_font_size = 20
+theme_override_colors/default_color = Color(0.2627451, 0.21568628, 0.047058824, 1)
+theme_override_fonts/normal_font = ExtResource("4_cf4go")
+theme_override_font_sizes/normal_font_size = 30
 text = "Hola buenas tardes Hola buenas tardesHola buenas tardes"
 fit_content = true
 horizontal_alignment = 1
@@ -77,6 +83,8 @@ theme_override_constants/margin_bottom = 10
 [node name="Cost" type="Label" parent="MarginContainer" unique_id=751615557]
 custom_minimum_size = Vector2(186.585, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.2627451, 0.21568628, 0.047058824, 1)
+theme_override_fonts/font = ExtResource("4_cf4go")
 theme_override_font_sizes/font_size = 32
 text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
