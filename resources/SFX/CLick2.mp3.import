@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cogkomfrc0yfc"
-path="res://.godot/imported/CLick2.mp3-c0908fc6cbb3183537f1a32c33c954b3.mp3str"
+path="res://.godot/imported/CLick2.mp3-379d829051b8ccba720128eb264d02f9.mp3str"
 
 [deps]
 
-source_file="res://globals/AudioManager/SFX/CLick2.mp3"
-dest_files=["res://.godot/imported/CLick2.mp3-c0908fc6cbb3183537f1a32c33c954b3.mp3str"]
+source_file="res://resources/SFX/CLick2.mp3"
+dest_files=["res://.godot/imported/CLick2.mp3-379d829051b8ccba720128eb264d02f9.mp3str"]
 
 [params]
 

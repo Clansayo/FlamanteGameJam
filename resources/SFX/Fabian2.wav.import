@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d2u5javhkifgm"
-path="res://.godot/imported/Fabian2.wav-a282d44e3589e2fc4259c5598a232649.sample"
+path="res://.godot/imported/Fabian2.wav-08d2d7140e9b1751f881d3709d0cc5fe.sample"
 
 [deps]
 
-source_file="res://globals/AudioManager/SFX/Fabian2.wav"
-dest_files=["res://.godot/imported/Fabian2.wav-a282d44e3589e2fc4259c5598a232649.sample"]
+source_file="res://resources/SFX/Fabian2.wav"
+dest_files=["res://.godot/imported/Fabian2.wav-08d2d7140e9b1751f881d3709d0cc5fe.sample"]
 
 [params]
 

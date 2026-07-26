@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cdpp06himlxcu"
-path="res://.godot/imported/NCDrums.ogg-6992fb8f8d629eccdb6b505514b5a9af.oggvorbisstr"
+path="res://.godot/imported/NCDrums.ogg-b24313a5e20d5fd0454e128e26b6b1a3.oggvorbisstr"
 
 [deps]
 
-source_file="res://globals/AudioManager/Music/NightCity/NCDrums.ogg"
-dest_files=["res://.godot/imported/NCDrums.ogg-6992fb8f8d629eccdb6b505514b5a9af.oggvorbisstr"]
+source_file="res://resources/Music/NightCity/NCDrums.ogg"
+dest_files=["res://.godot/imported/NCDrums.ogg-b24313a5e20d5fd0454e128e26b6b1a3.oggvorbisstr"]
 
 [params]
 

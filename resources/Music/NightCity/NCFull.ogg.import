@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cbrxayc7bcpre"
-path="res://.godot/imported/NCFull.ogg-c10a13f01817a64e5e9ff1b30fa0e16b.oggvorbisstr"
+path="res://.godot/imported/NCFull.ogg-893878961539514b734b02318ed295a2.oggvorbisstr"
 
 [deps]
 
-source_file="res://globals/AudioManager/Music/NightCity/NCFull.ogg"
-dest_files=["res://.godot/imported/NCFull.ogg-c10a13f01817a64e5e9ff1b30fa0e16b.oggvorbisstr"]
+source_file="res://resources/Music/NightCity/NCFull.ogg"
+dest_files=["res://.godot/imported/NCFull.ogg-893878961539514b734b02318ed295a2.oggvorbisstr"]
 
 [params]
 

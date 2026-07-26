@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://876nddeda066"
-path="res://.godot/imported/UIRetro.mp3-28054ac9e64daa9b9090176556195fd3.mp3str"
+path="res://.godot/imported/UIRetro.mp3-726a17356d0864f4a368190131a11197.mp3str"
 
 [deps]
 
-source_file="res://globals/AudioManager/SFX/UIRetro.mp3"
-dest_files=["res://.godot/imported/UIRetro.mp3-28054ac9e64daa9b9090176556195fd3.mp3str"]
+source_file="res://resources/SFX/UIRetro.mp3"
+dest_files=["res://.godot/imported/UIRetro.mp3-726a17356d0864f4a368190131a11197.mp3str"]
 
 [params]
 

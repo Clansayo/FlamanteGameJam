@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwvpsl6hwbmuv"
-path="res://.godot/imported/Fabian3.wav-a2c7cd74aeac01714622dfa97ffd6c30.sample"
+path="res://.godot/imported/Fabian3.wav-5d2dd1736c4d66f5efd868f170147bc5.sample"
 
 [deps]
 
-source_file="res://globals/AudioManager/SFX/Fabian3.wav"
-dest_files=["res://.godot/imported/Fabian3.wav-a2c7cd74aeac01714622dfa97ffd6c30.sample"]
+source_file="res://resources/SFX/Fabian3.wav"
+dest_files=["res://.godot/imported/Fabian3.wav-5d2dd1736c4d66f5efd868f170147bc5.sample"]
 
 [params]
 

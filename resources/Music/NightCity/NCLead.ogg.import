@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bdbun5gl0f02b"
-path="res://.godot/imported/NCLead.ogg-f71cda0c0746fa7ccea95ab6f260ee45.oggvorbisstr"
+path="res://.godot/imported/NCLead.ogg-fadb2e7ee6d8bf0512aca5d20315b6d4.oggvorbisstr"
 
 [deps]
 
-source_file="res://globals/AudioManager/Music/NightCity/NCLead.ogg"
-dest_files=["res://.godot/imported/NCLead.ogg-f71cda0c0746fa7ccea95ab6f260ee45.oggvorbisstr"]
+source_file="res://resources/Music/NightCity/NCLead.ogg"
+dest_files=["res://.godot/imported/NCLead.ogg-fadb2e7ee6d8bf0512aca5d20315b6d4.oggvorbisstr"]
 
 [params]
 

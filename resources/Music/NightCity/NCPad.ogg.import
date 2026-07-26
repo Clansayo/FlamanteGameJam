@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c3wc023y70w1d"
-path="res://.godot/imported/NCPad.ogg-fef519c279798d5ce4cd48d421e8af1b.oggvorbisstr"
+path="res://.godot/imported/NCPad.ogg-038be1b2c8b80fa171ba45053083eb1e.oggvorbisstr"
 
 [deps]
 
-source_file="res://globals/AudioManager/Music/NightCity/NCPad.ogg"
-dest_files=["res://.godot/imported/NCPad.ogg-fef519c279798d5ce4cd48d421e8af1b.oggvorbisstr"]
+source_file="res://resources/Music/NightCity/NCPad.ogg"
+dest_files=["res://.godot/imported/NCPad.ogg-038be1b2c8b80fa171ba45053083eb1e.oggvorbisstr"]
 
 [params]
 

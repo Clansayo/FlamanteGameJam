@@ -1,15 +1,17 @@
 extends Node
 
 const KEYBOARD_CLICKS = [
-	preload("res://globals/AudioManager/SFX/CLick1.mp3"),
-	preload("res://globals/AudioManager/SFX/CLick2.mp3"),
-	preload("res://globals/AudioManager/SFX/CLick3.mp3"),
-	preload("res://globals/AudioManager/SFX/CLick5.mp3"),
+	preload("res://resources/SFX/CLick1.mp3"),
+	preload("res://resources/SFX/CLick2.mp3"),
+	preload("res://resources/SFX/CLick3.mp3"),
+	preload("res://resources/SFX/CLick4.mp3"),
+	preload("res://resources/SFX/CLick5.mp3"),
+	
 ]
 
-const UI_CLICK = preload("res://globals/AudioManager/SFX/UIClick2.mp3")
-const F_CLICK = preload("res://globals/AudioManager/SFX/ClickF.mp3")
-const MAIN_THEME = preload("res://globals/AudioManager/Music/NightCity/NCFull.ogg")
+const UI_CLICK = preload("res://resources/SFX/UIClick2.mp3")
+const F_CLICK = preload("res://resources/SFX/ClickF.mp3")
+const MAIN_THEME = preload("res://resources/Music/NightCity/NCFull.ogg")
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer

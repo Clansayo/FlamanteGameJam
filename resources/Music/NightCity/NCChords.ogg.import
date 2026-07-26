@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b5yww706mf25e"
-path="res://.godot/imported/NCChords.ogg-e57dd308a68bab516a562dafde67e531.oggvorbisstr"
+path="res://.godot/imported/NCChords.ogg-99dfc7ecff4827acfda24d2e5fc358a7.oggvorbisstr"
 
 [deps]
 
-source_file="res://globals/AudioManager/Music/NightCity/NCChords.ogg"
-dest_files=["res://.godot/imported/NCChords.ogg-e57dd308a68bab516a562dafde67e531.oggvorbisstr"]
+source_file="res://resources/Music/NightCity/NCChords.ogg"
+dest_files=["res://.godot/imported/NCChords.ogg-99dfc7ecff4827acfda24d2e5fc358a7.oggvorbisstr"]
 
 [params]
 
