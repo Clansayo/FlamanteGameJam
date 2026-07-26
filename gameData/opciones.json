@@ -295,8 +295,8 @@
 		"effect_visibility": true,
 		"effect": {
 			"add_dollars": -1000,
-			"add_earth_points": -25,
-			"add_boss_points": 25,
+			"add_earth_points": -10,
+			"add_boss_points": 1,
 			"add_email_points_modifier": 40
 		},
 		"cost": 30000
