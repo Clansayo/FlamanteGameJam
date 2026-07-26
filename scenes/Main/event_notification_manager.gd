@@ -16,7 +16,7 @@ func _ready() -> void:
 	timer_refresh_rate.start()
 
 func check():
-	#print("Boss points: %s" % CurrencyManager.get_boss_points())
+	print("Boss points: %s" % CurrencyManager.get_boss_points())
 	var is_more_than: bool = false
 	var value: int = -1
 	for notification_data_key: String in DataResources.notifications_data_map.keys():

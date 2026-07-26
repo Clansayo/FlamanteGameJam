@@ -12,6 +12,9 @@ var current_tux_intervall_index: int
 
 var timer_refresh_rate: Timer
 
+var BOSS_END_SCENE: String = "res://scenes/Finales/Despido.tscn"
+var EARTH_END_SCENE: String = "res://scenes/Finales/FinalDestruccion.tscn"
+
 @onready var tux_sprite: AnimatedSprite2D = $"../UI/TuxSprite"
 @onready var ferran_sprite: AnimatedSprite2D = $"../UI/FerranSprite"
 
@@ -21,7 +24,6 @@ func _ready() -> void:
 	timer_refresh_rate.one_shot = false
 	timer_refresh_rate.timeout.connect(refresh)
 	self.add_child(timer_refresh_rate)
-	
 	timer_refresh_rate.start()
 	
 	current_boss_intervall_index = get_interval_index(boss_intervall, CurrencyManager.get_boss_points())
@@ -38,7 +40,23 @@ func get_interval_index(interval: Array, value: int) -> int:
 		index += 1
 	return index
 
+func trigger_boss_end():
+	print("TRIGGER BOSS END")
+	get_tree().change_scene_to_file(BOSS_END_SCENE)
+
+func trigger_earth_end():
+	get_tree().change_scene_to_file(EARTH_END_SCENE)
+
 func refresh():
+	if CurrencyManager.get_earth_points() >= 100:
+		await get_tree().create_timer(2.5).timeout
+		trigger_earth_end()
+		return
+	if CurrencyManager.get_boss_points() >= 100:
+		await get_tree().create_timer(2.5).timeout
+		trigger_boss_end()
+		return
+	
 	current_boss_intervall_index = get_interval_index(boss_intervall, CurrencyManager.get_boss_points())
 	current_tux_intervall_index = get_interval_index(tux_intervall, CurrencyManager.get_earth_points())
 	
@@ -53,3 +71,4 @@ func refresh():
 				option_button.texture_normal = DataResources.BOTON_NO_DISPONIBLE_TEXTURE
 			else:
 				option_button.texture_normal = DataResources.BOTON_NORMAL_TEXTURE
+	
