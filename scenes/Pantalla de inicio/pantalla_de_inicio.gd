@@ -6,7 +6,9 @@ var start_size = 1
 var end_size = 1.04
 
 func _ready() -> void:
-	pass # Replace with function body.
+	AudioManager.stop_music()
+	AudioManager.play_song(1)
+	AudioManager.set_layer(AudioManager.nc_drums, false)
 
 func _process(delta: float) -> void:
 	pass

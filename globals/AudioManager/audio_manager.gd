@@ -52,11 +52,16 @@ func play_song(song: int):
 	fa_coro.volume_db = -80
 	fa_base.volume_db = -80
 	if song == 1:
-		nc_drums.play()
-		nc_chords.play()
-		nc_bass.play()
-		nc_lead.play()
-		nc_pad.play()
+		if !nc_drums.playing:
+			nc_drums.play()
+		if !nc_chords.playing:
+			nc_chords.play()
+		if !nc_bass.playing:
+			nc_bass.play()
+		if !nc_lead.playing:
+			nc_lead.play()
+		if !nc_pad.playing:
+			nc_pad.play()
 	else:
 		#Fuera cancion 1
 		fade_out(nc_drums)
