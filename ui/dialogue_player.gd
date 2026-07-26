@@ -26,6 +26,7 @@ var fixed_visible_char: float = 0
 @onready var speaker_name_label: RichTextLabel = $TextBox/SpeakerName
 
 signal letter_typed
+signal dialogue_ended
 
 var current_dialogue_area: DialogueArea
 
@@ -159,6 +160,7 @@ func finish():
 	page_bbcode = ""
 	current_dialogue_area.on_dialogue_ended()
 	print("##### FINISH #######")
+	dialogue_ended.emit()
 
 func get_line_length(line: int) -> int:
 	var range: Vector2i = text_label.get_line_range(line)
