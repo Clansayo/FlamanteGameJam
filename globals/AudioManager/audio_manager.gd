@@ -9,7 +9,7 @@ const KEYBOARD_CLICKS = [
 
 const UI_CLICK = preload("res://globals/AudioManager/SFX/UIClick2.mp3")
 const F_CLICK = preload("res://globals/AudioManager/SFX/ClickF.mp3")
-const MAIN_THEME = preload("res://globals/AudioManager/Music/Prueba_1.ogg")
+const MAIN_THEME = preload("res://globals/AudioManager/Music/NightCity/NCFull.ogg")
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer
