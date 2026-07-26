@@ -64,6 +64,22 @@
 			"more_points_than": 85
 		}
 	},
+	"BOSS_NOTIFICATION_9": {
+		"type": "boss",
+		"image": ".png",
+		"message": "Esta empresa no está ganando suficiente, genérame más riqueza, ¡TIENES QUE AUMENTAR LOS BENEFICIOS!",
+		"trigger": {
+			"more_points_than": 60
+		}
+	},
+	"BOSS_NOTIFICATION_10": {
+		"type": "boss",
+		"image": ".png",
+		"message": "Hey,¡que tal!. Sé que estas haciendo un gran trabajo, pero necesito que entiendas que hay que aumentar más esos beneficios, aún no me llega para el lambo :)",
+		"trigger": {
+			"less_points_than": 30
+		}
+	},
 	
 	"PLANET_NOTIFICATION_1": {
 		"type": "planet",
@@ -130,5 +146,5 @@
 		"trigger": {
 			"more_points_than": 80
 		} 
-	},
+	}
 }
