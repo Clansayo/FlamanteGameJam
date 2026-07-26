@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qc6r48b8a3ci"
-path="res://.godot/imported/explota el patinete.png-cfae59a70101a285bb174657a1c9491f.ctex"
+uid="uid://m68npi4w3yp5"
+path="res://.godot/imported/no_heredas.png-d8fc17622562bea267432b5b3188feb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/explota el patinete.png"
-dest_files=["res://.godot/imported/explota el patinete.png-cfae59a70101a285bb174657a1c9491f.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/no_heredas.png"
+dest_files=["res://.godot/imported/no_heredas.png-d8fc17622562bea267432b5b3188feb6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyvttu4outxto"
-path="res://.godot/imported/Osos frigopie.png-2bc889491a06aebc399639e9264708d0.ctex"
+uid="uid://qc6r48b8a3ci"
+path="res://.godot/imported/explota_el_patinete.png-c6d850c581c7c02b1cdac2ac601cf2e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/Osos frigopie.png"
-dest_files=["res://.godot/imported/Osos frigopie.png-2bc889491a06aebc399639e9264708d0.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/explota_el_patinete.png"
+dest_files=["res://.godot/imported/explota_el_patinete.png-c6d850c581c7c02b1cdac2ac601cf2e9.ctex"]
 
 [params]
 

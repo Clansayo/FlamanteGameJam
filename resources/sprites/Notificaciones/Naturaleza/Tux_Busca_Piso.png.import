@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bohble0lgtifh"
-path="res://.godot/imported/7 tios con pancarta.png-ade48196dcf9ebbf07b2679c2f6cbb66.ctex"
+uid="uid://m1q2x404qoac"
+path="res://.godot/imported/Tux_Busca_Piso.png-bcae97c23c7c88aa71c09b9f4c375a67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/7 tios con pancarta.png"
-dest_files=["res://.godot/imported/7 tios con pancarta.png-ade48196dcf9ebbf07b2679c2f6cbb66.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/Tux_Busca_Piso.png"
+dest_files=["res://.godot/imported/Tux_Busca_Piso.png-bcae97c23c7c88aa71c09b9f4c375a67.ctex"]
 
 [params]
 

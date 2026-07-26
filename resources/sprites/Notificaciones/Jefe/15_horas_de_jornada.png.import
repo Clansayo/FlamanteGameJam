@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0dq7ompx8dvm"
-path="res://.godot/imported/lafufus para todos.png-cdc55733a584d6110e0cd9a64accb404.ctex"
+uid="uid://dawhh2n4rko8e"
+path="res://.godot/imported/15_horas_de_jornada.png-733a4f60224b8c123e9a34f6ce5f70f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/lafufus para todos.png"
-dest_files=["res://.godot/imported/lafufus para todos.png-cdc55733a584d6110e0cd9a64accb404.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/15_horas_de_jornada.png"
+dest_files=["res://.godot/imported/15_horas_de_jornada.png-733a4f60224b8c123e9a34f6ce5f70f9.ctex"]
 
 [params]
 

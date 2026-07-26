@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpkg132snto6s"
-path="res://.godot/imported/2 paradas de baño.png-8b13f9b554b3ee169768abbfc03ac707.ctex"
+uid="uid://0dq7ompx8dvm"
+path="res://.godot/imported/lafufus_para_todos.png-b55076922e2f4531320fc88d23ee670b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/2 paradas de baño.png"
-dest_files=["res://.godot/imported/2 paradas de baño.png-8b13f9b554b3ee169768abbfc03ac707.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/lafufus_para_todos.png"
+dest_files=["res://.godot/imported/lafufus_para_todos.png-b55076922e2f4531320fc88d23ee670b.ctex"]
 
 [params]
 

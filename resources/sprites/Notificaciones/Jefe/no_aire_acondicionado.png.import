@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs6awttji3xcp"
-path="res://.godot/imported/tux se muda al metro.png-e075f19e044d15455a58586f2b3a5742.ctex"
+uid="uid://cpiwiobdd32ho"
+path="res://.godot/imported/no_aire_acondicionado.png-b05db1956dfaf5f1d2a728afb713f258.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/tux se muda al metro.png"
-dest_files=["res://.godot/imported/tux se muda al metro.png-e075f19e044d15455a58586f2b3a5742.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/no_aire_acondicionado.png"
+dest_files=["res://.godot/imported/no_aire_acondicionado.png-b05db1956dfaf5f1d2a728afb713f258.ctex"]
 
 [params]
 

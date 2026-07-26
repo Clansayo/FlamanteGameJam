@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc7dcyo8mwimp"
-path="res://.godot/imported/protestas zbe.png-2c3fec62ffb3b10d4ffdd9639b6ed462.ctex"
+uid="uid://ddontf4anti6y"
+path="res://.godot/imported/1_hora_vacaciones.png-c360336d8895c2852df1c3d3d70a8fa3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/protestas zbe.png"
-dest_files=["res://.godot/imported/protestas zbe.png-2c3fec62ffb3b10d4ffdd9639b6ed462.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/1_hora_vacaciones.png"
+dest_files=["res://.godot/imported/1_hora_vacaciones.png-c360336d8895c2852df1c3d3d70a8fa3.ctex"]
 
 [params]
 

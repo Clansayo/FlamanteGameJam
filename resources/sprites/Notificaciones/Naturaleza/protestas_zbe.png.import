@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m68npi4w3yp5"
-path="res://.godot/imported/no heredas.png-71e0e1062b26a3aa3cec506e9ccc5e54.ctex"
+uid="uid://bc7dcyo8mwimp"
+path="res://.godot/imported/protestas_zbe.png-3428517871edd0b2462786cde1846a84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/no heredas.png"
-dest_files=["res://.godot/imported/no heredas.png-71e0e1062b26a3aa3cec506e9ccc5e54.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/protestas_zbe.png"
+dest_files=["res://.godot/imported/protestas_zbe.png-3428517871edd0b2462786cde1846a84.ctex"]
 
 [params]
 

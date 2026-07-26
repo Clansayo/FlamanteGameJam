@@ -1,11 +1,11 @@
 {
 	"BOSS_NOTIFICATION_1": {
 		"type": "boss",
-		"image": "clupenguin.webp",
-		"message": "Hola soy tu jefe que pasa",
+		"image": "1_hora_vacaciones.png",
+		"message": "Estas trabajando TAN bien que voy a añadir una hora a tus vacaciones.",
 		"trigger": {
 			"less_boss_points_than": 50
-		} 
+		}
 	},
 	"PLANET_NOTIFICATION_1": {
 		"type": "planet",

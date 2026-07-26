@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddontf4anti6y"
-path="res://.godot/imported/1 hora vacaciones.png-4e7c09094717c5db66719f9048bf545b.ctex"
+uid="uid://cyvttu4outxto"
+path="res://.godot/imported/Osos_frigopie.png-b990067eb92699bde714e39ecebc075a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/1 hora vacaciones.png"
-dest_files=["res://.godot/imported/1 hora vacaciones.png-4e7c09094717c5db66719f9048bf545b.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/Osos_frigopie.png"
+dest_files=["res://.godot/imported/Osos_frigopie.png-b990067eb92699bde714e39ecebc075a.ctex"]
 
 [params]
 

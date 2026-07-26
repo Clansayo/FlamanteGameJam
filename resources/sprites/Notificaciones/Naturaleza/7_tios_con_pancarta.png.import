@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpn4cslrjryp5"
-path="res://.godot/imported/sillas de carton.png-f8b3a2761e5b66adcef095280ce56d18.ctex"
+uid="uid://bohble0lgtifh"
+path="res://.godot/imported/7_tios_con_pancarta.png-c87c6aacf0caa81349c0e04540a3448a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/sillas de carton.png"
-dest_files=["res://.godot/imported/sillas de carton.png-f8b3a2761e5b66adcef095280ce56d18.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/7_tios_con_pancarta.png"
+dest_files=["res://.godot/imported/7_tios_con_pancarta.png-c87c6aacf0caa81349c0e04540a3448a.ctex"]
 
 [params]
 

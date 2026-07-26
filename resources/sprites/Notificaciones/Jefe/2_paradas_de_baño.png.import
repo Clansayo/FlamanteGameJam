@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m1q2x404qoac"
-path="res://.godot/imported/Tux Busca Piso.png-0b85d07d389839126c2fc63593275925.ctex"
+uid="uid://bpkg132snto6s"
+path="res://.godot/imported/2_paradas_de_baño.png-0315f4642cd622bae12824dd1de79898.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Naturaleza/Tux Busca Piso.png"
-dest_files=["res://.godot/imported/Tux Busca Piso.png-0b85d07d389839126c2fc63593275925.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/2_paradas_de_baño.png"
+dest_files=["res://.godot/imported/2_paradas_de_baño.png-0315f4642cd622bae12824dd1de79898.ctex"]
 
 [params]
 

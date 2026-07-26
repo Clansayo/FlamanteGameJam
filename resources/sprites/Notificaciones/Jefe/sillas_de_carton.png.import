@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvdjqtb854tl1"
-path="res://.godot/imported/solo 1 baño.png-0c8cbc6924d3f3b5ebad326dbe7ae88c.ctex"
+uid="uid://dpn4cslrjryp5"
+path="res://.godot/imported/sillas_de_carton.png-27f300ec9989adcb406d63379672f236.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/solo 1 baño.png"
-dest_files=["res://.godot/imported/solo 1 baño.png-0c8cbc6924d3f3b5ebad326dbe7ae88c.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/sillas_de_carton.png"
+dest_files=["res://.godot/imported/sillas_de_carton.png-27f300ec9989adcb406d63379672f236.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dawhh2n4rko8e"
-path="res://.godot/imported/15 horas de jornada.png-e2431618e20364c04a6ce3739c8be650.ctex"
+uid="uid://bvdjqtb854tl1"
+path="res://.godot/imported/solo_1_baño.png-bb8426011ef39ffe25753ee382ffd5aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/15 horas de jornada.png"
-dest_files=["res://.godot/imported/15 horas de jornada.png-e2431618e20364c04a6ce3739c8be650.ctex"]
+source_file="res://resources/sprites/Notificaciones/Jefe/solo_1_baño.png"
+dest_files=["res://.godot/imported/solo_1_baño.png-bb8426011ef39ffe25753ee382ffd5aa.ctex"]
 
 [params]
 

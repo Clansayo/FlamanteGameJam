@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpiwiobdd32ho"
-path="res://.godot/imported/no aire acondicionado.png-fe1a1b6a7bfaa03a9f5650e72fb01eeb.ctex"
+uid="uid://bs6awttji3xcp"
+path="res://.godot/imported/tux_se_muda_al_metro.png-b1b66834d02d3674c445ac0718be039a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Notificaciones/Jefe/no aire acondicionado.png"
-dest_files=["res://.godot/imported/no aire acondicionado.png-fe1a1b6a7bfaa03a9f5650e72fb01eeb.ctex"]
+source_file="res://resources/sprites/Notificaciones/Naturaleza/tux_se_muda_al_metro.png"
+dest_files=["res://.godot/imported/tux_se_muda_al_metro.png-b1b66834d02d3674c445ac0718be039a.ctex"]
 
 [params]
 
