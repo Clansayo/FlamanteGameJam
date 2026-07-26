@@ -4,6 +4,8 @@ class_name Notification
 var data: Dictionary
 
 var notification_key: String = "PLANET_NOTIFICATION_1"
+var start_size = 1
+var end_size = 1.04
 
 @onready var quit_button: Button = $QuitButton
 @onready var title: Label = $MarginContainer/Title
@@ -42,3 +44,17 @@ func _on_quit_button_pressed() -> void:
 	self.visible = false
 	AudioManager.play_discard_notification()
 	self.queue_free()
+	
+
+
+
+func _on_mouse_entered() -> void:
+	var tween: Tween = create_tween()
+	tween.tween_property(self,"scale", Vector2(end_size, end_size), 0.4)
+	tween.set_trans(Tween.TRANS_BOUNCE)
+	
+
+func _on_mouse_exited() -> void:
+	var tween: Tween = create_tween()
+	tween.tween_property(self,"scale", Vector2(start_size, start_size), 0.4)
+	tween.set_trans(Tween.TRANS_BOUNCE)
