@@ -44,3 +44,9 @@ func refresh():
 	
 	ferran_sprite.play(boss_animations[current_boss_intervall_index])
 	tux_sprite.play(tux_animations[current_tux_intervall_index])
+	
+	for option_button: Option in DataResources.decision_options_button_list:
+		if CurrencyManager.get_emails_points() < option_button.data.cost:
+			option_button.texture_normal = DataResources.BOTON_NO_DISPONIBLE_TEXTURE
+		else:
+			option_button.texture_normal = DataResources.BOTON_PRESIONADO_TEXTURE if option_button.is_active else DataResources.BOTON_NORMAL_TEXTURE

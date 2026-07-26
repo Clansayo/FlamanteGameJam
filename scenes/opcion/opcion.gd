@@ -12,7 +12,10 @@ signal option_selected(option: Option)
 
 var data : Dictionary 
 
+var is_active: bool = false
+
 func _ready():
+	DataResources.decision_options_button_list.append(self)
 	effect_description_label.visible = false
 	data = DataResources.options_data_map[option_key] #Los datos serán los que saque del mapa, que coincidan con su option_key
 	title_label.text = data.title #El título será el que ela de los datos
@@ -64,10 +67,14 @@ func _on_pressed() -> void:
 	# AudioManager.play_ui_click()
 
 func activate_option():
-	self.modulate = Color(0.716, 0.0, 0.422, 1.0)
+	#self.modulate = Color(0.716, 0.0, 0.422, 1.0)
+	self.texture_normal = DataResources.BOTON_PRESIONADO_TEXTURE
+	is_active = true
 
 func deactivate_option():
-	self.modulate = Color(1.0, 1.0, 1.0, 1.0)
+	#self.modulate = Color(1.0, 1.0, 1.0, 1.0)
+	self.texture_normal = DataResources.BOTON_NORMAL_TEXTURE
+	is_active = false
 
 func _on_effect_description_timer_timeout() -> void:
 	effect_description_label.visible = true

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="1_6dmt1"]
 [ext_resource type="Script" uid="uid://4s3kydkrojqk" path="res://scenes/opcion/opcion.gd" id="1_x0rm4"]
+[ext_resource type="Texture2D" uid="uid://c5f2u3himp0gi" path="res://resources/sprites/Fondo/botónPresionado.png" id="2_ni5ej"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yc7ip"]
 font_size = 18
@@ -14,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("1_6dmt1")
+texture_pressed = ExtResource("2_ni5ej")
 script = ExtResource("1_x0rm4")
 option_key = "PLASTIC_STRAW"
 
@@ -80,6 +82,7 @@ text = "XX @"
 label_settings = SubResource("LabelSettings_yc7ip")
 clip_text = true
 
+[connection signal="button_down" from="." to="." method="_on_button_down"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -7,7 +7,6 @@ var active_option: Option = null
 signal option_selected_data(data: Dictionary) # Declaro la señal de que se emitirá cuando pulse el boton, y que emite un diccionario
 signal option_deselected_data(data: Dictionary)
 
-
 @export var option_keys_list: PackedStringArray
 
 
