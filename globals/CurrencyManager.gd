@@ -22,6 +22,9 @@ func add_dollars(x: int) -> void:
 	dollar.add(x)
 
 func add_earth_points(x: int) -> void:
+	if (earth.get_total() + x) < 0 and x < 0:
+		earth.sett(0)
+		return
 	earth.add(x)
 
 func add_email_points(x: int) -> void:

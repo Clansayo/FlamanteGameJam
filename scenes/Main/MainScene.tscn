@@ -17,12 +17,15 @@
 [ext_resource type="PackedScene" uid="uid://b8cpsyuuy0cg1" path="res://scenes/Decision/decision.tscn" id="10_kerbj"]
 [ext_resource type="Script" uid="uid://cgct5tcotwf8o" path="res://scenes/Main/event_animation_manager.gd" id="13_wtihh"]
 [ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="14_0k3pk"]
+[ext_resource type="PackedScene" uid="uid://em8c6v4o6hdu" path="res://scenes/Finales/FinalGusano.tscn" id="18_qtvlh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k5thl"]
 size = Vector2(292, 298)
 
 [node name="MainScene" type="Node" unique_id=1411292886]
 script = ExtResource("1_j720q")
+
+[node name="DuracionGusanoEscenaTimer" type="Timer" parent="." unique_id=146610984]
 
 [node name="EventMusicManager" type="Node" parent="." unique_id=1005404475]
 script = ExtResource("2_0k3pk")
@@ -221,7 +224,11 @@ option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
 
 [node name="GeneradorNotificaciones" parent="UI" unique_id=909852352 instance=ExtResource("4_in32o")]
 
+[node name="GusanoEscena" parent="." unique_id=1698438906 instance=ExtResource("18_qtvlh")]
+
+[connection signal="timeout" from="DuracionGusanoEscenaTimer" to="." method="_on_duracion_gusano_escena_timer_timeout"]
 [connection signal="trigger_notification" from="EventNotificationManager" to="." method="_on_event_notification_manager_trigger_notification"]
+[connection signal="liberen_al_gusano" from="EventAnimationManager" to="." method="_on_event_animation_manager_liberen_al_gusano"]
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]
 [connection signal="button_down" from="UI/Teclado" to="UI/Teclado" method="_on_button_down"]
@@ -229,3 +236,4 @@ option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
 [connection signal="mouse_entered" from="UI/Teclado" to="UI/Teclado" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="UI/Teclado" to="UI/Teclado" method="_on_mouse_exited"]
 [connection signal="pressed" from="UI/Teclado" to="." method="_on_teclado_pressed"]
+[connection signal="dialogue_ended" from="GusanoEscena" to="." method="_on_gusano_escena_dialogue_ended"]

@@ -19,6 +19,10 @@ func update(delta: float):
 func add(x: int) -> void:
 	v_int += x
 
+func sett(x: int) -> void:
+	v_int = 0
+	v_float = 0.0
+
 func add_modifier(x: int) -> void:
 	v_modifier += x
 

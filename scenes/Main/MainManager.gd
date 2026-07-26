@@ -11,16 +11,18 @@ extends Node
 
 @onready var decision_container: VBoxContainer = $UI/ScrollContainer/DecisionContainer
 @onready var generador_notificaciones: NotificationGenerator = $UI/GeneradorNotificaciones
+@onready var ui: CanvasLayer = $UI
 
-
+@onready var gusano_escena: ControlCinematica = $GusanoEscena
+@onready var duracion_gusano_escena_timer: Timer = $DuracionGusanoEscenaTimer
 
 var click_value: int = 1
 
-
-
 func _ready() -> void:
+	gusano_escena.disable()
+	
 	CurrencyManager.add_dollars_modifier(1)
-	CurrencyManager.add_email_points_modifier(1)
+	CurrencyManager.add_email_points_modifier(100000)
 	CurrencyManager.add_email_points(1000)
 	AudioManager.play_song(1)
 	
@@ -57,3 +59,17 @@ func _on_decision_deselected(data: Dictionary) -> void:
 func _on_event_notification_manager_trigger_notification(notification_key: String) -> void:
 	print("TRIGGER DE: %s" % notification_key)
 	generador_notificaciones.generate(notification_key)
+
+
+func _on_duracion_gusano_escena_timer_timeout() -> void:
+	gusano_escena.disable()
+	ui.visible = true
+
+
+func _on_event_animation_manager_liberen_al_gusano() -> void:
+	gusano_escena.enable()
+	ui.visible = false
+
+
+func _on_gusano_escena_dialogue_ended() -> void:
+	duracion_gusano_escena_timer.start()

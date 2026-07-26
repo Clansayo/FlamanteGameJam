@@ -12,15 +12,21 @@ var current_tux_intervall_index: int
 
 var timer_refresh_rate: Timer
 
+const GUSANO_OPTIONS_KEYS = ["GUSANOS", "INVESTIGAR_GUSANOS", "MANGO_LOCO"]
+
 var BOSS_END_SCENE: String = "res://scenes/Finales/Despido.tscn"
 var EARTH_END_SCENE: String = "res://scenes/Finales/FinalDestruccion.tscn"
+
+signal liberen_al_gusano
+
+var gusano_liberado: bool = false
 
 @onready var tux_sprite: AnimatedSprite2D = $"../UI/TuxSprite"
 @onready var ferran_sprite: AnimatedSprite2D = $"../UI/FerranSprite"
 
 func _ready() -> void:
 	timer_refresh_rate = Timer.new()
-	timer_refresh_rate.wait_time = 1
+	timer_refresh_rate.wait_time = 1.5
 	timer_refresh_rate.one_shot = false
 	timer_refresh_rate.timeout.connect(refresh)
 	self.add_child(timer_refresh_rate)
@@ -63,8 +69,12 @@ func refresh():
 	ferran_sprite.play(boss_animations[current_boss_intervall_index])
 	tux_sprite.play(tux_animations[current_tux_intervall_index])
 	
+	var gusano_option: int = 0
 	for option_button: Option in DataResources.decision_options_button_list:
+		
 		if option_button.is_active:
+			if GUSANO_OPTIONS_KEYS.has(option_button.option_key):
+				gusano_option += 1
 			option_button.texture_normal = DataResources.BOTON_PRESIONADO_TEXTURE
 		else:
 			if CurrencyManager.get_emails_points() < option_button.data.cost:
@@ -72,3 +82,6 @@ func refresh():
 			else:
 				option_button.texture_normal = DataResources.BOTON_NORMAL_TEXTURE
 	
+	if !gusano_liberado and gusano_option == 3:
+		liberen_al_gusano.emit()
+		gusano_liberado = true
