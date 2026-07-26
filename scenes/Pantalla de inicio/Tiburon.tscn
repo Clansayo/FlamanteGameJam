@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://djs7o2ea3docn"]
+
+[ext_resource type="Texture2D" uid="uid://y0vl1t1c5djr" path="res://resources/sprites/Fondo/silla grande.png" id="1_pe6rm"]
+[ext_resource type="SpriteFrames" uid="uid://di878oetghqop" path="res://resources/Animations/Ferran.tres" id="2_w3qt8"]
+
+[node name="Control" type="Control" unique_id=1867615568]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1926533187]
+
+[node name="SillaGrande" type="Sprite2D" parent="CanvasLayer" unique_id=2091137068]
+position = Vector2(960, 540)
+texture = ExtResource("1_pe6rm")
+
+[node name="FerranSprite" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=621526723]
+position = Vector2(1236.455, 618.565)
+scale = Vector2(0.8574074, 0.8574074)
+sprite_frames = ExtResource("2_w3qt8")
+animation = &"Idle"
+autoplay = "Idle"
