@@ -1,11 +1,19 @@
 extends Node
 
+# DEBUG
 @onready var label_dinero: Label = $UI/VBoxContainer/LabelDinero
 @onready var label_emails: Label = $UI/VBoxContainer/LabelEmails
 @onready var label_planeta: Label = $UI/VBoxContainer/LabelPlaneta
+###
+
+@onready var dollars_label: RichTextLabel = $UI/DisplayCurrency/DollarsLabel
+@onready var emails_label: RichTextLabel = $UI/DisplayCurrency/EmailsLabel
+
 @onready var decision_container: VBoxContainer = $UI/ScrollContainer/DecisionContainer
 
 var click_value: int = 1
+
+
 
 func _ready() -> void:
 	CurrencyManager.add_dollars_modifier(1)
@@ -22,6 +30,9 @@ func _process(delta: float) -> void:
 	label_dinero.text = "dinero: %s M$\n$/s: %s\n" % [CurrencyManager.get_dollar(), CurrencyManager.get_dollar_modifier()]
 	label_emails.text = "emails: %s\ne/s: %s\n" % [CurrencyManager.get_emails_points(), CurrencyManager.get_email_points_modifier()]
 	label_planeta.text = "earth_points: %s\np/s: %s\n" % [CurrencyManager.get_earth_points(), CurrencyManager.get_earth_points_modifier()]
+	
+	dollars_label.text = "dinero: %s M$\t$/s: %s\t" % [CurrencyManager.get_dollar(), CurrencyManager.get_dollar_modifier()]
+	emails_label.text = "emails: %s\te/s: %s\t" % [CurrencyManager.get_emails_points(), CurrencyManager.get_email_points_modifier()]
 
 func _on_teclado_pressed() -> void:
 	CurrencyManager.add_email_points(click_value)
