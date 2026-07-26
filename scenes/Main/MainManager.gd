@@ -12,6 +12,8 @@ extends Node
 @onready var decision_container: VBoxContainer = $UI/ScrollContainer/DecisionContainer
 @onready var generador_notificaciones: NotificationGenerator = $UI/GeneradorNotificaciones
 
+
+
 var click_value: int = 1
 
 

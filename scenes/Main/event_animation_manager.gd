@@ -25,10 +25,10 @@ func _ready() -> void:
 	timer_refresh_rate.start()
 	
 	current_boss_intervall_index = get_interval_index(boss_intervall, CurrencyManager.get_boss_points())
-	print("FIRST CURRENT BOSS INTERVAL: %s" % current_boss_intervall_index)
+	#print("FIRST CURRENT BOSS INTERVAL: %s" % current_boss_intervall_index)
 	
 	current_tux_intervall_index = get_interval_index(tux_intervall, CurrencyManager.get_earth_points())
-	print("FIRST CURRENT TUX INTERVAL: %s" % current_tux_intervall_index)
+	#print("FIRST CURRENT TUX INTERVAL: %s" % current_tux_intervall_index)
 
 func get_interval_index(interval: Array, value: int) -> int:
 	var index: int = 0

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c00hfrflt640b" path="res://scenes/Main/MainManager.gd" id="1_j720q"]
 [ext_resource type="Texture2D" uid="uid://bmln2pnic7and" path="res://resources/sprites/fondo.png" id="1_l353u"]
+[ext_resource type="Script" uid="uid://bnvkpq3iegex4" path="res://scenes/Main/event_music_manager.gd" id="2_0k3pk"]
 [ext_resource type="Texture2D" uid="uid://b16bh0xy1hlo1" path="res://resources/sprites/fondo_jefe.png" id="2_1xk82"]
 [ext_resource type="Texture2D" uid="uid://cty3nypxjcoac" path="res://resources/sprites/Teclado.png" id="2_5hlhw"]
 [ext_resource type="Texture2D" uid="uid://clu50p4a70s0w" path="res://resources/sprites/Fondo/fondo pantalla ui.jpg" id="2_eu47k"]
@@ -21,6 +22,9 @@ size = Vector2(292, 298)
 
 [node name="MainScene" type="Node" unique_id=1411292886]
 script = ExtResource("1_j720q")
+
+[node name="EventMusicManager" type="Node" parent="." unique_id=1005404475]
+script = ExtResource("2_0k3pk")
 
 [node name="EventNotificationManager" type="Node" parent="." unique_id=1507618744]
 script = ExtResource("2_gyehl")
@@ -211,11 +215,6 @@ theme_override_constants/separation = 19
 option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
 
 [node name="GeneradorNotificaciones" parent="UI" unique_id=909852352 instance=ExtResource("4_in32o")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
 
 [connection signal="trigger_notification" from="EventNotificationManager" to="." method="_on_event_notification_manager_trigger_notification"]
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
