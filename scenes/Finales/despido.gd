@@ -7,6 +7,8 @@ class_name ControlCinematica
 
 signal dialogue_ended
 
+var is_enabled: bool = false
+
 func _ready() -> void:
 	TranslationServer.set_locale("es")
 
@@ -15,10 +17,13 @@ func _input(event: InputEvent) -> void:
 		SignalBus.display_dialogue.emit(dialogue_area)
 
 func disable():
+	is_enabled = false
 	canvas_layer.visible = false
 	dialogue_player.visible = false
+	
 
 func enable():
+	is_enabled = true
 	canvas_layer.visible = true
 	dialogue_player.visible = true
 
@@ -31,6 +36,7 @@ func _on_dialogue_player_dialogue_ended() -> void:
 	
 var blip_counter := 0
 func _on_dialogue_player_letter_typed() -> void:
+	if !is_enabled: return
 	blip_counter += 1
 	if blip_counter % 4 == 0:
 		AudioManager.play_dialogue_blip(0.5)
