@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d03swvk63a4kc" path="res://resources/sprites/Fondo/botónNoDisponible.png" id="17_f88up"]
 [ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="17_rd00t"]
 [ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="18_f88up"]
+[ext_resource type="Script" uid="uid://bnpu00nocylqv" path="res://scenes/Finales/botonVolver.gd" id="18_rd00t"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nrqu0"]
 animations = [{
@@ -109,6 +110,7 @@ offset_bottom = 194.0
 texture_normal = ExtResource("16_nhwhd")
 texture_pressed = ExtResource("16_rd00t")
 texture_hover = ExtResource("17_f88up")
+script = ExtResource("18_rd00t")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/TextureButton" unique_id=1944004839]
 layout_mode = 0
@@ -159,6 +161,8 @@ position = Vector2(395, 228)
 shape = SubResource("RectangleShape2D_g1cxt")
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="dialogue_ended" from="DialoguePlayer" to="." method="_on_dialogue_player_dialogue_ended"]
+[connection signal="dialogue_ended" from="DialoguePlayer" to="CanvasLayer/TextureButton" method="_on_dialogue_player_dialogue_ended"]
 [connection signal="letter_typed" from="DialoguePlayer" to="." method="_on_dialogue_player_letter_typed"]
 
 [editable path="DialoguePlayer"]

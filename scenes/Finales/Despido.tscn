@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c5f2u3himp0gi" path="res://resources/sprites/Fondo/botónPresionado.png" id="6_sp5nc"]
 [ext_resource type="Texture2D" uid="uid://d03swvk63a4kc" path="res://resources/sprites/Fondo/botónNoDisponible.png" id="7_g3ibt"]
 [ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="7_sp5nc"]
+[ext_resource type="Script" uid="uid://bnpu00nocylqv" path="res://scenes/Finales/botonVolver.gd" id="8_g3ibt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g3ibt"]
 size = Vector2(229, 192)
@@ -45,6 +46,7 @@ offset_bottom = 194.0
 texture_normal = ExtResource("5_qp0gr")
 texture_pressed = ExtResource("6_sp5nc")
 texture_hover = ExtResource("7_g3ibt")
+script = ExtResource("8_g3ibt")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/TextureButton" unique_id=680644078]
 layout_mode = 0
@@ -99,6 +101,7 @@ shape = SubResource("RectangleShape2D_g3ibt")
 [connection signal="mouse_entered" from="CanvasLayer/Caja" to="CanvasLayer/Caja" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Caja" to="CanvasLayer/Caja" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="dialogue_ended" from="DialoguePlayer" to="CanvasLayer/TextureButton" method="_on_dialogue_player_dialogue_ended"]
 [connection signal="letter_typed" from="DialoguePlayer" to="." method="_on_dialogue_player_letter_typed"]
 
 [editable path="DialoguePlayer"]
