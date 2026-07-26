@@ -6,7 +6,7 @@
 			"add_dollars": 300,
 			"add_earth_points": 10,
 			"add_email_points_modifier": 1,
-			"add_boss_points": -5
+			"add_boss_points": -3
 		},
 		"cost": 5
 	},
@@ -18,7 +18,7 @@
 			"add_dollars": -10,
 			"add_earth_points": -5,
 			"add_email_points_modifier": 1,
-			"add_boss_points": 5
+			"add_boss_points": 3
 		},
 		"cost": 15
 	},
@@ -29,7 +29,8 @@
 		"effect": {
 			"add_dollars": 1500,
 			"add_earth_points": 20,
-			"add_boss_points": -10
+			"add_boss_points": -5,
+			"add_email_points_modifier": 2
 		},
 		"cost": 50
 	},
@@ -40,7 +41,8 @@
 		"effect": {
 			"add_dollars": -300,
 			"add_earth_points": -20,
-			"add_boss_points": 10
+			"add_boss_points": 5,
+			"add_email_points_modifier": 2
 		},
 		"cost": 200
 	},
@@ -97,7 +99,7 @@
 			"add_dollars": 10,
 			"add_earth_points": 2,
 			"add_dollars_modifier": 5,
-			"add_email_points_modifier": 2,
+			"add_email_points_modifier": 10,
 			"add_boss_points": -5
 		},
 		"cost": 100
@@ -110,8 +112,8 @@
 			"add_dollars": 900,
 			"add_earth_points": 25,
 			"add_dollars_modifier": 20,
-			"add_email_points_modifier": 10,
-			"add_boss_points": -20
+			"add_email_points_modifier": 15,
+			"add_boss_points": -10
 		},
 		"cost": 200
 	},
@@ -123,7 +125,8 @@
 			"add_dollars": -100,
 			"add_earth_points": -20,
 			"add_dollars_modifier": -10,
-			"add_boss_points": 15
+			"add_boss_points": 5,
+			"add_email_points_modifier": 5
 		},
 		"cost": 1000
 	},
@@ -147,7 +150,8 @@
 			"add_earth_points": 10,
 			"add_dollars_modifier": 100,
 			"add_email_points_modifier": 10,
-			"add_boss_points": -20
+			"add_boss_points": -10,
+			"add_email_points_modifier": 4,
 		},
 		"cost": 500
 	},
