@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FlamanteJam"
-run/main_scene="uid://isdopt0ybbjv"
+run/main_scene="uid://b4x3kbe31hfta"
 config/features=PackedStringArray("4.7", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
