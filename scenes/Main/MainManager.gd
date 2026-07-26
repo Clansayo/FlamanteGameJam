@@ -16,8 +16,10 @@ extends Node
 @onready var gusano_escena: ControlCinematica = $GusanoEscena
 @onready var duracion_gusano_escena_timer: Timer = $DuracionGusanoEscenaTimer
 @onready var event_animation_manager: Node = $EventAnimationManager
+@onready var max_mails_generator: Control = $UI/MaxMailsGenerator
 
 var click_value: int = 1
+const MAX_MAILS = preload("uid://nhsg6lg5jj8q")
 
 func _ready() -> void:
 	gusano_escena.disable()
@@ -46,6 +48,10 @@ func _process(delta: float) -> void:
 func _on_teclado_pressed() -> void:
 	CurrencyManager.add_email_points(click_value)
 	AudioManager.play_keyboard_click()
+	
+	var max_mail_new = MAX_MAILS.instantiate()
+	max_mails_generator.add_child(max_mail_new)
+	max_mail_new.global_position = max_mails_generator.global_position + Vector2(randf_range(-10, 10), randf_range(-10, 10))
 
 func _on_decision_selected(data: Dictionary) -> void:
 	print("Se ha seleccionado una decision con el siguiente efecto: %s" % data.effect)

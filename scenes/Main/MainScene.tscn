@@ -225,7 +225,19 @@ option_keys_list = PackedStringArray("DATACENTER", "MENDIGOS")
 
 [node name="GeneradorNotificaciones" parent="UI" unique_id=909852352 instance=ExtResource("4_in32o")]
 
+[node name="MaxMailsGenerator" type="Control" parent="UI" unique_id=426844207]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1186.19
+offset_top = 107.025
+offset_right = 1226.19
+offset_bottom = 147.02496
+
 [node name="GusanoEscena" parent="." unique_id=1698438906 instance=ExtResource("18_qtvlh")]
+offset_left = 1163.0
+offset_top = 15.0
+offset_right = 1332.0
+offset_bottom = 132.0
 
 [connection signal="timeout" from="DuracionGusanoEscenaTimer" to="." method="_on_duracion_gusano_escena_timer_timeout"]
 [connection signal="trigger_notification" from="EventNotificationManager" to="." method="_on_event_notification_manager_trigger_notification"]

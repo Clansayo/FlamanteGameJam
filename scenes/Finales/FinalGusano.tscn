@@ -106,6 +106,7 @@ script = ExtResource("1_x7rwo")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1285904356]
 layer = 3
+visible = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=246319677]
 position = Vector2(960, 540)
@@ -116,6 +117,7 @@ frame_progress = 0.26447642
 
 [node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("22_1rnda")]
 layer = 4
+visible = false
 scene_text_data_file = "res://dialogues/scene1.json"
 speech_speed_multiplayer = 10
 lines_per_page = 5
