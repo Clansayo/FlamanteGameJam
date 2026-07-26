@@ -2,7 +2,7 @@ extends Node
 
 const song_change = 50
 const song_1_intervals = [15,25,35]
-const song_2_intervals = [60,70,80]
+const song_2_intervals = [60,70,80,90]
 
 var current_song := -1
 var current_interval := -1

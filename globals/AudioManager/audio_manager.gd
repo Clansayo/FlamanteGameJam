@@ -8,15 +8,17 @@ const KEYBOARD_CLICKS = [
 	preload("res://resources/SFX/CLick5.mp3"),
 	
 ]
-
 const UI_CLICK = preload("res://resources/SFX/UIClick2.mp3")
 const F_CLICK = preload("res://resources/SFX/ClickF.mp3")
 const MAIN_THEME = preload("res://resources/Music/NightCity/NCFull.ogg")
 const DESCARTE = preload("uid://cct2itbtp061s")
 const NOTIFICACION = preload("uid://cod665jok36a5")
+const GAME_BLIP = preload("res://resources/SFX/Fabian1_2.wav")
+
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer
+@onready var voice_player: AudioStreamPlayer = $Voice_Player
 
 #Cancion 1
 @onready var nc_drums: AudioStreamPlayer = $NC_Drums
@@ -31,6 +33,7 @@ const NOTIFICACION = preload("uid://cod665jok36a5")
 @onready var fa_lead: AudioStreamPlayer = $FA_Lead
 @onready var fa_coro: AudioStreamPlayer = $FA_Coro
 @onready var fa_base: AudioStreamPlayer = $FA_Base
+@onready var fa_drums: AudioStreamPlayer = $FA_Drums
 
 
 var keyboard_playback: AudioStreamPlaybackPolyphonic
@@ -71,6 +74,7 @@ func play_song(song: int):
 		fa_lead.play()
 		fa_coro.play()
 		fa_base.play()
+		fa_drums.play()
 
 func play_keyboard_click():
 	keyboard_playback.play_stream(KEYBOARD_CLICKS.pick_random())
@@ -106,6 +110,7 @@ func stop_music():
 	fa_base.stop()
 	fa_lead.stop()
 	fa_coro.stop()
+	fa_drums.stop()
 	
 func set_layer(player: AudioStreamPlayer, enabled: bool):
 	var target_volume
@@ -116,7 +121,13 @@ func set_layer(player: AudioStreamPlayer, enabled: bool):
 
 	var tween = create_tween()
 	tween.tween_property(player, "volume_db", target_volume, 1)
-	
+
+func play_dialogue_blip():
+	voice_player.pitch_scale = randf_range(0.85, 1.15)
+	voice_player.volume_db = randf_range(-10.0, -8.0)
+	voice_player.stream = GAME_BLIP
+	voice_player.play()
+
 func fade_out(player: AudioStreamPlayer):
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_SINE)
@@ -135,3 +146,4 @@ func set_music_state(song: int, interval: int):
 		set_layer(fa_base, interval >= 1)
 		set_layer(fa_lead, interval >= 2)
 		set_layer(fa_coro, interval >= 3)
+		set_layer(fa_drums, interval >= 4)

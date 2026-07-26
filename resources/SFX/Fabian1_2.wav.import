@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://b4rg3ssgl5dvx"
-path="res://.godot/imported/Fabian1.wav-942755edfb895f8b175baf36aee66be6.sample"
+uid="uid://crnxnlm6sngx8"
+path="res://.godot/imported/Fabian1_2.wav-e29f23b2a9ed747adaadf67bf32bd3f1.sample"
 
 [deps]
 
-source_file="res://resources/SFX/Fabian1.wav"
-dest_files=["res://.godot/imported/Fabian1.wav-942755edfb895f8b175baf36aee66be6.sample"]
+source_file="res://resources/SFX/Fabian1_2.wav"
+dest_files=["res://.godot/imported/Fabian1_2.wav-e29f23b2a9ed747adaadf67bf32bd3f1.sample"]
 
 [params]
 

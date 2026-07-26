@@ -8,6 +8,13 @@ const MAIN_SCENE = "res://scenes/Main/MainScene.tscn"
 
 func _ready() -> void:
 	TranslationServer.set_locale("es")
+	dialogue_player.letter_typed.connect(_on_letter_typed)
+	
+var blip_counter := 0
+func _on_letter_typed():
+	blip_counter += 1
+	if blip_counter % 4 == 0:
+		AudioManager.play_dialogue_blip()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("click"):

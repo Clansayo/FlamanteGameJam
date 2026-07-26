@@ -11,10 +11,13 @@
 [ext_resource type="AudioStream" uid="uid://chmekqlcoidss" path="res://resources/Music/FireAge/FRBASE.ogg" id="9_m727p"]
 [ext_resource type="AudioStream" uid="uid://b56fgyrn41lx2" path="res://resources/Music/FireAge/FRLead.ogg" id="10_sa0q8"]
 [ext_resource type="AudioStream" uid="uid://c1wwdt0qgdflx" path="res://resources/Music/FireAge/FRCORO.ogg" id="11_5bubq"]
+[ext_resource type="AudioStream" uid="uid://cyecp58echput" path="res://resources/Music/FireAge/FRDRUMS.ogg" id="12_wap0v"]
 
 [sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_wtihh"]
 
 [sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_8hqgo"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_rv2yo"]
 
 [node name="Node" type="Node" unique_id=724489040]
 script = ExtResource("1_8hqgo")
@@ -25,6 +28,11 @@ max_polyphony = 8
 
 [node name="UIPlayer" type="AudioStreamPlayer" parent="." unique_id=502274573]
 stream = SubResource("AudioStreamPolyphonic_8hqgo")
+
+[node name="Voice_Player" type="AudioStreamPlayer" parent="." unique_id=1156523500]
+stream = SubResource("AudioStreamPolyphonic_rv2yo")
+volume_db = -65.901
+bus = &"Voces"
 
 [node name="NC_Drums" type="AudioStreamPlayer" parent="." unique_id=728880533]
 stream = ExtResource("2_rv2yo")
@@ -75,5 +83,10 @@ parameters/looping = true
 
 [node name="FA_Coro" type="AudioStreamPlayer" parent="." unique_id=1045122354]
 stream = ExtResource("11_5bubq")
+bus = &"Musica2"
+parameters/looping = true
+
+[node name="FA_Drums" type="AudioStreamPlayer" parent="." unique_id=1131017672]
+stream = ExtResource("12_wap0v")
 bus = &"Musica2"
 parameters/looping = true
