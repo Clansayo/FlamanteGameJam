@@ -23,7 +23,7 @@ func sett(x: int) -> void:
 	v_int = 0
 	v_float = 0.0
 
-func add_modifier(x: int) -> void:
+func add_modifier(x: float) -> void:
 	v_modifier += x
 
 func get_total() -> int:

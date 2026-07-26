@@ -15,6 +15,7 @@ extends Node
 
 @onready var gusano_escena: ControlCinematica = $GusanoEscena
 @onready var duracion_gusano_escena_timer: Timer = $DuracionGusanoEscenaTimer
+@onready var event_animation_manager: Node = $EventAnimationManager
 
 var click_value: int = 1
 
@@ -22,14 +23,17 @@ func _ready() -> void:
 	gusano_escena.disable()
 	
 	CurrencyManager.add_dollars_modifier(1)
-	CurrencyManager.add_email_points_modifier(100000)
-	CurrencyManager.add_email_points(1000)
+	CurrencyManager.add_earth_points_modifier(0.15)
+	CurrencyManager.add_email_points_modifier(0)
+	CurrencyManager.add_email_points(0)
 	#AudioManager.play_song(1)
 	
 	# Conectar la signal emitidas por las decisiones:
 	for decision: Decision in decision_container.get_children():
 		decision.option_selected_data.connect(_on_decision_selected)
 		decision.option_deselected_data.connect(_on_decision_deselected)
+	
+	event_animation_manager.refresh()
 
 func _process(delta: float) -> void:
 	label_dinero.text = "dinero: %s M$\n$/s: %s\n" % [CurrencyManager.get_dollar(), CurrencyManager.get_dollar_modifier()]
