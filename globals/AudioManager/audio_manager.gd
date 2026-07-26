@@ -92,6 +92,21 @@ func play_discard_notification():
 	ui_player.stream = DESCARTE
 	ui_player.play()
 	
+func stop_music():
+	# Canción 1
+	nc_drums.stop()
+	nc_chords.stop()
+	nc_bass.stop()
+	nc_pad.stop()
+	nc_lead.stop()
+
+	# Canción 2
+	fa_chords.stop()
+	fa_chords_2.stop()
+	fa_base.stop()
+	fa_lead.stop()
+	fa_coro.stop()
+	
 func set_layer(player: AudioStreamPlayer, enabled: bool):
 	var target_volume
 	if enabled:
