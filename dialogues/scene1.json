@@ -12,5 +12,20 @@
 		"speaker": "Boss",
 		"autopaging": false,
 		"message": ["FERRAN_INTRO"]
+	},
+	"final_despido_scena": {
+		"speaker": "",
+		"autopaging": false,
+		"message": ["FINAL_DESPIDO_D"]
+	},
+	"final_tierra_scena": {
+		"speaker": "",
+		"autopaging": false,
+		"message": ["FINAL_TIERRA_D"]
+	},
+	"final_gusano_escena": {
+		"speaker": "",
+		"autopaging": false,
+		"message": ["FINAL_GUSANO_D"]
 	}
 }

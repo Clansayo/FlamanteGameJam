@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://em8c6v4o6hdu"]
 
 [ext_resource type="Texture2D" uid="uid://3rxm5f3y3qcw" path="res://resources/sprites/Finales/Telavvo destruccion/1.png" id="1_uxcbj"]
+[ext_resource type="Script" uid="uid://dygmsaly8sgty" path="res://scenes/Finales/despido.gd" id="1_x7rwo"]
 [ext_resource type="Texture2D" uid="uid://o4tg6imxi0aa" path="res://resources/sprites/Finales/Telavvo destruccion/2.png" id="2_pol3x"]
 [ext_resource type="Texture2D" uid="uid://fe72sbwjb0xk" path="res://resources/sprites/Finales/Telavvo destruccion/3.png" id="3_paba6"]
 [ext_resource type="Texture2D" uid="uid://b337q6b48thmv" path="res://resources/sprites/Finales/Telavvo destruccion/4.png" id="4_sl482"]
@@ -20,6 +21,10 @@
 [ext_resource type="Texture2D" uid="uid://bvgc2ykujv2na" path="res://resources/sprites/Finales/Telavvo destruccion/18.png" id="18_lh4c5"]
 [ext_resource type="Texture2D" uid="uid://4ompboh786mo" path="res://resources/sprites/Finales/Telavvo destruccion/19.png" id="19_5jhsc"]
 [ext_resource type="Texture2D" uid="uid://du8skfjp4ocv6" path="res://resources/sprites/Finales/Telavvo destruccion/20.png" id="20_2gmjf"]
+[ext_resource type="PackedScene" uid="uid://bv3lkfnvry34r" path="res://ui/DialoguePlayer.tscn" id="22_1rnda"]
+[ext_resource type="Texture2D" uid="uid://bsxqvc5whho57" path="res://resources/sprites/Fondo/botón.png" id="23_1h3ff"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="24_i7m56"]
+[ext_resource type="PackedScene" uid="uid://dd7ltlxp8huwp" path="res://scenes/DialogueSystem/dialogue_area.tscn" id="25_ddyg2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k5thl"]
 animations = [{
@@ -89,11 +94,15 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smrqs"]
+size = Vector2(229, 192)
+
 [node name="Control" type="Control" unique_id=1698438906]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_x7rwo")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1285904356]
 
@@ -103,3 +112,48 @@ sprite_frames = SubResource("SpriteFrames_k5thl")
 autoplay = "default"
 frame = 15
 frame_progress = 0.26447642
+
+[node name="DialoguePlayer" parent="." unique_id=2013203058 instance=ExtResource("22_1rnda")]
+scene_text_data_file = "res://dialogues/scene1.json"
+speech_speed_multiplayer = 10
+lines_per_page = 5
+
+[node name="TextBox" parent="DialoguePlayer" index="0" unique_id=978828007]
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" parent="DialoguePlayer/TextBox" index="0" unique_id=471597746]
+modulate = Color(0, 0, 0, 0.81960785)
+offset_left = -673.0
+offset_top = -263.65997
+offset_right = 671.0
+offset_bottom = 245.34003
+texture = ExtResource("23_1h3ff")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextLabel" parent="DialoguePlayer/TextBox" index="1" unique_id=1833959117]
+offset_left = -638.0
+offset_top = -236.65997
+offset_right = 640.0
+offset_bottom = 147.34003
+theme_override_fonts/normal_font = ExtResource("24_i7m56")
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SpeakerName" parent="DialoguePlayer/TextBox" index="2" unique_id=1915075921]
+offset_left = -791.0
+offset_top = -775.66
+offset_right = 486.0
+offset_bottom = -708.66
+theme_override_fonts/normal_font = ExtResource("24_i7m56")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueArea" parent="." unique_id=1854636417 instance=ExtResource("25_ddyg2")]
+dialogue_key = "final_gusano_escena"
+last_dialogue_index = 0
+
+[node name="CollisionShape2D" parent="DialogueArea" index="0" unique_id=617687203]
+position = Vector2(395, 228)
+shape = SubResource("RectangleShape2D_smrqs")
+
+[editable path="DialoguePlayer"]
+[editable path="DialogueArea"]
