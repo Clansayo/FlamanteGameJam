@@ -17,7 +17,6 @@ const NOTIFICACION = preload("uid://cod665jok36a5")
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer
-@onready var music_player: AudioStreamPlayer = $MusicPlayer
 
 #Cancion 1
 @onready var nc_drums: AudioStreamPlayer = $NC_Drums
