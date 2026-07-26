@@ -28,3 +28,9 @@ func _on_texture_button_pressed() -> void:
 
 func _on_dialogue_player_dialogue_ended() -> void:
 	dialogue_ended.emit()
+	
+var blip_counter := 0
+func _on_dialogue_player_letter_typed() -> void:
+	blip_counter += 1
+	if blip_counter % 4 == 0:
+		AudioManager.play_dialogue_blip(0.5)

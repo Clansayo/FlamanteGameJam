@@ -159,6 +159,7 @@ position = Vector2(395, 228)
 shape = SubResource("RectangleShape2D_g1cxt")
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="letter_typed" from="DialoguePlayer" to="." method="_on_dialogue_player_letter_typed"]
 
 [editable path="DialoguePlayer"]
 [editable path="DialogueArea"]

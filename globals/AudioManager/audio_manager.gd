@@ -127,8 +127,8 @@ func set_layer(player: AudioStreamPlayer, enabled: bool):
 	var tween = create_tween()
 	tween.tween_property(player, "volume_db", target_volume, 1)
 
-func play_dialogue_blip():
-	voice_player.pitch_scale = randf_range(0.85, 1.15)
+func play_dialogue_blip(base_pitch := 0.0):
+	voice_player.pitch_scale = base_pitch + randf_range(0.85, 1.15)
 	voice_player.volume_db = randf_range(-10.0, -8.0)
 	voice_player.stream = GAME_BLIP
 	voice_player.play()

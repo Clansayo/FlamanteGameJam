@@ -99,6 +99,7 @@ shape = SubResource("RectangleShape2D_g3ibt")
 [connection signal="mouse_entered" from="CanvasLayer/Caja" to="CanvasLayer/Caja" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Caja" to="CanvasLayer/Caja" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="letter_typed" from="DialoguePlayer" to="." method="_on_dialogue_player_letter_typed"]
 
 [editable path="DialoguePlayer"]
 [editable path="DialogueArea"]
