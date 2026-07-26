@@ -12,8 +12,11 @@ script = ExtResource("1_8hqgo")
 [node name="KeyboardPlayer" type="AudioStreamPlayer" parent="." unique_id=571564703]
 stream = SubResource("AudioStreamPolyphonic_wtihh")
 max_polyphony = 8
+bus = &"SFX"
 
 [node name="UIPlayer" type="AudioStreamPlayer" parent="." unique_id=502274573]
 stream = SubResource("AudioStreamPolyphonic_8hqgo")
+bus = &"SFX"
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1280223386]
+bus = &"Musica"
