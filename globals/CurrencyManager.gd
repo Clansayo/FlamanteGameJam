@@ -39,7 +39,7 @@ func add_dollars_modifier(x: int) -> void:
 func add_email_points_modifier(x: int) -> void:
 	email.add_modifier(x)
 
-func add_earth_points_modifier(x: int) -> void:
+func add_earth_points_modifier(x: float) -> void:
 	earth.add_modifier(x)
 
 func add_boss_points_modifier(x: int) -> void:
