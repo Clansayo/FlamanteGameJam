@@ -20,10 +20,12 @@ script = ExtResource("1_hak6v")
 
 [node name="Background" type="TextureRect" parent="." unique_id=532268237]
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("2_1ctnc")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=236366932]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
@@ -49,6 +51,7 @@ theme_override_constants/margin_top = 56
 [node name="ContentLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=1135720484]
 custom_minimum_size = Vector2(0, 140.535)
 layout_mode = 2
+mouse_filter = 2
 theme_override_fonts/normal_font = ExtResource("3_yfjqq")
 theme_override_font_sizes/normal_font_size = 27
 text = "Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas "
@@ -70,6 +73,6 @@ custom_minimum_size = Vector2(530, 675)
 layout_mode = 2
 flat = true
 
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="QuitButton" to="." method="_on_quit_button_mouse_exited"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
