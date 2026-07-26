@@ -22,10 +22,14 @@ func load_data() -> void:
 		title.text = "Nota del Jefe"
 		path_tipo = "Jefe/"
 		background.texture = DataResources.FONDO_NOTI_JEFE
+		title.add_theme_color_override("font_color", Color.WHITE)
+		content_label.add_theme_color_override("default_color", Color.WHITE)
 	else:
 		title.text = "Últimas Noticias"
 		path_tipo = "Naturaleza/"
 		background.texture = DataResources.FONDO_NOTI_NATURALEZA
+		title.add_theme_color_override("font_color", Color.BLACK)
+		content_label.add_theme_color_override("default_color", Color.BLACK)
 
 	content_label.text = data.message
 

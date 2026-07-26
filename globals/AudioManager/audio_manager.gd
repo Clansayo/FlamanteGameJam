@@ -12,6 +12,8 @@ const KEYBOARD_CLICKS = [
 const UI_CLICK = preload("res://resources/SFX/UIClick2.mp3")
 const F_CLICK = preload("res://resources/SFX/ClickF.mp3")
 const MAIN_THEME = preload("res://resources/Music/NightCity/NCFull.ogg")
+const DESCARTE = preload("uid://cct2itbtp061s")
+const NOTIFICACION = preload("uid://cod665jok36a5")
 
 @onready var keyboard_player: AudioStreamPlayer = $KeyboardPlayer
 @onready var ui_player: AudioStreamPlayer = $UIPlayer
@@ -36,3 +38,11 @@ func play_ui_f_click():
 func play_music():
 	music_player.stream = MAIN_THEME
 	music_player.play()
+
+func play_notification():
+	ui_player.stream = NOTIFICACION
+	ui_player.play()
+
+func play_discard_notification():
+	ui_player.stream = DESCARTE
+	ui_player.play()

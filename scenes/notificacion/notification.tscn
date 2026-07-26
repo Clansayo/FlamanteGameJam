@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://h1uoj21tokmb" path="res://scenes/notificacion/notification.gd" id="1_hak6v"]
 [ext_resource type="Texture2D" uid="uid://d3jortycqj0po" path="res://resources/notification_images/FondoNotiJefe.jpg" id="2_1ctnc"]
+[ext_resource type="FontFile" uid="uid://dflbhet7s2fpa" path="res://resources/fonts/times.ttf" id="3_yfjqq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hak6v"]
 
@@ -47,6 +48,7 @@ theme_override_constants/margin_top = 56
 [node name="ContentLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=1135720484]
 custom_minimum_size = Vector2(0, 140.535)
 layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("3_yfjqq")
 theme_override_font_sizes/normal_font_size = 27
 text = "Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas Hola buenas "
 scroll_active = false
@@ -57,6 +59,7 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(0, 95.78)
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_yfjqq")
 theme_override_font_sizes/font_size = 49
 text = "Notificacion"
 horizontal_alignment = 1
