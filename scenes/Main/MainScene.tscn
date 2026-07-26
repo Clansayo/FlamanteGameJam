@@ -175,33 +175,10 @@ option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 layout_mode = 2
 option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
 
-[node name="decision10" parent="UI/ScrollContainer/DecisionContainer" unique_id=219995411 instance=ExtResource("10_kerbj")]
+[node name="decision10" parent="UI/ScrollContainer/DecisionContainer" unique_id=1434398155 instance=ExtResource("10_kerbj")]
 layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision11" parent="UI/ScrollContainer/DecisionContainer" unique_id=110628027 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision12" parent="UI/ScrollContainer/DecisionContainer" unique_id=1736619024 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision13" parent="UI/ScrollContainer/DecisionContainer" unique_id=1961678083 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision14" parent="UI/ScrollContainer/DecisionContainer" unique_id=1757618556 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision15" parent="UI/ScrollContainer/DecisionContainer" unique_id=1447579684 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
-
-[node name="decision16" parent="UI/ScrollContainer/DecisionContainer" unique_id=212046732 instance=ExtResource("10_kerbj")]
-layout_mode = 2
-option_keys_list = PackedStringArray("PLASTIC_STRAW", "PAPER_STRAW")
+theme_override_constants/separation = 19
+option_keys_list = PackedStringArray("TAYLOR_SWIFT", "PESETA_VISION")
 
 [connection signal="mouse_entered" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="UI/FerranSprite/Area2D" to="UI/FerranSprite" method="_on_area_2d_mouse_exited"]
