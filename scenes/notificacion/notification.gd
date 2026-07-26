@@ -39,4 +39,6 @@ func load_data() -> void:
 
 
 func _on_quit_button_pressed() -> void:
+	self.visible = false
+	AudioManager.play_discard_notification()
 	self.queue_free()
