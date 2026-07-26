@@ -2,10 +2,14 @@
 	"door": {
 		"speaker": "DOOR_NAME",
 		"autopaging": true,
-		"messeges": ["S1_DOOR", "S1_DOOR_2"]
+		"message": ["S1_DOOR", "S1_DOOR_2"]
 	},
 	"window": {
 		"speaker": "WINDOW_NAME",
-		"messeges": ["S1_WINDOW"]
+		"message": ["S1_WINDOW"]
+	},
+	"ferran_scena_1": {
+		"speaker": "Boss",
+		"message": ["FERRAN_INTRO"]
 	}
 }

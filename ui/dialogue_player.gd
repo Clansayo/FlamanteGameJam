@@ -107,7 +107,7 @@ func on_display_dialogue(dialogue_area: DialogueArea):
 	if !scene_text_data.has(dialogue_key):
 		print("ERROR: No existe esta dialogue_key: %s" % dialogue_key)
 		return
-	if dialogue_index >= scene_text_data[dialogue_key]["messeges"].size(): 
+	if dialogue_index >= scene_text_data[dialogue_key]["message"].size(): 
 		print("ERROR: No existe este dialogue_index: %s" % dialogue_index)
 		return
 
@@ -121,7 +121,7 @@ func on_display_dialogue(dialogue_area: DialogueArea):
 		in_progress = true
 		is_writing = true
 		current_displayed_page = 0
-		var text = tr(scene_text_data[dialogue_key]["messeges"].get(dialogue_index))
+		var text = tr(scene_text_data[dialogue_key]["message"].get(dialogue_index))
 		speaker_name = tr(scene_text_data[dialogue_key].get("speaker", ""))
 
 		print("Speaker: ", speaker_name)
