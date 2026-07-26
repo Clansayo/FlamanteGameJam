@@ -11,6 +11,10 @@ const BOTON_NO_DISPONIBLE_TEXTURE = preload("uid://d03swvk63a4kc")
 const BOTON_PRESIONADO_TEXTURE = preload("uid://c5f2u3himp0gi")
 const BOTON_NORMAL_TEXTURE = preload("uid://bsxqvc5whho57")
 
+const FONDO_NOTI_NATURALEZA = preload("uid://c6bbhdpmjy6g1")
+const FONDO_NOTI_JEFE = preload("uid://d3jortycqj0po")
+
+
 ## Array de referencias a cada uno de los botones de la clase Opcion
 var decision_options_button_list: Array = []
 

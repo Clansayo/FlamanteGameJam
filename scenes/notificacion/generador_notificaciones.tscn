@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://cs65f4d7komk2"]
 
 [ext_resource type="Script" uid="uid://dokl2s51hn34i" path="res://scenes/notificacion/generador_notificaciones.gd" id="1_tej4y"]
+[ext_resource type="PackedScene" uid="uid://c5pfutdg4tr2x" path="res://scenes/notificacion/notification.tscn" id="2_i5w4c"]
 
 [node name="GeneradorNotificaciones" type="Control" unique_id=909852352]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 script = ExtResource("1_tej4y")
+
+[node name="Notification" parent="." unique_id=217631275 instance=ExtResource("2_i5w4c")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 656.0
+offset_top = 597.0
+offset_right = 1156.0
+offset_bottom = 1062.0
